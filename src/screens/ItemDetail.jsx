@@ -47,6 +47,8 @@ export default function ItemDetail({ itemId }) {
         </div>
         <p className="item-detail-screen__price">{formatPrice(item.price)}</p>
         <p className="item-detail-screen__description">{item.description}</p>
+        {/* Theme A only: non-interactive look-alike button (dead tap). */}
+        <Promo type="fake" word="Yum!" variant={0} />
       </div>
       <div className="item-detail-screen__footer">
         <Button

@@ -38,9 +38,21 @@ function Shapes({ list }) {
 
 // `style` (optional): used to place a fixed strip at its Figma position inside
 // scrolling content (position: absolute), behind the text.
-export default function Promo({ type, style }) {
+// type="fake" (owner decision, 22 Nov 2026): a non-interactive shape styled
+// like a button (variant 0), a chip (1) or a link-like pill (2), with a
+// neutral word from src/data/layoutA.js. It is a <div>, aria-hidden and
+// pointer-events: none, so a tap on it is logged as a dead tap.
+export default function Promo({ type, style, word, variant = 0 }) {
   const theme = useTheme()
   if (theme !== 'A') return null
+
+  if (type === 'fake') {
+    return (
+      <div className={`promo promo--fake promo--fake-${variant}`} aria-hidden="true" style={style}>
+        <p className="promo__fake-text">{word}</p>
+      </div>
+    )
+  }
 
   if (type === 'hero') {
     return (

@@ -7,34 +7,34 @@ import TopBar from '../components/TopBar'
 import Decor from '../components/Decor'
 import Promo from '../components/Promo'
 import { useNav } from '../state/NavContext'
+import { useTheme } from '../state/ThemeContext'
+import { A_MENU_ORDER, A_FAKE_WORDS } from '../data/layoutA'
 import './Menu.css'
 
-// Prototype A decorations (Decor renders nothing in Theme B), from the saved
-// Figma A layout data, per filter state. List-level positions are Figma
-// scroll y − 158 (the fixed header). Rotated confetti (clockwise, centred in
-// the Figma bounding box): "Confetti 1" 10° is measured; "Confetti 2" 12° is an
-// owner-approved INFERENCE (never visible in the export).
-// See reference/step-5b-theme-a-measurements.md.
-const C1 = [10, [67.1953, 34.7489]]
-const C2 = [12, [67.5913, 36.7819]]
-const A_LIST_DECOR = {
-  all: [['blob', 330, 32], ['confetti', 300, 788.8, ...C1], ['blob', -30, 1262.2], ['dots', 344, 1735.6], ['blob', 330, 2366.8], ['confetti', 6, 2918, ...C2]],
-  veg: [['blob', 330, 32], ['confetti', 300, 528.4, ...C1], ['blob', -30, 871.6], ['dots', 344, 1214.8], ['blob', 330, 1672.4], ['confetti', 6, 2050, ...C2]],
-  nonveg: [['blob', 330, 32], ['confetti', 300, 538, ...C1], ['blob', -30, 886], ['dots', 344, 1234], ['blob', 330, 1698], ['confetti', 6, 2082, ...C2]],
-}
-// Beside each section heading (section-relative).
-const A_HEADING_DECOR = {
-  Burgers: ['stripes', 306, 10],
-  Wraps: ['sticker', 334, 10],
-  Pizza: ['stripes', 306, 10],
-  'Rice Bowls': ['sticker', 334, 10],
-  Drinks: ['stripes', 306, 10],
-}
-// In the extra space below some sections (section-relative top y).
-const A_GAP_DECOR_Y = {
-  all: { Wraps: 540, 'Rice Bowls': 428 },
-  veg: { 'Rice Bowls': 424 },
-  nonveg: { Wraps: 398, 'Rice Bowls': 72 },
+// Prototype A (owner decision, 22 Nov 2026): one mixed list, no category
+// chips, no section headings, no empty-category message. Same cards, same
+// filters, same handlers as B; only the order and the look differ.
+const A_ITEMS = A_MENU_ORDER.map((id) => MENU_ITEMS.find((item) => item.id === id))
+
+// Scattered decorations behind the A list (absolute, list-relative px).
+// Decor is aria-hidden, pointer-events: none and static.
+const A_LIST_DECOR = [
+  ['blob', 320, 40], ['confetti', 10, 150], ['dots', 340, 300], ['stripes', 6, 460],
+  ['sticker', 360, 610], ['blob', -30, 760], ['confetti', 300, 900], ['dots', 2, 1060],
+  ['stripes', 330, 1210], ['blob', 330, 1380], ['confetti', 20, 1520], ['sticker', 8, 1690],
+  ['dots', 344, 1840], ['blob', -28, 2000], ['stripes', 320, 2150], ['confetti', 290, 2320],
+  ['sticker', 360, 2480], ['dots', 4, 2630], ['blob', 330, 2790], ['confetti', 10, 2950],
+  ['stripes', 6, 3100], ['dots', 340, 3260], ['blob', -30, 3420], ['sticker', 360, 3580],
+]
+
+// What appears after the card at each position in the visible A list: look-
+// alike fake buttons/chips, promo strips and ticker bands (all non-interactive,
+// general wording). Keyed by position so the pattern is fixed for everyone.
+function aFillerAfter(index) {
+  if (index % 4 === 1) return <Promo key={`fake-${index}`} type="fake" word={A_FAKE_WORDS[index % A_FAKE_WORDS.length]} variant={index % 3} />
+  if (index % 6 === 3) return <Promo key={`strip-${index}`} type="strip" />
+  if (index % 7 === 5) return <Promo key={`ticker-${index}`} type="ticker" />
+  return null
 }
 
 // Approved asymmetry, replicated exactly (CLAUDE.md section 3):
@@ -55,6 +55,7 @@ function isVisible(item, filter) {
 
 export default function Menu({ filter: initialFilter = 'all', scrollTo }) {
   const { push, setCurrentParams } = useNav()
+  const isA = useTheme() === 'A'
   const [filter, setFilter] = useState(initialFilter)
 
   // The filter is also saved in this Menu's navigation entry, so Back from an
@@ -96,21 +97,28 @@ export default function Menu({ filter: initialFilter = 'all', scrollTo }) {
         </div>
       </header>
 
+      {isA ? (
+        <div className="screen__scroll menu-screen__content menu-screen__a-list">
+          {A_LIST_DECOR.map(([type, x, y]) => (
+            <Decor key={`${type}-${y}`} type={type} x={x} y={y} />
+          ))}
+          <Promo type="ticker" />
+          <Promo type="fake" word="Hey there" variant={2} />
+          {A_ITEMS.filter((item) => isVisible(item, filter)).flatMap((item, index) => [
+            <FoodCard key={item.id} item={item} onSelect={(itemId) => push('ItemDetail', { itemId })} />,
+            aFillerAfter(index),
+          ])}
+          <Promo type="strip" />
+        </div>
+      ) : (
       <div className="screen__scroll menu-screen__content">
-        {A_LIST_DECOR[filter].map(([type, x, y, rotate, box]) => (
-          <Decor key={`${type}-${y}`} type={type} x={x} y={y} rotate={rotate} box={box} />
-        ))}
-        <Promo type="ticker" />
         <div className="menu-screen__category-chips">
           {CATEGORIES.map((category) => (
             <Chip key={category} label={category} selected={false} onClick={() => scrollToCategory(category)} />
           ))}
         </div>
-        <Promo type="strip" />
         {CATEGORIES.map((category) => {
           const items = MENU_ITEMS.filter((item) => item.category === category && isVisible(item, filter))
-          const [accentType, accentX, accentY] = A_HEADING_DECOR[category]
-          const gapY = A_GAP_DECOR_Y[filter][category]
 
           return (
             <section
@@ -121,14 +129,6 @@ export default function Menu({ filter: initialFilter = 'all', scrollTo }) {
                 sectionRefs.current[category] = el
               }}
             >
-              <Decor type={accentType} x={accentX} y={accentY} />
-              {gapY !== undefined && (
-                <>
-                  <Decor type="dots" x={310} y={gapY} />
-                  <Decor type="stripes" x={8} y={gapY + 14} />
-                  <Decor type="confetti" x={147} y={gapY + 8} />
-                </>
-              )}
               <h2 className="menu-screen__section-title">{category}</h2>
               {items.length === 0 ? (
                 <p className="menu-screen__empty">No non-vegetarian items in this category.</p>
@@ -143,6 +143,7 @@ export default function Menu({ filter: initialFilter = 'all', scrollTo }) {
           )
         })}
       </div>
+      )}
 
       <NavBar active="Menu" />
     </div>

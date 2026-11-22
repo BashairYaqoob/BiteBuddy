@@ -55,6 +55,7 @@ Across the five papers reviewed (HCEye, Sarvi, Cheng, Bentley, Alhamadi), none c
 - **Independent variable:** visual complexity, two levels: A (high), B (low).
 - **Dependent variables:** task time, success, errors (decision errors and wrong turns), interaction behaviour (taps against shortest path, backtracks, scroll-pasts, time to first relevant tap), perceived workload (Raw NASA-TLX), visual busyness rating, preference.
 - **Held constant:** food items, prices, ratings, descriptions, diet tags, item order, functionality, screens, shortest tap path for every task, device, task wording, transitions and timing, minimum text and tap-target sizes.
+  - **Changed (owner, 22 Nov 2026):** in the React Prototype A, **item order, category navigation (category chips, Home category tiles, section headings), the shortest tap path and the 4.5:1 contrast floor are no longer held constant.** A is now a deliberately poor design with a mixed, uncategorised menu (section 3, "React Prototype A redesign"). Food items, prices, ratings, descriptions, diet tags, task wording, screens, cart, checkout, navigation handlers, transitions, time caps and logging are still identical. **[VERIFY]** The Methodology Plan (outside this repo) has not been updated to match; the owner must do that.
 - Participants see neutral names only: **"Design 1"** and **"Design 2"**. Never show "A", "B", "complex" or "simple" to participants, in the UI, page titles, URLs they can see or file names on screen.
 
 ### Participants
@@ -109,6 +110,7 @@ Pilot with 1–2 people not counted in the 12. If the two sets' median times dif
   - T1: the matching diet filter, a category tab, or a meal card of the named diet.
   - T2: the Burgers (Set 1) or Wraps (Set 2) category, or a chicken burger or chicken wrap card.
   - T3: the Pizza category, or the named pizza card.
+- **Note (22 Nov 2026):** Theme A has no category chips or tiles, so in A only the filter and card entries of these lists can occur. The lists themselves (`src/data/relevantTaps.js`) are unchanged.
 - Irrelevant taps before the first relevant tap are logged, do not stop the clock, and feed wrong-turn and decision counts.
 - **Perceived workload:** Raw NASA-TLX, six scales (mental, physical, temporal, performance, effort, frustration), each 0–20, once per prototype after its three tasks. Raw TLX = mean of the six. Performance runs good (0) to poor (20) and is **not** reversed. Report per-person B minus A.
 - **Visual busyness:** one rating 1 (very calm) to 7 (very busy) per prototype. Doubles as a manipulation check.
@@ -127,6 +129,7 @@ The Methodology Plan's primary capture method is **screen recording of the phone
 - Single coder for errors and scroll-pasts (re-check ~20% of recordings).
 - Expectation effects (neutral names, neutral briefing, preference asked last).
 - Raw NASA-TLX with few people.
+- **Added 22 Nov 2026 (React Prototype A redesign):** A vs B is no longer a pure visual-complexity contrast. A also removes categories and shows items in a different (mixed) order, so information organisation is confounded with visual complexity. Some A task text is below 4.5:1 contrast (lowest measured 2.27:1). A's task cards sit 200–450 px further down the Menu than B's. A's category-based "relevant first taps" cannot occur in A, so `firstRelevantTapMs` differs between A and B by construction. A has non-interactive look-alike buttons, so dead taps are expected to be higher in A by design.
 
 ---
 
@@ -262,6 +265,8 @@ Font: **Plus Jakarta Sans** (both prototypes).
 - Prices: "Rs. 720", comma thousands ("Rs. 1,090"), no decimals. Ratings: one decimal ("4.0"), shown with a star.
 
 ### Prototype A (high complexity): what changes
+> **Superseded in React (owner, 22 Nov 2026).** This subsection describes the Figma Prototype A, which is still the Figma reference but is **no longer** what the React Theme A looks like. For the React A, read "React Prototype A redesign" below. Decisions 3, 9 and the "Task-item vertical positions" table no longer hold in React.
+
 Approved decisions (21 Nov 2026), applied in Figma:
 1. Separate A cart state, same 25 variables and logic.
 2. Single-column menu with denser cards.
@@ -325,6 +330,35 @@ A component set (page 02, "A / Components"):
 | Menu – All | 1650 / 1655 | 1784 / 1779 | 2432 / 2442 | 2700 / 2690 |
 | Menu – Vegetarian | 846 / 848 | not shown | 1494 / 1504 | 1762 / 1752 |
 | Menu – Non-vegetarian | not shown | 1248 / 1248 | 1530 / 1540 | 1798 / 1788 |
+
+### React Prototype A redesign (owner decisions, 22 Nov 2026)
+The React Theme A was redesigned to be **deliberately visually distracting and poorly designed**, violating HCI principles on purpose. It no longer matches the Figma Prototype A. The previous, Figma-matched A stylesheet is in git history: `git show ab83a8f:src/theme/theme-a.css`.
+
+**Owner decisions (asked and answered 22 Nov 2026):**
+1. **Categories removed and items mixed, in A only.** No category chips, no Home category tiles, no section headings, no "No non-vegetarian items in this category." message. One mixed list in a fixed order (`src/data/layoutA.js`, `A_MENU_ORDER`), identical for every participant, never random. B keeps the frozen sheet order. Menu data itself (`src/data/menu.js`) is unchanged.
+2. **Poor contrast allowed on task text too** (names, prices, ratings, diet tags), not only decorative text.
+3. **Task-card positions may differ from B.** Measure and report them instead of holding ±10 px.
+4. **Non-interactive look-alike buttons/chips allowed** (`Promo type="fake"`), with neutral words only (`A_FAKE_WORDS`: "Yum!", "Wow!", "Hey there"…). No item, price, rating, diet, category or offer. Taps on them pass through and are logged as dead taps.
+
+**A_MENU_ORDER** (Menu – All, top to bottom): D04, D02, M12, M01, M13, M06, M02, M09, M07, M10, D06, M11, M05, M14, D01, M03, D03, M08, D05, M04. Set 1 / Set 2 targets were placed at similar depths (T1 M13 #5 / M07 #9; T2 M02 #7 / M06 #6; T3 M10 #10 / M11 #12 and D01 #15 / D03 #17). Do not change once the pilot starts.
+
+**Deliberate violations in A (visual only; behaviour is identical to B):**
+- Visual hierarchy: prices, ratings and promos compete with names; headings small and pale; Total smaller than Subtotal.
+- Consistency: five rotating card styles (colour, border, radius, shadow, tilt, field placement), so the same item can look different under another filter; each screen's primary button has a different shape; nav tabs and the two diet filters each look different.
+- Proximity: price, rating and diet tag placed in different corners per card; on the item screen the price is at the top, far from the name; labels far from values on Checkout cards and in the summary.
+- Similarity: fake buttons/chips look like real controls; promo strips look like cards.
+- Alignment and crowding: mixed left/centre/right alignment, offset and tilted cards, small gaps.
+- Affordances and status: Back has no visible button shape on most screens; the selected diet filter and active nav tab are only subtly marked.
+- Cognitive load: patterned background, extra decorations, tickers, strips and fake buttons between cards.
+
+**Still kept in A:** every control ≥ 44 × 44 px (smallest measured 45 px); task text ≥ 14 px; item names never truncated or covered; decorations and promos never over a control, never tappable, static; primary action fill #C8451C; Ready and Wait screens identical to B; same screens, handlers, cart, logging and export.
+
+**Where A differs in code:** `src/theme/theme-a.css` (all rules scoped to `[data-theme="A"]`, Ready excluded); `src/screens/Menu.jsx` and `src/screens/Home.jsx` (an `isA` branch: mixed list, no category tiles); `src/components/Promo.jsx` (fake type, renders nothing in B); `src/screens/ItemDetail.jsx` (one fake button, renders nothing in B); `src/data/layoutA.js`. The logger's class names (`.food-card`, `.chip`, `.btn`, `.nav-bar__tab`, `.top-bar__back`, `.category-tile`, `.screen__scroll`) are unchanged, and card text is still only item data, so tap and card logging work the same.
+
+**Measured 22 Nov 2026 (Chromium, 390 × 844, dev build; not yet on the study iPhone):**
+- Lowest task-text contrast in the A Menu: 2.27:1 (a price), 2.61:1 (a name).
+- Task-card positions (px from the top of the list, B → A): Menu – All: Veggie Supreme 1605 → 1824, Chicken Fajita 1739 → 2162, Mango Lassi 2387 → 2770, Mint Lemonade 2655 → 3107. Vegetarian: Veggie Supreme 801 → 1095, Mango Lassi 1449 → 1623, Mint Lemonade 1717 → 1776. Non-vegetarian: Chicken Fajita 1203 → 1429, Mango Lassi 1485 → 1790, Mint Lemonade 1753 → 2146.
+- Screenshots: `screenshots/prototype-a/` (17 PNGs).
 
 ---
 
@@ -425,6 +459,7 @@ src/
   - free of item names, prices, ratings, diet info or offers;
   - never placed over a control.
 - **All content comes from `src/data/`.** No item text, price or rating is typed inside a component.
+- **Theme A exception (owner, 22 Nov 2026):** Menu and Home have an `isA` branch: A shows one mixed list with no category chips, tiles or section headings (section 3, "React Prototype A redesign"). The two Menu and Fixed-header bullets below describe B (and the shared filter logic, which A also uses).
 - **Menu screen:** one Menu component with a `filter` prop (all, veg, nonveg) rendering the three Menu states, in sheet order. Drinks always shown. When a filtered section has no meals, show the empty message. Only one case occurs with this menu: Rice Bowls under the Non-vegetarian filter, which shows "No non-vegetarian items in this category." exactly as in Figma. Every category has at least one vegetarian meal, so no vegetarian empty message exists or is needed.
 - **Fixed menu header**, with category chips scrolling the list so the section heading lands directly below the header (CSS `scroll-margin-top` equal to the header height, smooth scroll ~300 ms). Home category tiles open Menu – All and scroll to that section.
 - **Every item** card opens its detail screen, and every detail screen has Back and Add to cart (see the note in section 3; confirmed). Home featured cards and the search field: keep them non-interactive, matching Figma, unless the owner decides otherwise **[VERIFY]**.
@@ -443,7 +478,7 @@ src/
 ### Accessibility floors (both themes)
 - Task-related text ≥ 14 px.
 - Decorative text ≥ 12 px.
-- All text contrast ≥ 4.5:1.
+- All text contrast ≥ 4.5:1. **Theme A exception (owner, 22 Nov 2026):** A may use poor contrast, including on task text (lowest measured 2.27:1). B keeps ≥ 4.5:1.
 - Every tappable control ≥ 44 × 44 px.
 - No overlapping or truncated item names.
 - No decoration over a control.
@@ -498,13 +533,13 @@ This app does **not** measure gaze or attention. Taps, scrolls, visibility event
 
 ## 6. Experimental integrity (non-negotiable)
 
-1. A and B share every screen, component, data file, state, navigation rule, transition and logging hook. The only switch is the theme.
-2. Do not change menu data, prices, ratings, descriptions, diet tags, item order, section order, copy text or task answers.
+1. A and B share every screen, component, data file, state, navigation rule, transition and logging hook. The only switch is the theme. **Exception (owner, 22 Nov 2026):** Theme A has no category chips, Home category tiles or section headings, and shows a mixed item order (section 3, "React Prototype A redesign"). Do not add any further A-only differences without the owner's approval.
+2. Do not change menu data, prices, ratings, descriptions, diet tags, item order, section order, copy text or task answers. (Theme A's display order comes from `src/data/layoutA.js`; `src/data/menu.js` stays frozen.)
 3. Do not add features in only one condition. Do not add features in both without the owner's approval: search, remove buttons, quantity, sorting, recommendations, extra badges, animations, sounds or haptics would all change the experiment.
 4. Do not add informative badges or promotions. A's decorations carry no information and are not tappable.
 5. Do not use motion in A only. Decorations are static. Transitions are identical in both.
 6. Keep the primary action colour #C8451C in both themes.
-7. Keep task items' scroll distances similar between themes. After building the A layout, measure the four task cards' positions on all three Menu states and compare with B. Report the differences; Figma achieved within ±10 px.
+7. Keep task items' scroll distances similar between themes. After building the A layout, measure the four task cards' positions on all three Menu states and compare with B. Report the differences; Figma achieved within ±10 px. **Changed (owner, 22 Nov 2026):** the React A no longer holds ±10 px; measure and report instead (latest values in section 3, "React Prototype A redesign").
 8. The Ready screen is identical in both themes.
 9. Behaviour measured by the app is a proxy, not gaze (section 5).
 10. Preserve the methodology: neutral names, counterbalancing table, task order T1→T2→T3, empty cart and Home at every task start, time caps, success rules.
@@ -512,7 +547,7 @@ This app does **not** measure gaze or attention. Taps, scrolls, visibility event
 
 Suggested parity check before any study use:
 - render both themes;
-- confirm the same set of interactive elements on every screen (same count and roles);
+- confirm the same set of interactive elements on every screen (same count and roles), except that A has no category chips or Home category tiles (owner decision, 22 Nov 2026);
 - confirm identical text content apart from A's decorative promo text;
 - run both task sets in both themes from a fresh state and confirm the Rs. 1,360 and Rs. 1,480 totals.
 
@@ -532,7 +567,7 @@ Suggested parity check before any study use:
 
 ---
 
-## 8. Current project status (as of 21 Nov 2026)
+## 8. Current project status (updated 22 Nov 2026)
 
 ### Completed in Figma
 - Prototype B (low complexity), corrected and approved.
@@ -556,24 +591,36 @@ Known Figma limitations recorded in the audit:
 - Mixing items from both sets gives partial counts.
 - Some decoration layers are named "… badge" but carry no information.
 
-### Not yet implemented in React
-Everything. The React project is the starter template. No data files, screens, themes, cart, logging or moderator tools exist yet.
+### Implemented in React (found in the code, 22 Nov 2026)
+The earlier "nothing implemented" note was out of date. The repo already contains:
+- data files (`src/data/menu.js`, `tasks.js`, `rules.js`, `conditions.js`, `relevantTaps.js`);
+- all screens (Ready, Wait, Home, Menu, ItemDetail, Cart, Checkout, OrderConfirmed) and shared components;
+- both themes (`src/theme/theme-b.css`, `theme-a.css`), cart, navigation, session state;
+- moderator setup (`src/moderator/Setup.jsx`), event logging (`src/logging/logger.js`) and JSON export;
+- self-hosted Plus Jakarta Sans (`public/fonts/`).
+
+### Done and verified on 22 Nov 2026 (Chromium at 390 × 844, dev build)
+- Theme A redesigned as a deliberately poor design (section 3, "React Prototype A redesign").
+- `npm run lint` and `npm run build`: pass.
+- All 20 items open, add to cart and total identically in A and B (filters show 20 / 13 / 13 cards in both).
+- Moderator session (P99, condition C1) with export: A Set 1 T1 success, T2 wrong item recorded as a failure, T3 Rs. 1,360; B Set 2 T3 Rs. 1,480. All event types present in the JSON.
+- Theme B unchanged: layout, colour, font and text fingerprints of 13 B screen states identical before and after the redesign; A's Ready screen identical to B's.
+- **Not yet tested:** the study iPhone in Safari.
 
 ### Not yet built or decided anywhere
 - Practice prototype.
 - Per-task starting points.
-- Interactions for T1/T2 items (Figma wires Task 3 only).
-- The written "on path" rule, shortest-path definitions and scroll-past threshold.
-- Font hosting approach.
+- The written "on path" rule, shortest-path definitions and scroll-past threshold (the A redesign changes A's shortest paths, so these now need A and B versions).
+- Updating the Methodology Plan, report limitations and `reference/step-5b-theme-a-measurements.md` (Figma-era) for the A redesign.
 - New deadline and testing dates (the original deadline was 19 Nov 2026) **[VERIFY]**.
 - The pilot.
 
 ### Suggested next steps (propose each before doing it)
 1. **Done.** The owner has confirmed: all 20 items interactive (section 3); diet filter behaviour, replicated exactly (section 3); cart row order, menu order (section 5); device and browser, one iPhone / Safari / portrait / 390 × 844 (section 5); logging as supplementary to screen recording (section 2).
 2. **Done.** Added `src/data/menu.js`, `tasks.js` and `rules.js` from section 4, with a small check that counts and totals match (14 meals, 6 drinks, Rs. 1,360, Rs. 1,480) — validated in Step 1.
-3. Build theme B screens with shared components and a simple screen-stack navigator.
-4. Add the cart reducer and the added-to-cart panel. Verify both task sets.
-5. Add the theme A stylesheet and decorative components. Verify readability floors and task-card positions against B.
-6. Add the session/moderator setup, the Ready → Start → t0 flow, time caps and event logging with JSON export.
+3. **Implemented** (found in code): theme B screens, shared components, screen-stack navigator.
+4. **Implemented** (found in code): cart reducer and added-to-cart panel; both task sets verified 22 Nov 2026.
+5. **Implemented, then redesigned 22 Nov 2026**: theme A (section 3, "React Prototype A redesign").
+6. **Implemented** (found in code): moderator setup, Ready → Start → t0, time caps, event logging, JSON export. Export verified 22 Nov 2026; time caps not re-tested.
 7. Run a parity check across both themes and a full dry run on the study phone.
 8. Pilot with 1–2 non-counted participants before real sessions.

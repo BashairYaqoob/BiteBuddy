@@ -7,6 +7,7 @@ import NavBar from '../components/NavBar'
 import Decor from '../components/Decor'
 import Promo from '../components/Promo'
 import { useNav } from '../state/NavContext'
+import { useTheme } from '../state/ThemeContext'
 import { recordHomeFrame } from '../state/sessionStore'
 import './Home.css'
 
@@ -16,6 +17,7 @@ const FEATURED_IDS = ['M14', 'M05', 'M09']
 
 export default function Home() {
   const { push } = useNav()
+  const isA = useTheme() === 'A'
   const featured = FEATURED_IDS.map((id) => MENU_ITEMS.find((item) => item.id === id))
 
   // Step 6, t0: after Home is in the page, the next animation frame is the
@@ -41,31 +43,42 @@ export default function Home() {
         <Decor type="confetti" x={300} y={48} rotate={8} box={[66.717, 32.674]} />
         <Decor type="dots" x={210} y={14} />
         <Decor type="blob" x={-24} y={762} />
+        <Decor type="stripes" x={6} y={330} />
+        <Decor type="sticker" x={360} y={420} />
+        <Decor type="confetti" x={280} y={600} />
+        <Decor type="dots" x={10} y={900} />
         <h1 className="home-screen__wordmark">
           Bite<span className="home-screen__wordmark-accent">Buddy</span>
         </h1>
+        <Promo type="ticker" />
         <SearchField />
         <Promo type="hero" />
+        <Promo type="fake" word="Hello!" variant={0} />
 
-        <section>
-          <Decor type="stripes" x={310} y={10} />
-          <h2 className="home-screen__section-title">Categories</h2>
-          <div className="home-screen__categories">
-            {CATEGORIES.map((category) => (
-              <CategoryTile key={category} category={category} onSelect={openCategory} />
-            ))}
-          </div>
-        </section>
+        {/* Prototype A (owner decision, 22 Nov 2026): no category tiles.
+            Prototype B keeps the Categories section unchanged. */}
+        {!isA && (
+          <section>
+            <h2 className="home-screen__section-title">Categories</h2>
+            <div className="home-screen__categories">
+              {CATEGORIES.map((category) => (
+                <CategoryTile key={category} category={category} onSelect={openCategory} />
+              ))}
+            </div>
+          </section>
+        )}
 
+        <Promo type="strip" />
         <section>
-          <Decor type="sticker" x={334} y={6} />
           <h2 className="home-screen__section-title">Featured meals</h2>
           <div className="home-screen__featured">
-            {featured.map((item) => (
-              <FoodCard key={item.id} item={item} interactive={false} />
-            ))}
+            {featured.map((item, index) => [
+              <FoodCard key={item.id} item={item} interactive={false} />,
+              index === 0 ? <Promo key="fake-home" type="fake" word="Nom nom" variant={1} /> : null,
+            ])}
           </div>
         </section>
+        <Promo type="fake" word="Wow!" variant={2} />
       </div>
       <NavBar active="Home" />
     </div>

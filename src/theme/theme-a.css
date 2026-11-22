@@ -1,413 +1,728 @@
-/* Prototype A (high visual complexity). Every rule is scoped to
-   [data-theme="A"]; Theme B is untouched. Values come from the saved Figma A
-   component code (A / FoodCard, DietTag, FoodImage, Chip, Button, SearchField,
-   NavBar, CartRow, CategoryTile, TopBar) and the saved Figma A layout data.
-   Step 5a: confirmed details only. Screen-level details of Item, Cart,
-   Checkout, Order confirmed and the Added-to-cart panel are deferred (5b). */
+/* =======================================================================
+   Prototype A: DELIBERATELY POOR, high-visual-complexity design
+   (owner decision, 22 Nov 2026; replaces the Figma-matched A styling, which
+   is kept in git history: `git show HEAD:src/theme/theme-a.css`).
+
+   Every rule is scoped to [data-theme="A"], so Theme B is untouched.
+   The Ready and Wait screens (.ready-screen) are excluded everywhere, so
+   they stay identical to B.
+
+   Kept on purpose (functional floors, both themes):
+   - every tappable control keeps a hit area of at least 44 x 44 px;
+   - task text (names, prices, ratings, diet tags, buttons) is >= 14 px;
+   - item names are never truncated or covered by decoration;
+   - decorations and promos never sit over a control and are never tappable;
+   - primary action fill stays #C8451C (CLAUDE.md section 6, rule 6);
+   - no motion: nothing here animates.
+
+   Deliberate HCI violations (labelled V-* below):
+   V-HIER  visual hierarchy     V-CONS  consistency       V-PROX  proximity
+   V-SIM   similarity           V-ALIGN alignment         V-LOAD  cognitive load
+   V-AFF   affordances          V-CONT  contrast (owner: task text allowed)
+   V-STAT  visibility of status (weak selected / active states)
+   ======================================================================= */
 
 [data-theme="A"] {
-  --color-accent-soft: #FCEBE4;
+  --color-accent-soft: #FFE3F1;
   --color-ink: #1F1B16;
-  --color-muted: #6B645C;
-  --color-border: #E9E4DD;
+  --color-muted: #8A7F74;
+  --color-border: #6C3FC5;
   --color-surface: #FFFFFF;
   --color-bg: #FFF4E6;
   --color-placeholder: #F1ECE5;
   --color-glyph: #B7ADA0;
-  /* Decorative accents (CLAUDE.md section 3). */
+
   --color-decor-mustard: #F2B705;
   --color-decor-teal: #0F8B8D;
   --color-decor-violet: #6C3FC5;
   --color-decor-pink: #E0457B;
+  /* Extra competing colours (V-LOAD, V-CONS). */
+  --a-yellow: #FFE14D;
+  --a-lime: #C6F432;
+  --a-cyan: #5CE1E6;
+  --a-orange: #FF7A00;
+  --a-magenta: #FF2BD6;
+  --a-blush: #FFD6E8;
+  --a-mint: #D9FFF0;
+  --a-lilac: #E9E0FF;
+
+  /* V-LOAD: busy patterned background behind every A screen except Ready /
+     Wait (those paint their own #FAF8F5 background). */
+  background:
+    radial-gradient(circle at 7px 7px, rgba(224, 69, 123, 0.28) 2.5px, transparent 3.5px) 0 0 / 22px 22px,
+    radial-gradient(circle at 18px 15px, rgba(15, 139, 141, 0.22) 2px, transparent 3px) 0 0 / 31px 31px,
+    repeating-linear-gradient(-35deg, #FFF4E6 0 22px, #FFF0B8 22px 40px, #E6FBF8 40px 58px, #FFE6F2 58px 76px);
 }
 
-/* Decorations are clipped at the frame edge (some sit partly outside it in
-   Figma) and painted behind content. */
-[data-theme="A"] .screen__scroll {
+/* Decorations clipped at the frame edge and painted behind content. */
+[data-theme="A"] .screen:not(.ready-screen) .screen__scroll {
   position: relative;
   overflow-x: hidden;
 }
 
-[data-theme="A"] .screen__scroll > :not(.decor),
-[data-theme="A"] .home-screen__content section > :not(.decor),
-[data-theme="A"] .menu-screen__section > :not(.decor) {
+[data-theme="A"] .screen:not(.ready-screen) .screen__scroll > :not(.decor),
+[data-theme="A"] .home-screen__content section > :not(.decor) {
   position: relative;
   z-index: 1;
 }
 
-/* ---------- Components ---------- */
+/* Promo strips that the screens place absolutely are put back into the flow
+   in A so that, with the new layouts, they can never cover text or controls. */
+[data-theme="A"] .screen:not(.ready-screen) .promo--strip {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+}
 
-/* A / FoodCard: 358 × 116 on screens, padding 8, gap 10, 2 px violet border,
-   radius 14; name ExtraBold ink; price ExtraBold violet; corner sticker. */
+/* =======================================================================
+   Look-alike fake buttons / chips (Promo type="fake"): V-SIM, V-AFF.
+   Non-interactive (pointer-events: none from .promo), aria-hidden.
+   ======================================================================= */
+[data-theme="A"] .promo--fake {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  overflow: visible;
+}
+
+[data-theme="A"] .promo__fake-text {
+  font-size: 15px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* 0: looks like a primary button (accent fill, like Add to cart). */
+[data-theme="A"] .promo--fake-0 {
+  align-self: flex-end;
+  width: 62%;
+  height: 50px;
+  border-radius: 4px 26px 4px 26px;
+  background: var(--color-accent);
+  border: 3px solid var(--a-yellow);
+  box-shadow: 4px 4px 0 var(--color-decor-violet);
+}
+[data-theme="A"] .promo--fake-0 .promo__fake-text { color: #FFFFFF; text-transform: uppercase; }
+
+/* 1: looks like a diet-filter chip. */
+[data-theme="A"] .promo--fake-1 {
+  align-self: flex-start;
+  margin-left: 22px;
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 23px;
+  background: var(--a-lime);
+  border: 2px solid var(--color-decor-teal);
+}
+[data-theme="A"] .promo--fake-1 .promo__fake-text { color: var(--color-ink); font-weight: 700; }
+
+/* 2: looks like a secondary button. */
+[data-theme="A"] .promo--fake-2 {
+  align-self: center;
+  width: 78%;
+  height: 44px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 2px dashed var(--color-decor-pink);
+}
+[data-theme="A"] .promo--fake-2 .promo__fake-text { color: var(--color-decor-pink); font-style: italic; }
+
+/* Existing promos made louder and inconsistent (V-LOAD). */
+[data-theme="A"] .promo--ticker {
+  background: repeating-linear-gradient(90deg, var(--color-decor-violet) 0 40px, var(--a-magenta) 40px 80px);
+  transform: rotate(-1.2deg);
+}
+[data-theme="A"] .promo--strip {
+  border: 3px dotted var(--color-decor-violet);
+  background: linear-gradient(100deg, var(--color-decor-mustard), var(--a-lime));
+}
+[data-theme="A"] .promo--hero {
+  border: 4px solid var(--a-yellow);
+  box-shadow: 8px 8px 0 var(--color-decor-pink), -6px -6px 0 var(--a-cyan);
+  background: linear-gradient(135deg, #6C3FC5, #E0457B 70%, #FF7A00);
+}
+
+/* =======================================================================
+   Food cards (Menu list and Home featured): V-CONS, V-PROX, V-SIM,
+   V-ALIGN, V-HIER, V-CONT. Five visual variants cycle by position, so the
+   same item can look different under another filter. The card's content
+   (name, diet tag, price, rating) is unchanged; only its placement varies.
+   ======================================================================= */
 [data-theme="A"] .food-card {
   position: relative;
+  display: grid;
   max-width: 358px;
-  min-height: 116px;
+  min-height: 112px;
   padding: 8px;
-  gap: 10px;
-  border: 2px solid var(--color-decor-violet);
+  gap: 4px 8px;
   border-radius: 14px;
+  border: 2px solid var(--color-decor-violet);
 }
 
-[data-theme="A"] .food-card__name {
-  font-weight: 800;
+[data-theme="A"] .food-card__info,
+[data-theme="A"] .food-card__row {
+  display: contents;
 }
 
-[data-theme="A"] .food-card__price {
-  font-weight: 800;
-  color: var(--color-decor-violet);
-}
+[data-theme="A"] .food-card__name { grid-area: name; font-weight: 800; }
+[data-theme="A"] .food-card .food-image { grid-area: img; }
+[data-theme="A"] .food-card .diet-tag { grid-area: tag; }
+[data-theme="A"] .food-card__price { grid-area: price; font-weight: 800; }
+[data-theme="A"] .food-card .rating { grid-area: rating; }
 
-/* A / FoodImage tile (card 96 × 96; Home tile stretched to 106 × 80). */
-[data-theme="A"] .food-image--a-tile {
-  background: none;
-  border-radius: 0;
-}
+[data-theme="A"] .food-image--a-tile { background: none; border-radius: 0; }
+[data-theme="A"] .food-image__a-tile { display: block; width: 100%; height: 100%; }
 
-[data-theme="A"] .food-image__a-tile {
-  display: block;
+/* ---- Variant 1: yellow, price first and huge, name below, image right.
+   Name pink on yellow (V-CONT ~3:1); tag plain underlined text. */
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+1), .home-screen__featured > .food-card:nth-child(1)) {
+  grid-template-columns: 1fr 96px;
+  grid-template-areas: "price img" "name img" "rating tag";
   width: 100%;
-  height: 100%;
+  background: var(--a-yellow);
+  border: 3px dashed var(--color-decor-pink);
+  border-radius: 0;
+  transform: rotate(-0.8deg);
+  text-align: right;
+  justify-items: end;
 }
-
-/* Rating in A / FoodCard: number Bold ink. */
-[data-theme="A"] .rating__value {
-  font-weight: 700;
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+1), .home-screen__featured > .food-card:nth-child(1)) .food-card__price {
+  font-size: 26px; line-height: 30px; color: var(--color-ink);
 }
-
-/* A / DietTag (meals): 34 tall, 1.5 px violet border, radius 8, padding 3.5/8,
-   12% violet tint, 14 Bold uppercase ink. The plain drink label is deferred. */
-[data-theme="A"] .diet-tag:not(.diet-tag--plain) {
-  padding: 3.5px 8px;
-  border: 1.5px solid var(--color-decor-violet);
-  border-radius: 8px;
-  background: linear-gradient(rgba(108, 63, 197, 0.12), rgba(108, 63, 197, 0.12)), #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--color-ink);
-  text-transform: uppercase;
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+1), .home-screen__featured > .food-card:nth-child(1)) .food-card__name {
+  font-size: 15px; color: #D6336C; font-weight: 600;
 }
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+1), .home-screen__featured > .food-card:nth-child(1)) .diet-tag {
+  height: auto; padding: 0; border: none; background: none;
+  font-size: 14px; font-weight: 700; color: #0F8B8D; text-decoration: underline wavy;
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+1), .home-screen__featured > .food-card:nth-child(1)) .rating { justify-self: start; }
 
-/* A / Chip: unselected 2 px teal border, white, radius 12, padding 9/14,
-   14 Bold uppercase ink (46 tall); selected accent fill, 2 px mustard border,
-   padding 8/14, 14 ExtraBold uppercase white (44 tall). */
-[data-theme="A"] .chip {
-  padding: 9px 14px;
-  border: 2px solid var(--color-decor-teal);
-  border-radius: 12px;
+/* ---- Variant 2: white, double teal border, tiny image left, name small
+   uppercase orange (V-CONT ~2.6:1), price far bottom-right, tag on its own row. */
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+2), .home-screen__featured > .food-card:nth-child(3)) {
+  grid-template-columns: 64px 1fr auto;
+  grid-template-areas: "img name name" "tag tag tag" "rating . price";
+  width: 91%;
+  margin-left: auto;
   background: #FFFFFF;
+  border: 6px double var(--color-decor-teal);
+  border-radius: 30px 4px 30px 4px;
+  box-shadow: 6px 6px 0 var(--color-decor-violet);
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+2), .home-screen__featured > .food-card:nth-child(3)) .food-image {
+  width: 64px; height: 64px;
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+2), .home-screen__featured > .food-card:nth-child(3)) .food-card__name {
+  font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--a-orange); align-self: center;
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+2), .home-screen__featured > .food-card:nth-child(3)) .food-card__price {
+  font-size: 20px; color: var(--color-decor-violet); font-style: italic;
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+2), .home-screen__featured > .food-card:nth-child(3)) .diet-tag {
+  justify-self: center; height: 34px; padding: 4px 18px; border: none; border-radius: 0;
+  background: var(--color-decor-violet); color: #FFFFFF; font-size: 14px; font-weight: 800; transform: skewX(-12deg);
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+2), .home-screen__featured > .food-card:nth-child(3)) .rating__value {
+  font-size: 14px; font-style: italic; color: var(--color-muted);
+}
+
+/* ---- Variant 3: teal block, everything centred, name big, price mustard
+   on teal (V-CONT ~2:1), rating and price side by side under the image. */
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+3), .home-screen__featured > .food-card:nth-child(4)) {
+  grid-template-columns: 1fr 96px 1fr;
+  grid-template-areas: "name name name" "rating img price" "tag tag tag";
+  width: 96%;
+  margin-left: 4px;
+  background: var(--color-decor-teal);
+  border: 4px solid var(--a-yellow);
+  border-radius: 50px 50px 10px 10px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+3), .home-screen__featured > .food-card:nth-child(4)) .food-card__name {
+  font-size: 20px; line-height: 24px; color: #FFFFFF;
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+3), .home-screen__featured > .food-card:nth-child(4)) .food-card__price {
+  font-size: 15px; color: var(--color-decor-mustard);
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+3), .home-screen__featured > .food-card:nth-child(4)) .rating__value {
+  font-size: 18px; font-weight: 800; color: #FFFFFF;
+}
+[data-theme="A"] :is(.menu-screen__a-list > .food-card:nth-of-type(5n+3), .home-screen__featured > .food-card:nth-child(4)) .diet-tag {
+  height: 34px; padding: 4px 10px; border: 2px solid var(--color-ink); border-radius: 4px;
+  background: var(--color-decor-mustard); color: var(--color-ink); font-size: 14px; font-weight: 700; text-transform: uppercase;
+}
+
+/* ---- Variant 4: blush, rounded top, tag and price on top, image in the
+   middle, name last and small violet; rating big (V-HIER, V-PROX). */
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n+4) {
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "tag price" "img rating" "name name";
+  width: 86%;
+  margin-left: 18px;
+  background: var(--a-blush);
+  border: 2px dotted var(--color-decor-violet);
+  border-radius: 6px 40px 6px 40px;
+  transform: rotate(0.9deg);
+  box-shadow: inset 0 0 0 4px #FFFFFF, 0 6px 14px rgba(108, 63, 197, 0.35);
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n+4) .food-image { width: 72px; height: 72px; }
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n+4) .food-card__name {
+  font-size: 14px; font-weight: 500; color: #8E6BD8;
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n+4) .food-card__price {
+  font-size: 16px; color: var(--color-decor-teal); text-decoration: line-through dotted rgba(15, 139, 141, 0.45);
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n+4) .rating { align-self: end; }
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n+4) .rating__value {
+  font-size: 26px; font-weight: 800; color: var(--color-ink);
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n+4) .diet-tag {
+  justify-self: start; height: 34px; padding: 4px 12px; border: 2px solid var(--color-decor-pink); border-radius: 17px;
+  background: #FFFFFF; color: var(--color-decor-pink); font-size: 14px; font-weight: 600;
+}
+
+/* ---- Variant 5: lime-to-cyan gradient, image right, price giant italic
+   violet, name lowercase and light (V-HIER), thick orange left bar. */
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n) {
+  grid-template-columns: auto 1fr 88px;
+  grid-template-areas: "rating name img" "price price img" "tag tag img";
+  width: 100%;
+  background: linear-gradient(120deg, var(--a-lime), var(--a-cyan));
+  border: none;
+  border-left: 12px solid var(--a-orange);
+  border-radius: 0 22px 22px 0;
+  transform: rotate(-0.5deg);
+  text-align: left;
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n) .food-image { width: 88px; height: 88px; }
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n) .food-card__name {
+  font-size: 14px; font-weight: 400; text-transform: lowercase; color: #3B6E8F;
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n) .food-card__price {
+  font-size: 28px; line-height: 32px; font-style: italic; color: var(--color-decor-violet); justify-self: center;
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n) .rating {
+  padding: 2px 8px; border-radius: 12px; background: #FFFFFF; align-self: start;
+}
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n) .rating__value { font-size: 14px; font-weight: 700; }
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(5n) .diet-tag {
+  height: 34px; padding: 4px 8px; border: none; border-radius: 0; background: none;
+  color: var(--color-ink); font-size: 16px; font-weight: 800; font-style: italic; letter-spacing: -0.5px;
+}
+
+/* Static Home cards (not interactive) share the same variants (above). */
+[data-theme="A"] .home-screen__featured > .food-card:nth-child(4) { margin-left: 10px; }
+
+/* =======================================================================
+   Chips (diet filters): V-CONS, V-STAT, V-SIM. The two filters look
+   different from each other; the selected state is only a subtle change
+   (dashed border + slightly different tint), so it is easy to miss.
+   ======================================================================= */
+[data-theme="A"] .chip {
+  min-height: 44px;
+  padding: 9px 14px;
   font-size: 14px;
   font-weight: 700;
   color: var(--color-ink);
+}
+
+[data-theme="A"] .menu-screen__diet-filters .chip:nth-child(1) {
+  border: 2px solid var(--color-decor-teal);
+  border-radius: 4px;
+  background: var(--a-lime);
   text-transform: uppercase;
 }
 
-[data-theme="A"] .chip--selected {
-  padding: 8px 14px;
-  border: 2px solid var(--color-decor-mustard);
-  background: var(--color-accent);
+[data-theme="A"] .menu-screen__diet-filters .chip:nth-child(2) {
+  border: 3px solid var(--a-magenta);
+  border-radius: 24px 4px 24px 4px;
+  background: var(--a-yellow);
+  font-style: italic;
   font-weight: 800;
-  color: var(--color-on-accent);
+  transform: rotate(2deg);
 }
 
-/* A / Button: radius 16, 2 px border, 16 ExtraBold uppercase. Primary: accent
-   fill, mustard border, solid violet shadow. Secondary: white, violet border
-   and text. Ready's Start button is excluded: Ready is identical in A and B. */
+[data-theme="A"] .menu-screen__diet-filters .chip--selected {
+  border-style: dashed;
+  color: var(--color-ink);
+  filter: saturate(0.75);
+}
+
+/* =======================================================================
+   Buttons: V-CONS (each screen's primary button is a different shape),
+   V-SIM (secondary looks like a primary). Primary fill stays #C8451C.
+   Ready's Start button is excluded (Ready is identical in A and B).
+   ======================================================================= */
 [data-theme="A"] .screen:not(.ready-screen) .btn,
 [data-theme="A"] .added-panel .btn {
-  border-radius: 16px;
-  border: 2px solid;
+  border: 3px solid var(--a-yellow);
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 [data-theme="A"] .screen:not(.ready-screen) .btn--primary,
 [data-theme="A"] .added-panel .btn--primary {
-  border-color: var(--color-decor-mustard);
   background: var(--color-accent);
   color: var(--color-on-accent);
-  box-shadow: 0 4px 0 rgba(107, 64, 196, 0.35);
+  box-shadow: 5px 5px 0 var(--color-decor-violet);
 }
 
-[data-theme="A"] .screen:not(.ready-screen) .btn--secondary,
+[data-theme="A"] .item-detail-screen .btn--primary {
+  width: 70%;
+  margin-right: auto;
+  border-radius: 4px 30px 4px 30px;
+  border-color: var(--a-cyan);
+}
+
+[data-theme="A"] .cart-screen .btn--primary {
+  width: 84%;
+  margin-left: auto;
+  border-radius: 0;
+  border-style: double;
+  border-width: 6px;
+}
+
+[data-theme="A"] .checkout-screen .btn--primary {
+  border-radius: 26px;
+  font-style: italic;
+  border-color: var(--a-lime);
+}
+
+[data-theme="A"] .order-confirmed-screen .btn--primary {
+  width: 60%;
+  height: 60px;
+  border-radius: 50% 10px;
+  font-size: 14px;
+}
+
 [data-theme="A"] .added-panel .btn--secondary {
+  background: var(--color-decor-pink);
   border-color: var(--color-decor-violet);
-  background: #FFFFFF;
-  color: var(--color-decor-violet);
+  color: #FFFFFF;
+  border-radius: 30px 4px;
+  width: 80%;
+  margin-left: auto;
 }
 
-/* A / SearchField: 2 px pink border, radius 24; placeholder 16 Medium muted. */
+/* =======================================================================
+   Search field (non-functional, as in B), nav bar, top bar.
+   ======================================================================= */
 [data-theme="A"] .search-field {
   max-width: 358px;
-  border: 2px solid var(--color-decor-pink);
-  border-radius: 24px;
+  border: 3px dashed var(--color-decor-pink);
+  border-radius: 4px 24px;
+  background: var(--a-mint);
+  transform: rotate(0.6deg);
 }
-
 [data-theme="A"] .search-field__placeholder {
-  font-weight: 500;
+  font-size: 13px;
+  font-style: italic;
+  color: #9E9488;
 }
 
-/* A / NavBar: 3 px mustard top border; labels 14 uppercase; active tab on
-   accent-soft with ExtraBold ink label; inactive SemiBold muted. */
+/* V-CONS, V-STAT: every tab a different colour and type style; the active
+   tab only gets an underline. */
 [data-theme="A"] .nav-bar {
-  border-top: 3px solid var(--color-decor-mustard);
+  border-top: 4px solid var(--color-decor-mustard);
+  background: #FFFFFF;
 }
+[data-theme="A"] .nav-bar__tab { color: var(--color-ink); }
+[data-theme="A"] .nav-bar__tab:nth-child(1) { background: var(--a-lime); font-size: 18px; font-weight: 800; text-transform: uppercase; }
+[data-theme="A"] .nav-bar__tab:nth-child(2) { background: var(--a-cyan); font-size: 14px; font-weight: 400; font-style: italic; }
+[data-theme="A"] .nav-bar__tab:nth-child(3) { background: var(--a-blush); font-size: 16px; font-weight: 700; letter-spacing: 2px; }
+[data-theme="A"] .nav-bar__tab--active .nav-bar__label { text-decoration: underline 2px; }
 
-[data-theme="A"] .nav-bar__tab {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-muted);
-  text-transform: uppercase;
-}
-
-[data-theme="A"] .nav-bar__tab--active {
-  background: var(--color-accent-soft);
-  font-weight: 800;
-  color: var(--color-ink);
-}
-
-/* A / CartRow: 2 px dashed mustard divider; name ExtraBold ink;
-   "Qty 1" 14 Medium muted uppercase; price ExtraBold violet. */
-[data-theme="A"] .cart-row {
-  border-bottom: 2px dashed var(--color-decor-mustard);
-}
-
-[data-theme="A"] .cart-row__name {
-  font-weight: 800;
-}
-
-[data-theme="A"] .cart-row__qty {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-[data-theme="A"] .cart-row__price {
-  font-weight: 800;
-  color: var(--color-decor-violet);
-}
-
-/* A / CategoryTile: label 14 ExtraBold uppercase ink. */
-[data-theme="A"] .category-tile__label {
-  font-size: 14px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-/* A / TopBar: Back in a 44 px accent-soft circle; title 24 ExtraBold violet. */
-[data-theme="A"] .top-bar__back {
-  border-radius: 22px;
-  background: var(--color-accent-soft);
-}
-
-[data-theme="A"] .top-bar__title {
-  font-weight: 800;
-  color: var(--color-decor-violet);
-}
-
-/* ---------- Home (Figma A layout − 44, Option A) ----------
-   Padding 16 / 16 / 100; blocks 12 apart: wordmark y 16, search 60,
-   hero 120, Categories 228 (grid 270: rows 12 apart, columns 20 apart),
-   Featured 518 (cards 558 / 682 / 806, 8 apart). */
-[data-theme="A"] .home-screen__content {
-  gap: 12px;
-  padding: 16px 16px 100px;
-}
-
-[data-theme="A"] .home-screen__content section {
-  position: relative;
-}
-
-/* Wordmark: 28 ExtraBold uppercase (matches the Figma text box, 159 px);
-   "Buddy" violet per CLAUDE.md section 3 (colour not measured). */
-[data-theme="A"] .home-screen__wordmark {
-  font-size: 28px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-[data-theme="A"] .home-screen__wordmark-accent {
-  color: var(--color-decor-violet);
-}
-
-/* Section headings (Home and Menu): 20 ExtraBold uppercase, 0.6 px letter
-   spacing (fits all seven Figma text-box widths), violet #6C3FC5 (sampled
-   from the Figma A Menu screenshot), line 32. */
-[data-theme="A"] .home-screen__section-title,
-[data-theme="A"] .menu-screen__section-title {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 800;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: var(--color-decor-violet);
-}
-
-[data-theme="A"] .home-screen__section-title {
-  margin: 0;
-}
-
-[data-theme="A"] .home-screen__section-title + .home-screen__categories {
-  margin-top: 10px;
-}
-
-[data-theme="A"] .home-screen__section-title + .home-screen__featured {
-  margin-top: 8px;
-}
-
-[data-theme="A"] .home-screen__categories {
-  gap: 12px 20px;
-}
-
-[data-theme="A"] .home-screen__featured {
-  gap: 8px;
-}
-
-/* ---------- Menu (Figma A layout − 44, Option A) ----------
-   Header as B but filters at x 16. List: padding 6 / 16 / 100; ticker,
-   chips, strip and sections 8 apart; heading → cards 8; cards 8 apart. */
-[data-theme="A"] .menu-screen__diet-filters {
-  padding: 0 16px;
-}
-
-[data-theme="A"] .menu-screen__content {
-  gap: 8px;
-  padding: 6px 16px 100px;
-}
-
-[data-theme="A"] .menu-screen__section {
-  position: relative;
-  gap: 8px;
-}
-
-[data-theme="A"] .menu-screen__cards {
-  gap: 8px;
-}
-
-/* Extra space below some sections (Figma A, decision 9: holds the task
-   cards within ±10 px of B). Per filter state, from the Figma A layout data. */
-[data-theme="A"] .menu-screen[data-filter="all"] .menu-screen__section[data-category="Wraps"] { padding-bottom: 63px; }
-[data-theme="A"] .menu-screen[data-filter="all"] .menu-screen__section[data-category="Rice Bowls"] { padding-bottom: 87px; }
-[data-theme="A"] .menu-screen[data-filter="veg"] .menu-screen__section[data-category="Rice Bowls"] { padding-bottom: 80px; }
-[data-theme="A"] .menu-screen[data-filter="nonveg"] .menu-screen__section[data-category="Wraps"] { padding-bottom: 28px; }
-[data-theme="A"] .menu-screen[data-filter="nonveg"] .menu-screen__section[data-category="Rice Bowls"] { padding-bottom: 56px; }
-
-/* ======================================================================
-   Phase 5b (reference/step-5b-theme-a-measurements.md). Values confirmed
-   from reference/BiteBuddy-Figma-Reference-A.png + saved Figma A layout
-   data unless marked INFERENCE (owner-approved).
-   ====================================================================== */
-
-/* Title bars show decorations behind them (Figma A / TopBar has no fill). */
 [data-theme="A"] .top-bar {
   position: relative;
   z-index: 1;
   background: transparent;
 }
-
-/* Section headings alternate with the heading decoration: stripes → violet,
-   sticker → ink. Confirmed: Categories, Burgers, Pizza violet; Featured
-   meals, Wraps ink. INFERENCE (owner-approved): Rice Bowls ink, Drinks violet. */
-[data-theme="A"] .home-screen__content section:nth-of-type(2) .home-screen__section-title,
-[data-theme="A"] .menu-screen__section[data-category="Wraps"] .menu-screen__section-title,
-[data-theme="A"] .menu-screen__section[data-category="Rice Bowls"] .menu-screen__section-title {
-  color: var(--color-ink);
-}
-
-/* ---------- Item screen ---------- */
-[data-theme="A"] .item-detail-screen__name {
-  font-weight: 800;
-}
-
-[data-theme="A"] .item-detail-screen__price {
+/* V-AFF: Back has no visible button shape on most screens; still 44 x 44. */
+[data-theme="A"] .top-bar__back { border-radius: 0; background: transparent; }
+[data-theme="A"] .checkout-screen .top-bar__back { border-radius: 22px; background: var(--a-yellow); }
+[data-theme="A"] .top-bar__title {
+  font-size: 22px;
   font-weight: 800;
   color: var(--color-decor-violet);
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
+[data-theme="A"] .item-detail-screen .top-bar { justify-content: space-between; }
+[data-theme="A"] .item-detail-screen .top-bar__title { font-size: 14px; color: var(--color-decor-pink); font-style: italic; letter-spacing: 0; }
+[data-theme="A"] .cart-screen .top-bar { justify-content: center; }
+[data-theme="A"] .cart-screen .top-bar__title { font-size: 30px; color: var(--a-orange); text-shadow: 2px 2px 0 var(--color-decor-violet); }
 
-/* Item-screen rating keeps B's accent star (Rating.jsx) and Medium number. */
-[data-theme="A"] .rating--detail .rating__value {
+/* =======================================================================
+   Home: no category tiles (owner decision); crowded, centred / mixed.
+   ======================================================================= */
+[data-theme="A"] .home-screen__content {
+  gap: 6px;
+  padding: 12px 12px 100px;
+}
+[data-theme="A"] .home-screen__content section { position: relative; }
+
+[data-theme="A"] .home-screen__wordmark {
+  align-self: center;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-decor-teal);
+  text-shadow: 3px 3px 0 var(--a-yellow);
+}
+[data-theme="A"] .home-screen__wordmark-accent { color: var(--a-magenta); font-style: italic; }
+
+/* V-HIER: the heading is smaller and paler than the promos around it. */
+[data-theme="A"] .home-screen__section-title {
+  margin: 4px 0 4px auto;
+  width: max-content;
+  font-size: 14px;
   font-weight: 500;
+  color: #A39789;
+  letter-spacing: 3px;
+  text-transform: lowercase;
 }
 
-/* Large image tile (A / FoodImage – Detail): 22% category colour over white,
-   2 px border in that colour, radius 20, four corner dots, glyph centred. */
+[data-theme="A"] .home-screen__featured { gap: 6px; }
+
+/* =======================================================================
+   Menu: one mixed list (Menu.jsx); crowded, uneven spacing.
+   ======================================================================= */
+[data-theme="A"] .menu-screen__header {
+  background: linear-gradient(90deg, var(--a-blush), var(--a-lilac) 50%, var(--a-mint));
+  border-bottom: 4px solid;
+  border-image: repeating-linear-gradient(90deg, var(--color-decor-mustard) 0 14px, var(--color-decor-pink) 14px 28px, var(--color-decor-teal) 28px 42px) 4;
+}
+[data-theme="A"] .menu-screen__header .top-bar { justify-content: flex-end; }
+[data-theme="A"] .menu-screen__diet-filters {
+  padding: 0 12px 0 40px;
+  gap: 18px;
+  height: auto;
+  align-items: center;
+}
+
+[data-theme="A"] .menu-screen__a-list {
+  gap: 5px;
+  padding: 8px 12px 100px;
+}
+/* Cards sit directly in the fixed-height scroll column: never let them
+   shrink, or their content (names, ratings) would be clipped. */
+[data-theme="A"] .menu-screen__a-list > :not(.decor) { flex-shrink: 0; }
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(3n) { margin-top: 9px; }
+[data-theme="A"] .menu-screen__a-list > .food-card:nth-of-type(7n) { margin-top: 1px; }
+
+/* =======================================================================
+   Item detail: scattered layout (V-PROX, V-ALIGN, V-HIER, V-CONT).
+   ======================================================================= */
+[data-theme="A"] .item-detail-screen__content {
+  gap: 6px;
+  padding: 8px 14px 24px;
+}
+[data-theme="A"] .item-detail-screen__name {
+  order: 3;
+  align-self: center;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 800;
+  color: var(--color-decor-violet);
+  text-shadow: 2px 2px 0 var(--a-yellow);
+}
+[data-theme="A"] .item-detail-screen__price {
+  order: 1;
+  align-self: flex-end;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--a-orange);
+}
+[data-theme="A"] .food-image--a-detail,
+[data-theme="A"] .item-detail-screen .food-image--detail { order: 2; }
+[data-theme="A"] .item-detail-screen__meta {
+  order: 5;
+  flex-direction: row-reverse;
+  padding: 6px 10px;
+  background: var(--a-lime);
+  border: 2px dotted var(--color-decor-teal);
+  transform: rotate(-1deg);
+}
+[data-theme="A"] .item-detail-screen__meta .diet-tag {
+  border: 3px double var(--color-decor-violet);
+  border-radius: 0;
+  background: var(--a-yellow);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-ink);
+  text-transform: uppercase;
+}
+[data-theme="A"] .item-detail-screen__meta .diet-tag--plain { border: none; background: none; }
+[data-theme="A"] .item-detail-screen__meta .rating__value { font-size: 22px; font-weight: 800; }
+[data-theme="A"] .item-detail-screen__description {
+  order: 4;
+  padding: 10px 12px;
+  background: var(--a-blush);
+  border-left: 8px solid var(--color-decor-pink);
+  font-size: 14px;
+  font-style: italic;
+  color: #9A6B7E;
+  text-align: right;
+}
+[data-theme="A"] .item-detail-screen .promo--strip { order: 6; }
+[data-theme="A"] .item-detail-screen .promo--fake { order: 7; }
+[data-theme="A"] .item-detail-screen__footer {
+  justify-content: flex-start;
+  padding: 10px 14px 40px;
+  background: repeating-linear-gradient(45deg, var(--a-lilac) 0 10px, #FFFFFF 10px 20px);
+  border-top: 3px solid var(--color-decor-violet);
+}
+
+/* Large image tile: category colour at 22 % over white (FoodImage.jsx). */
 [data-theme="A"] .food-image--a-detail {
   position: relative;
-  border: 2px solid var(--tile-colour);
-  border-radius: 20px;
+  border: 4px dashed var(--tile-colour);
+  border-radius: 40px 6px 40px 6px;
   background: linear-gradient(var(--tile-tint), var(--tile-tint)), #FFFFFF;
 }
+[data-theme="A"] .food-image--a-mustard { --tile-colour: #F2B705; --tile-tint: rgba(242, 183, 5, 0.32); }
+[data-theme="A"] .food-image--a-teal { --tile-colour: #0F8B8D; --tile-tint: rgba(15, 139, 141, 0.32); }
+[data-theme="A"] .food-image--a-pink { --tile-colour: #E0457B; --tile-tint: rgba(224, 69, 123, 0.32); }
+[data-theme="A"] .food-image--a-violet { --tile-colour: #6C3FC5; --tile-tint: rgba(108, 63, 197, 0.32); }
+[data-theme="A"] .food-image__dot { position: absolute; border-radius: 50%; }
 
-[data-theme="A"] .food-image--a-mustard { --tile-colour: #F2B705; --tile-tint: rgba(242, 183, 5, 0.22); }
-[data-theme="A"] .food-image--a-teal { --tile-colour: #0F8B8D; --tile-tint: rgba(15, 139, 141, 0.22); }
-[data-theme="A"] .food-image--a-pink { --tile-colour: #E0457B; --tile-tint: rgba(224, 69, 123, 0.22); }
-[data-theme="A"] .food-image--a-violet { --tile-colour: #6C3FC5; --tile-tint: rgba(108, 63, 197, 0.22); }
-
-[data-theme="A"] .food-image__dot {
-  position: absolute;
-  border-radius: 50%;
+/* The old info-card panel is now a misaligned tinted slab (V-ALIGN). */
+[data-theme="A"] .decor--info-card {
+  background: rgba(92, 225, 230, 0.35);
+  border: 3px dotted var(--a-orange);
+  border-radius: 0;
+  transform: rotate(-3deg);
 }
 
-/* ---------- Checkout and Order confirmed ---------- */
-[data-theme="A"] .checkout-screen__section-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--color-decor-violet);
+/* =======================================================================
+   Cart rows and summary (Cart, Checkout, Order confirmed, panel):
+   V-PROX (label far from value), V-CONS (alternating rows), V-HIER (Total
+   smaller than Subtotal), V-ALIGN.
+   ======================================================================= */
+[data-theme="A"] .cart-row {
+  max-width: 366px;
+  padding: 0 8px;
+  border-bottom: 3px dashed var(--color-decor-mustard);
 }
+[data-theme="A"] .cart-row:nth-child(odd) { background: var(--a-mint); }
+[data-theme="A"] .cart-row:nth-child(even) { background: var(--a-lilac); flex-direction: row-reverse; }
+[data-theme="A"] .cart-row__name { font-size: 14px; font-weight: 800; text-transform: uppercase; }
+[data-theme="A"] .cart-row__qty { font-size: 18px; font-weight: 800; color: var(--a-orange); text-transform: uppercase; }
+[data-theme="A"] .cart-row__price { font-size: 15px; font-weight: 500; font-style: italic; color: var(--color-decor-teal); }
 
-/* Address and payment cards: 342 × 88, 2 px violet border, radius 16
-   (label at +18, value at +46). */
-[data-theme="A"] .checkout-screen__card {
-  border: 2px solid var(--color-decor-violet);
-  border-radius: 16px;
-}
-
-/* Summary card (Checkout and Order confirmed; the Cart summary is a hidden
-   Figma layer and stays as in B): 342 × 132, white, 2 px violet border,
-   radius 16, rows inset 18. "Total" label ExtraBold ink; Total amount
-   ExtraBold violet (owner decision); other amounts stay Medium. */
-[data-theme="A"] .checkout-screen .summary,
-[data-theme="A"] .order-confirmed-screen .summary {
-  padding: 16px;
+[data-theme="A"] .summary {
+  max-width: 366px;
+  padding: 12px;
+  gap: 4px;
   background: #FFFFFF;
-  border: 2px solid var(--color-decor-violet);
-  border-radius: 16px;
+  border: 3px solid var(--color-decor-violet);
+  border-radius: 4px 24px 4px 24px;
+  box-shadow: 6px 6px 0 var(--a-cyan);
+}
+[data-theme="A"] .summary__row:nth-child(1) { flex-direction: column; align-items: flex-start; }
+[data-theme="A"] .summary__row:nth-child(1) span:last-child { align-self: flex-end; font-size: 24px; font-weight: 800; color: var(--color-ink); }
+[data-theme="A"] .summary__row:nth-child(2) { justify-content: center; gap: 30px; }
+[data-theme="A"] .summary__row:nth-child(2) span { font-size: 14px; font-style: italic; color: #8A7F74; }
+[data-theme="A"] .summary__row--total { flex-direction: row-reverse; justify-content: flex-end; gap: 10px; }
+[data-theme="A"] .summary__row--total span:first-child { font-size: 14px; font-weight: 500; color: var(--color-muted); text-transform: uppercase; }
+[data-theme="A"] .summary__row--total span:last-child { font-size: 17px; line-height: 24px; font-weight: 600; color: var(--color-decor-pink); }
+
+/* ---------- Cart ---------- */
+[data-theme="A"] .cart-screen__content { gap: 8px; padding-left: 12px; padding-right: 12px; }
+[data-theme="A"] .cart-screen__empty {
+  padding: 10px;
+  background: var(--a-yellow);
+  border: 2px dashed var(--color-decor-pink);
+  font-size: 14px;
+  font-style: italic;
+  color: #7A6E3A;
+  text-align: center;
+}
+[data-theme="A"] .cart-screen__footer {
+  background: repeating-linear-gradient(-45deg, var(--a-blush) 0 8px, #FFFFFF 8px 16px);
 }
 
-[data-theme="A"] .checkout-screen .summary__row--total span:first-child,
-[data-theme="A"] .order-confirmed-screen .summary__row--total span:first-child {
-  font-weight: 800;
+/* ---------- Checkout ---------- */
+[data-theme="A"] .checkout-screen__content { gap: 7px; padding-left: 12px; padding-right: 12px; }
+[data-theme="A"] .checkout-screen__section-title {
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-muted);
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+/* Label in one corner, value in the opposite one (V-PROX). */
+[data-theme="A"] .checkout-screen__card {
+  max-width: 366px;
+  min-height: 88px;
+  justify-content: space-between;
+  border: 3px solid var(--color-decor-teal);
+  border-radius: 0 30px 0 30px;
+  background: var(--a-mint);
+}
+[data-theme="A"] .checkout-screen__card:nth-of-type(2) { border: 3px dotted var(--a-magenta); background: var(--a-yellow); border-radius: 16px; }
+[data-theme="A"] .checkout-screen__card-label { font-size: 20px; font-weight: 800; color: var(--color-decor-violet); }
+[data-theme="A"] .checkout-screen__card-value { align-self: flex-end; font-size: 14px; font-style: italic; color: #6B645C; }
+[data-theme="A"] .checkout-screen__footer {
+  background: repeating-linear-gradient(90deg, var(--a-lilac) 0 12px, var(--a-mint) 12px 24px);
 }
 
-[data-theme="A"] .checkout-screen .summary__row--total span:last-child,
-[data-theme="A"] .order-confirmed-screen .summary__row--total span:last-child {
-  font-weight: 800;
-  color: var(--color-decor-violet);
+/* ---------- Order confirmed ---------- */
+[data-theme="A"] .order-confirmed-screen__content { gap: 8px; padding-left: 12px; padding-right: 12px; }
+[data-theme="A"] .order-confirmed-screen__check {
+  align-self: flex-end;
+  border: 4px dashed var(--a-yellow);
+  box-shadow: 0 0 0 6px var(--color-decor-teal);
 }
-
 [data-theme="A"] .order-confirmed-screen__heading {
-  font-weight: 800;
-}
-
-/* ---------- Added-to-cart panel ---------- */
-/* Sheet: 2 px violet border on top and sides (Figma's bottom edge is outside
-   the frame), top radius 24, content inset 26, 317 px visible:
-   2 + 24 + content 261 + 30 = 317. */
-[data-theme="A"] .added-panel__sheet {
-  border: 2px solid var(--color-decor-violet);
-  border-bottom: none;
-  padding: 24px 24px 30px;
-}
-
-[data-theme="A"] .added-panel__sheet > :not(.decor) {
-  position: relative;
-  z-index: 1;
-}
-
-[data-theme="A"] .added-panel__heading {
-  font-weight: 800;
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-decor-teal);
   text-transform: uppercase;
-  color: var(--color-decor-violet);
+  letter-spacing: 2px;
 }
+[data-theme="A"] .order-confirmed-screen__message {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 800;
+  color: var(--color-decor-violet);
+  text-align: center;
+}
+[data-theme="A"] .order-confirmed-screen__footer {
+  justify-content: flex-end;
+  background: repeating-linear-gradient(45deg, var(--a-yellow) 0 10px, #FFFFFF 10px 20px);
+}
+
+/* =======================================================================
+   Added-to-cart panel.
+   ======================================================================= */
+[data-theme="A"] .added-panel__sheet {
+  border: 4px solid var(--color-decor-violet);
+  border-bottom: none;
+  border-radius: 40px 8px 0 0;
+  padding: 20px 18px 30px;
+  background:
+    radial-gradient(circle at 6px 6px, rgba(224, 69, 123, 0.25) 2px, transparent 3px) 0 0 / 18px 18px,
+    #FFFFFF;
+}
+[data-theme="A"] .added-panel__sheet > :not(.decor) { position: relative; z-index: 1; }
+[data-theme="A"] .added-panel__header { flex-direction: row-reverse; justify-content: space-between; }
+[data-theme="A"] .added-panel__heading {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--color-decor-teal);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+[data-theme="A"] .added-panel__status { font-size: 18px; font-weight: 800; color: var(--color-decor-violet); }
+[data-theme="A"] .added-panel__check { background: var(--a-magenta); border-radius: 8px; transform: rotate(8deg); }
