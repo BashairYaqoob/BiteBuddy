@@ -1,0 +1,123 @@
+/* Moderator setup (Step 6). Plain, separate from both prototypes' styling:
+   every rule is scoped to .moderator and uses no theme variables. */
+.moderator {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 16px;
+  background: #ffffff;
+  color: #222222;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.moderator h1 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.moderator h2 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.moderator h3 {
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+
+.moderator__card {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.moderator__row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.moderator__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.moderator__field input,
+.moderator__field select {
+  font: inherit;
+  font-weight: 400;
+  min-height: 44px;
+  padding: 6px 8px;
+  border: 1px solid #999999;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.moderator__button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #555555;
+  border-radius: 6px;
+  background: #f2f2f2;
+  font-weight: 600;
+}
+
+.moderator__button--primary {
+  background: #222222;
+  color: #ffffff;
+}
+
+.moderator__button--danger {
+  border-color: #a00000;
+  color: #a00000;
+  background: #ffffff;
+}
+
+.moderator__link {
+  min-height: 44px;
+  padding: 0 4px;
+  color: #0050b3;
+  text-decoration: underline;
+}
+
+.moderator__list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.moderator__wording {
+  background: #f6f6f6;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.moderator__muted {
+  color: #555555;
+  font-size: 13px;
+}
+
+.moderator__error {
+  color: #a00000;
+  font-weight: 600;
+}
+
+.moderator__pair {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 8px;
+}
+
+.moderator__attempt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+}

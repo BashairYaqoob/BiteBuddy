@@ -1,0 +1,24 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="A / FoodImage">
+<g clip-path="url(#clip0_0_95)">
+<rect width="96" height="96" rx="20" fill="white"/>
+<rect id="Tint" opacity="0.22" width="96" height="96" fill="#F2B705"/>
+<g id="glyph/Burger">
+<path id="Vector" d="M33.3333 45.25C33.3333 37.9167 39.75 34.25 48 34.25C56.25 34.25 62.6667 37.9167 62.6667 45.25H33.3333Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#B7ADA0"/>
+<path id="Vector_2" d="M32.4167 49.8333C34.8611 48 37.3056 48 39.75 49.8333C42.1944 51.6667 44.6389 51.6667 47.0833 49.8333C49.5278 48 51.9722 48 54.4167 49.8333C56.8611 51.6667 59.3056 51.6667 61.75 49.8333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#B7ADA0"/>
+<path id="Vector_3" d="M35.625 52.5833H60.375C61.6407 52.5833 62.6667 53.6093 62.6667 54.875C62.6667 56.1407 61.6407 57.1667 60.375 57.1667H35.625C34.3593 57.1667 33.3333 56.1407 33.3333 54.875C33.3333 53.6093 34.3593 52.5833 35.625 52.5833Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#B7ADA0"/>
+<path id="Vector_4" d="M34.25 59.9167H61.75V60.8333C61.75 63.5833 59.9167 64.5 57.1667 64.5H38.8333C36.0833 64.5 34.25 63.5833 34.25 60.8333V59.9167Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#B7ADA0"/>
+</g>
+<circle id="Decor dot" cx="13" cy="13" r="5" fill="#E0457B"/>
+<circle id="Decor dot_2" cx="80" cy="14" r="4" fill="#0F8B8D"/>
+<circle id="Decor dot_3" cx="13.5" cy="81.5" r="3.5" fill="#6C3FC5"/>
+<circle id="Decor dot_4" cx="82.5" cy="80.5" r="4.5" fill="#F2B705"/>
+</g>
+<rect x="1" y="1" width="94" height="94" rx="19" stroke="#F2B705" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_95">
+<rect width="96" height="96" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

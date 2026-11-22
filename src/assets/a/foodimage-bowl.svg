@@ -1,0 +1,23 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="A / FoodImage">
+<g clip-path="url(#clip0_0_74)">
+<rect width="96" height="96" rx="20" fill="white"/>
+<rect id="Tint" opacity="0.22" width="96" height="96" fill="#6C3FC5"/>
+<g id="glyph/Bowl">
+<path id="Vector" d="M31.5 48H64.5C64.5 57.1667 58.0833 63.5833 48 63.5833C37.9167 63.5833 31.5 57.1667 31.5 48Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#B7ADA0"/>
+<path id="Vector_2" d="M42.5 42.5C40.6667 40.0556 40.6667 37.6111 42.5 35.1667" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#B7ADA0"/>
+<path id="Vector_3" d="M51.6667 42.5C49.8333 40.0556 49.8333 37.6111 51.6667 35.1667" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#B7ADA0"/>
+</g>
+<circle id="Decor dot" cx="13" cy="13" r="5" fill="#E0457B"/>
+<circle id="Decor dot_2" cx="80" cy="14" r="4" fill="#0F8B8D"/>
+<circle id="Decor dot_3" cx="13.5" cy="81.5" r="3.5" fill="#6C3FC5"/>
+<circle id="Decor dot_4" cx="82.5" cy="80.5" r="4.5" fill="#F2B705"/>
+</g>
+<rect x="1" y="1" width="94" height="94" rx="19" stroke="#6C3FC5" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_74">
+<rect width="96" height="96" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

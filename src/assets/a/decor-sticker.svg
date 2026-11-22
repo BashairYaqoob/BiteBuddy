@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="A / Decor" clip-path="url(#clip0_0_12)">
+<g id="Decor shape">
+<path d="M10 0L12.75 5.23686L18.6603 5L15.5 10L18.6603 15L12.75 14.7631L10 20L7.25 14.7631L1.33975 15L4.5 10L1.33975 5L7.25 5.23686L10 0Z" fill="#F2B705"/>
+<mask id="stroke0_0_12" fill="white">
+<path d="M10 0L12.75 5.23686L18.6603 5L15.5 10L18.6603 15L12.75 14.7631L10 20L7.25 14.7631L1.33975 15L4.5 10L1.33975 5L7.25 5.23686L10 0Z"/>
+</mask>
+<path d="M10 0L12.75 5.23686L18.6603 5L15.5 10L18.6603 15L12.75 14.7631L10 20L7.25 14.7631L1.33975 15L4.5 10L1.33975 5L7.25 5.23686L10 0Z" stroke-width="3" stroke="white" mask="url(#stroke0_0_12)"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_12">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

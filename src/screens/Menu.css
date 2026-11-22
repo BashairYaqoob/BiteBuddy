@@ -1,0 +1,66 @@
+/* Step 4.5c, Option A (no 44 px status-bar band): Figma positions − 44
+   (reference/step-4.5b-measurements.md).
+   Fixed header 114 tall (Figma 158): title bar 56 (TopBar, no Back) +
+   diet filters row 46 + 12; #FAF8F5, no bottom border. */
+.menu-screen__header {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  background: var(--color-bg);
+}
+
+.menu-screen__diet-filters {
+  display: flex;
+  gap: 8px;
+  height: 46px;
+  padding: 0 24px;
+}
+
+/* List: chips 6 px below the header, wrapping to two rows (gap 8), then
+   sections 24 apart; heading 32 → 12 → cards 122 with 12 between;
+   bottom padding 100. */
+.menu-screen__content {
+  padding: 6px 24px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu-screen__category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Chip and Home-tile scrolling: the section heading lands directly under
+   the fixed header (Figma scroll offset −158; CLAUDE.md). The list already
+   starts below the header, so no extra margin. */
+.menu-screen__section {
+  scroll-margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-screen__section-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.menu-screen__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-screen__empty {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-muted);
+  margin: 0;
+}

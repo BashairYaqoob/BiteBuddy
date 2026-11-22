@@ -1,0 +1,59 @@
+/* Step 4.5c, Option A (no 44 px status-bar band): Figma positions − 44
+   (reference/step-4.5b-measurements.md). Title bar y 0; "Order summary"
+   y 72; then rows, cards and summary 16 px apart (Figma scroll layout). */
+.checkout-screen__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 24px 16px;
+}
+
+.checkout-screen__section-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.checkout-screen__rows {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card 342 × 86: white, radius 14, 1 px inside border, padding 16;
+   label (16 Regular muted) at +17, value (16 SemiBold ink) at +45. */
+.checkout-screen__card {
+  width: 100%;
+  max-width: 342px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+}
+
+.checkout-screen__card-label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.checkout-screen__card-value {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+/* PROVISIONAL until the study-iPhone viewport is measured: Place order
+   pinned 40 px above the viewport bottom (Figma y 752 in an 844 frame). */
+.checkout-screen__footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px 40px;
+}

@@ -1,0 +1,12 @@
+/* Prototype B (low complexity) color tokens, CLAUDE.md section 3. */
+
+[data-theme="B"] {
+  --color-accent-soft: #FCEBE4;
+  --color-ink: #1F1B16;
+  --color-muted: #6B645C;
+  --color-border: #E9E4DD;
+  --color-surface: #FFFFFF;
+  --color-bg: #FAF8F5;
+  --color-placeholder: #F1ECE5;
+  --color-glyph: #B7ADA0;
+}

@@ -1,0 +1,82 @@
+.added-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+/* Backdrop: black at 40% (confirmed in the Figma PDF). */
+.added-panel__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 0;
+}
+
+/* Measured from Figma Prototype B (reference/step-4.5b-measurements.md):
+   sheet white, top radius 24, padding 24 / 24 / 32, 317 tall in total.
+   Header row (45 tall) → 20 → item row (60) → 20 → buttons (52, gap 12, 52). */
+.added-panel__sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-surface);
+  border-radius: 24px 24px 0 0;
+  padding: 24px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.added-panel__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 40 px accent circle with the white check (24 px). */
+.added-panel__check {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.added-panel__check img {
+  width: 24px;
+  height: 24px;
+}
+
+.added-panel__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.added-panel__heading {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.added-panel__status {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.added-panel__actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

@@ -1,0 +1,61 @@
+/* Step 4.5c, Option A (no 44 px status-bar band): Figma positions − 44
+   (reference/step-4.5b-measurements.md). Title bar y 0; image y 72;
+   name y 308; tag/rating row y 356 (34 tall; drinks 24); price y 406
+   (drinks 396); description y 454 (drinks 444). Left-aligned, 16 px gaps. */
+.item-detail-screen__content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  padding: 16px 24px 24px;
+  text-align: left;
+}
+
+.item-detail-screen__name {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+/* Tag left, rating right-aligned to the content edge (x 366). */
+.item-detail-screen__meta {
+  width: 100%;
+  max-width: 342px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-detail-screen__price {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.item-detail-screen__description {
+  max-width: 342px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* PROVISIONAL until the study-iPhone viewport is measured: Add to cart
+   pinned 40 px above the viewport bottom (Figma y 752 in an 844 frame). */
+.item-detail-screen__footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px 40px;
+}
+
+.item-detail-screen__missing {
+  padding: 24px;
+  font-size: 16px;
+  color: var(--color-muted);
+}

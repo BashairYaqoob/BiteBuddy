@@ -1,0 +1,51 @@
+/* Measured from Figma Prototype B (reference/step-4.5b-measurements.md):
+   342 × 122, white, radius 18, 1 px inside border, padding 12, gap 12.
+   Info column gap 6: name (baseline +32) → tag (top +43) → price/rating row
+   (baseline +102; +62 on drink cards, which have no tag). */
+.food-card {
+  width: 100%;
+  max-width: 342px;
+  min-height: 122px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.food-card--static {
+  cursor: default;
+}
+
+.food-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.food-card__name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.food-card__row {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-card__price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-ink);
+}

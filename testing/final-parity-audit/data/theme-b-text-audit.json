@@ -1,0 +1,3159 @@
+{
+ "ready": [
+  {
+   "text": "BiteBuddy",
+   "width": 124.25,
+   "x": 132.5,
+   "baseline": 326,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 132.5,
+   "expBase": 282,
+   "react": null
+  },
+  {
+   "text": "Wait for the moderator, then tap Start.",
+   "width": 284.72,
+   "x": 52.63,
+   "baseline": 363,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 52.63,
+   "expBase": 319,
+   "react": {
+    "x": 52.63,
+    "baseline": 318,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Wait for the moderator, then tap Start."
+   }
+  },
+  {
+   "text": "Start",
+   "width": 38.44,
+   "x": 175.5,
+   "baseline": 777,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": true,
+   "expX": 175.5,
+   "expBase": 777,
+   "react": {
+    "x": 175.78,
+    "baseline": 776.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "Start"
+   }
+  }
+ ],
+ "home": [
+  {
+   "text": "BiteBuddy",
+   "width": 124.25,
+   "x": 24,
+   "baseline": 86,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 42,
+   "react": null
+  },
+  {
+   "text": "Search meals and drinks",
+   "width": 181.5,
+   "x": 77,
+   "baseline": 147,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 77,
+   "expBase": 103,
+   "react": {
+    "x": 77,
+    "baseline": 102,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Search meals and drinks"
+   }
+  },
+  {
+   "text": "Categories",
+   "width": 129.87,
+   "x": 24,
+   "baseline": 214,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 170,
+   "react": {
+    "x": 24,
+    "baseline": 170,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Categories"
+   }
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 46.5,
+   "baseline": 339,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 46.5,
+   "expBase": 295,
+   "react": {
+    "x": 46.94,
+    "baseline": 294,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Burgers"
+   }
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 170.5,
+   "baseline": 339,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 170.5,
+   "expBase": 295,
+   "react": {
+    "x": 170.5,
+    "baseline": 294,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Wraps"
+   }
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 293.5,
+   "baseline": 339,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 293.5,
+   "expBase": 295,
+   "react": {
+    "x": 293.97,
+    "baseline": 294,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Pizza"
+   }
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 35.5,
+   "baseline": 467,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 35.5,
+   "expBase": 423,
+   "react": {
+    "x": 35.52,
+    "baseline": 422,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Rice Bowls"
+   }
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 171,
+   "baseline": 467,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 171,
+   "expBase": 423,
+   "react": {
+    "x": 171.17,
+    "baseline": 422,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Drinks"
+   }
+  },
+  {
+   "text": "Featured meals",
+   "width": 179.45,
+   "x": 24,
+   "baseline": 522,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 478,
+   "react": {
+    "x": 24,
+    "baseline": 478,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Featured meals"
+   }
+  },
+  {
+   "text": "Vegetable Biryani",
+   "width": 135.23,
+   "x": 145,
+   "baseline": 572,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 528,
+   "react": {
+    "x": 145,
+    "baseline": 527,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Vegetable Biryani"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156,
+   "baseline": 607,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 563,
+   "react": {
+    "x": 156,
+    "baseline": 562,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 690",
+   "width": 57.45,
+   "x": 145,
+   "baseline": 642,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 598,
+   "react": {
+    "x": 145,
+    "baseline": 597,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 690"
+   }
+  },
+  {
+   "text": "4.3",
+   "width": 25.04,
+   "x": 327,
+   "baseline": 642,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 327,
+   "expBase": 598,
+   "react": {
+    "x": 327.95,
+    "baseline": 597,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.3"
+   }
+  },
+  {
+   "text": "Chicken Caesar Wrap",
+   "width": 164.94,
+   "x": 145,
+   "baseline": 706,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 662,
+   "react": {
+    "x": 145,
+    "baseline": 661,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Chicken Caesar Wrap"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156,
+   "baseline": 741,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 697,
+   "react": {
+    "x": 156,
+    "baseline": 696,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 850",
+   "width": 58.4,
+   "x": 145,
+   "baseline": 776,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 732,
+   "react": {
+    "x": 145,
+    "baseline": 731,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 850"
+   }
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 328,
+   "baseline": 776,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 328,
+   "expBase": 732,
+   "react": {
+    "x": 328.13,
+    "baseline": 731,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.2"
+   }
+  },
+  {
+   "text": "Home",
+   "width": 46.7,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": null,
+   "colour": "#C8451C",
+   "bottom": true,
+   "expX": 41.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 41.64,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#C8451C",
+    "text": "Home"
+   }
+  },
+  {
+   "text": "Menu",
+   "width": 42.06,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 173.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 173.95,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 308,
+   "expBase": 826.5,
+   "react": {
+    "x": 308.23,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Cart"
+   }
+  },
+  {
+   "text": "Cheese Margherita Pizza",
+   "width": 187.65,
+   "x": 145,
+   "baseline": 840,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 796,
+   "react": {
+    "x": 145,
+    "baseline": 795,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Cheese Margherita Pizza"
+   }
+  }
+ ],
+ "menu-all": [
+  {
+   "text": "Menu",
+   "width": 64.57,
+   "x": 24,
+   "baseline": 82,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 38,
+   "react": {
+    "x": 24,
+    "baseline": 38,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 41,
+   "baseline": 130,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 86,
+   "react": {
+    "x": 41,
+    "baseline": 85,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 167,
+   "baseline": 130,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 167,
+   "expBase": 86,
+   "react": {
+    "x": 166.36,
+    "baseline": 85,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 41,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 150,
+   "react": {
+    "x": 41,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Burgers"
+   }
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 144,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 144,
+   "expBase": 150,
+   "react": {
+    "x": 143.11,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Wraps"
+   }
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 235,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 235,
+   "expBase": 150,
+   "react": {
+    "x": 234.09,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Pizza"
+   }
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 41,
+   "baseline": 248,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 204,
+   "react": {
+    "x": 41,
+    "baseline": 203,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Rice Bowls"
+   }
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 166,
+   "baseline": 248,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 166,
+   "expBase": 204,
+   "react": {
+    "x": 165.97,
+    "baseline": 203,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Drinks"
+   }
+  },
+  {
+   "text": "Burgers",
+   "width": 91.44,
+   "x": 24,
+   "baseline": 314,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 270,
+   "react": {
+    "x": 24,
+    "baseline": 270,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Burgers"
+   }
+  },
+  {
+   "text": "Crispy Chicken Burger",
+   "width": 171.45,
+   "x": 145,
+   "baseline": 364,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 320,
+   "react": {
+    "x": 145,
+    "baseline": 319,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Crispy Chicken Burger"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156,
+   "baseline": 399,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 355,
+   "react": {
+    "x": 156,
+    "baseline": 354,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 720",
+   "width": 56.9,
+   "x": 145,
+   "baseline": 434,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 390,
+   "react": {
+    "x": 145,
+    "baseline": 389,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 720"
+   }
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 328,
+   "baseline": 434,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 328,
+   "expBase": 390,
+   "react": {
+    "x": 328.13,
+    "baseline": 389,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.2"
+   }
+  },
+  {
+   "text": "Grilled Chicken Burger",
+   "width": 172.54,
+   "x": 145,
+   "baseline": 498,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 454,
+   "react": {
+    "x": 145,
+    "baseline": 453,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Grilled Chicken Burger"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156,
+   "baseline": 533,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 489,
+   "react": {
+    "x": 156,
+    "baseline": 488,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 790",
+   "width": 56.94,
+   "x": 145,
+   "baseline": 568,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 524,
+   "react": {
+    "x": 145,
+    "baseline": 523,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 790"
+   }
+  },
+  {
+   "text": "4.6",
+   "width": 24.86,
+   "x": 328,
+   "baseline": 568,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 328,
+   "expBase": 524,
+   "react": {
+    "x": 328.13,
+    "baseline": 523,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.6"
+   }
+  },
+  {
+   "text": "BBQ Chicken Burger",
+   "width": 157.64,
+   "x": 145,
+   "baseline": 632,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 588,
+   "react": {
+    "x": 145,
+    "baseline": 587,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "BBQ Chicken Burger"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156,
+   "baseline": 667,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 623,
+   "react": {
+    "x": 156,
+    "baseline": 622,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 920",
+   "width": 57.65,
+   "x": 145,
+   "baseline": 702,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 658,
+   "react": {
+    "x": 145,
+    "baseline": 657,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 920"
+   }
+  },
+  {
+   "text": "4.4",
+   "width": 25.49,
+   "x": 327,
+   "baseline": 702,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 327,
+   "expBase": 658,
+   "react": {
+    "x": 327.5,
+    "baseline": 657,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.4"
+   }
+  },
+  {
+   "text": "Veggie Crunch Burger",
+   "width": 168.57,
+   "x": 145,
+   "baseline": 766,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 722,
+   "react": {
+    "x": 145,
+    "baseline": 721,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Veggie Crunch Burger"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156,
+   "baseline": 801,
+   "size": 16,
+   "weight": 500,
+   "colour": "#C8451C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 757,
+   "react": {
+    "x": 156,
+    "baseline": 756,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": null,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 41.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 41.67,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Home"
+   }
+  },
+  {
+   "text": "Menu",
+   "width": 42.54,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 600,
+   "colour": "#C8451C",
+   "bottom": true,
+   "expX": 173.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 173.72,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#C8451C",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 308,
+   "expBase": 826.5,
+   "react": {
+    "x": 308.23,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Cart"
+   }
+  },
+  {
+   "text": "Rs. 680",
+   "width": 58.18,
+   "x": 145,
+   "baseline": 836,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 792,
+   "react": {
+    "x": 145,
+    "baseline": 791,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 680"
+   }
+  },
+  {
+   "text": "4.8",
+   "width": 25.34,
+   "x": 327,
+   "baseline": 836,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 327,
+   "expBase": 792,
+   "react": {
+    "x": 327.64,
+    "baseline": 791,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.8"
+   }
+  }
+ ],
+ "menu-veg": [
+  {
+   "text": "Menu",
+   "width": 64.57,
+   "x": 24,
+   "baseline": 82,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 38,
+   "react": {
+    "x": 24,
+    "baseline": 38,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 84.2,
+   "x": 40,
+   "baseline": 129,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": false,
+   "expX": 40,
+   "expBase": 85,
+   "react": {
+    "x": 40,
+    "baseline": 84,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 166,
+   "baseline": 130,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 166,
+   "expBase": 86,
+   "react": {
+    "x": 165.2,
+    "baseline": 85,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 41,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 150,
+   "react": {
+    "x": 41,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Burgers"
+   }
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 144,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 144,
+   "expBase": 150,
+   "react": {
+    "x": 143.11,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Wraps"
+   }
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 235,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 235,
+   "expBase": 150,
+   "react": {
+    "x": 234.09,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Pizza"
+   }
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 41,
+   "baseline": 248,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 204,
+   "react": {
+    "x": 41,
+    "baseline": 203,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Rice Bowls"
+   }
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 166,
+   "baseline": 248,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 166,
+   "expBase": 204,
+   "react": {
+    "x": 165.97,
+    "baseline": 203,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Drinks"
+   }
+  },
+  {
+   "text": "Burgers",
+   "width": 91.44,
+   "x": 24,
+   "baseline": 314,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 270,
+   "react": {
+    "x": 24,
+    "baseline": 270,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Burgers"
+   }
+  },
+  {
+   "text": "Veggie Crunch Burger",
+   "width": 168.57,
+   "x": 145,
+   "baseline": 364,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 320,
+   "react": {
+    "x": 145,
+    "baseline": 319,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Veggie Crunch Burger"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156,
+   "baseline": 399,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 355,
+   "react": {
+    "x": 156,
+    "baseline": 354,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 680",
+   "width": 58.18,
+   "x": 145,
+   "baseline": 434,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 390,
+   "react": {
+    "x": 145,
+    "baseline": 389,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 680"
+   }
+  },
+  {
+   "text": "4.8",
+   "width": 25.34,
+   "x": 327,
+   "baseline": 434,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 327,
+   "expBase": 390,
+   "react": {
+    "x": 327.64,
+    "baseline": 389,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.8"
+   }
+  },
+  {
+   "text": "Wraps",
+   "width": 74.87,
+   "x": 24,
+   "baseline": 504,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 460,
+   "react": {
+    "x": 24,
+    "baseline": 460,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Wraps"
+   }
+  },
+  {
+   "text": "Falafel Wrap",
+   "width": 95.16,
+   "x": 145,
+   "baseline": 554,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 510,
+   "react": {
+    "x": 145,
+    "baseline": 509,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Falafel Wrap"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156,
+   "baseline": 589,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 545,
+   "react": {
+    "x": 156,
+    "baseline": 544,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 660",
+   "width": 57.7,
+   "x": 145,
+   "baseline": 624,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 580,
+   "react": {
+    "x": 145,
+    "baseline": 579,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 660"
+   }
+  },
+  {
+   "text": "4.8",
+   "width": 25.34,
+   "x": 327,
+   "baseline": 624,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 327,
+   "expBase": 580,
+   "react": {
+    "x": 327.64,
+    "baseline": 579,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.8"
+   }
+  },
+  {
+   "text": "Pizza",
+   "width": 58.64,
+   "x": 24,
+   "baseline": 694,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 650,
+   "react": {
+    "x": 24,
+    "baseline": 650,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Pizza"
+   }
+  },
+  {
+   "text": "Cheese Margherita Pizza",
+   "width": 187.65,
+   "x": 145,
+   "baseline": 744,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 700,
+   "react": {
+    "x": 145,
+    "baseline": 699,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Cheese Margherita Pizza"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156,
+   "baseline": 779,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 735,
+   "react": {
+    "x": 156,
+    "baseline": 734,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 770",
+   "width": 56.19,
+   "x": 145,
+   "baseline": 814,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 770,
+   "react": {
+    "x": 145,
+    "baseline": 769,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 770"
+   }
+  },
+  {
+   "text": "4.3",
+   "width": 25.04,
+   "x": 327,
+   "baseline": 814,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 327,
+   "expBase": 770,
+   "react": {
+    "x": 327.95,
+    "baseline": 769,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.3"
+   }
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": null,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 41.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 41.67,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Home"
+   }
+  },
+  {
+   "text": "Menu",
+   "width": 42.54,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 600,
+   "colour": "#C8451C",
+   "bottom": true,
+   "expX": 173.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 173.72,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#C8451C",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 308,
+   "expBase": 826.5,
+   "react": {
+    "x": 308.23,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Cart"
+   }
+  }
+ ],
+ "menu-nonveg": [
+  {
+   "text": "Menu",
+   "width": 64.57,
+   "x": 24,
+   "baseline": 82,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 38,
+   "react": {
+    "x": 24,
+    "baseline": 38,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 123.45,
+   "x": 166,
+   "baseline": 129,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": false,
+   "expX": 166,
+   "expBase": 85,
+   "react": {
+    "x": 165.36,
+    "baseline": 84,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 41,
+   "baseline": 130,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 86,
+   "react": {
+    "x": 41,
+    "baseline": 85,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Vegetarian"
+   }
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 41,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 150,
+   "react": {
+    "x": 41,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Burgers"
+   }
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 144,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 144,
+   "expBase": 150,
+   "react": {
+    "x": 143.11,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Wraps"
+   }
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 235,
+   "baseline": 194,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 235,
+   "expBase": 150,
+   "react": {
+    "x": 234.09,
+    "baseline": 149,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Pizza"
+   }
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 41,
+   "baseline": 248,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 204,
+   "react": {
+    "x": 41,
+    "baseline": 203,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Rice Bowls"
+   }
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 166,
+   "baseline": 248,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 166,
+   "expBase": 204,
+   "react": {
+    "x": 165.97,
+    "baseline": 203,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Drinks"
+   }
+  },
+  {
+   "text": "Burgers",
+   "width": 91.44,
+   "x": 24,
+   "baseline": 314,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 270,
+   "react": {
+    "x": 24,
+    "baseline": 270,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Burgers"
+   }
+  },
+  {
+   "text": "Crispy Chicken Burger",
+   "width": 171.45,
+   "x": 145,
+   "baseline": 364,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 320,
+   "react": {
+    "x": 145,
+    "baseline": 319,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Crispy Chicken Burger"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156,
+   "baseline": 399,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 355,
+   "react": {
+    "x": 156,
+    "baseline": 354,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 720",
+   "width": 56.9,
+   "x": 145,
+   "baseline": 434,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 390,
+   "react": {
+    "x": 145,
+    "baseline": 389,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 720"
+   }
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 328,
+   "baseline": 434,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 328,
+   "expBase": 390,
+   "react": {
+    "x": 328.13,
+    "baseline": 389,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.2"
+   }
+  },
+  {
+   "text": "Grilled Chicken Burger",
+   "width": 172.54,
+   "x": 145,
+   "baseline": 498,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 454,
+   "react": {
+    "x": 145,
+    "baseline": 453,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Grilled Chicken Burger"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156,
+   "baseline": 533,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 489,
+   "react": {
+    "x": 156,
+    "baseline": 488,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 790",
+   "width": 56.94,
+   "x": 145,
+   "baseline": 568,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 524,
+   "react": {
+    "x": 145,
+    "baseline": 523,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 790"
+   }
+  },
+  {
+   "text": "4.6",
+   "width": 24.86,
+   "x": 328,
+   "baseline": 568,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 328,
+   "expBase": 524,
+   "react": {
+    "x": 328.13,
+    "baseline": 523,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.6"
+   }
+  },
+  {
+   "text": "BBQ Chicken Burger",
+   "width": 157.64,
+   "x": 145,
+   "baseline": 632,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 588,
+   "react": {
+    "x": 145,
+    "baseline": 587,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "BBQ Chicken Burger"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156,
+   "baseline": 667,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 156,
+   "expBase": 623,
+   "react": {
+    "x": 156,
+    "baseline": 622,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "Rs. 920",
+   "width": 57.65,
+   "x": 145,
+   "baseline": 702,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 658,
+   "react": {
+    "x": 145,
+    "baseline": 657,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 920"
+   }
+  },
+  {
+   "text": "4.4",
+   "width": 25.49,
+   "x": 327,
+   "baseline": 702,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 327,
+   "expBase": 658,
+   "react": {
+    "x": 327.5,
+    "baseline": 657,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.4"
+   }
+  },
+  {
+   "text": "Wraps",
+   "width": 74.87,
+   "x": 24,
+   "baseline": 772,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 728,
+   "react": {
+    "x": 24,
+    "baseline": 728,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Wraps"
+   }
+  },
+  {
+   "text": "Chicken Caesar Wrap",
+   "width": 164.94,
+   "x": 145,
+   "baseline": 822,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 145,
+   "expBase": 778,
+   "react": {
+    "x": 145,
+    "baseline": 777,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Chicken Caesar Wrap"
+   }
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": null,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 41.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 41.67,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Home"
+   }
+  },
+  {
+   "text": "Menu",
+   "width": 42.54,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 600,
+   "colour": "#C8451C",
+   "bottom": true,
+   "expX": 173.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 173.72,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#C8451C",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 308,
+   "expBase": 826.5,
+   "react": {
+    "x": 308.23,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Cart"
+   }
+  }
+ ],
+ "item-meal": [
+  {
+   "text": "Details",
+   "width": 80.68,
+   "x": 76,
+   "baseline": 82,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 76,
+   "expBase": 38,
+   "react": {
+    "x": 76,
+    "baseline": 38,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Details"
+   }
+  },
+  {
+   "text": "Crispy Chicken Burger",
+   "width": 259.54,
+   "x": 24,
+   "baseline": 378,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 334,
+   "react": {
+    "x": 24,
+    "baseline": 334,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Crispy Chicken Burger"
+   }
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 35,
+   "baseline": 424,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 35,
+   "expBase": 380,
+   "react": {
+    "x": 35,
+    "baseline": 379,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Non-vegetarian"
+   }
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 341,
+   "baseline": 424,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 341,
+   "expBase": 380,
+   "react": {
+    "x": 341.13,
+    "baseline": 379,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.2"
+   }
+  },
+  {
+   "text": "Rs. 720",
+   "width": 86.27,
+   "x": 24,
+   "baseline": 476,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 432,
+   "react": {
+    "x": 24,
+    "baseline": 432,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Rs. 720"
+   }
+  },
+  {
+   "text": "Fried chicken fillet, lettuce and mayo in a ",
+   "width": 304.85,
+   "x": 24,
+   "baseline": 517,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 24,
+   "expBase": 473,
+   "react": {
+    "x": 24,
+    "baseline": 472,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Fried chicken fillet, lettuce and mayo in a"
+   }
+  },
+  {
+   "text": "sesame bun.",
+   "width": 95.96,
+   "x": 24,
+   "baseline": 541,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 24,
+   "expBase": 497,
+   "react": {
+    "x": 24,
+    "baseline": 496,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "sesame bun."
+   }
+  },
+  {
+   "text": "Add to cart",
+   "width": 85.89,
+   "x": 152,
+   "baseline": 785,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": true,
+   "expX": 152,
+   "expBase": 785,
+   "react": {
+    "x": 152.06,
+    "baseline": 784.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "Add to cart"
+   }
+  }
+ ],
+ "item-drink": [
+  {
+   "text": "Details",
+   "width": 80.68,
+   "x": 76,
+   "baseline": 82,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 76,
+   "expBase": 38,
+   "react": {
+    "x": 76,
+    "baseline": 38,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Details"
+   }
+  },
+  {
+   "text": "Sweet Lassi",
+   "width": 137.5,
+   "x": 24,
+   "baseline": 378,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 334,
+   "react": {
+    "x": 24,
+    "baseline": 334,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Sweet Lassi"
+   }
+  },
+  {
+   "text": "Drink",
+   "width": 39.46,
+   "x": 24,
+   "baseline": 419,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 375,
+   "react": {
+    "x": 24,
+    "baseline": 374,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Drink"
+   }
+  },
+  {
+   "text": "4.1",
+   "width": 21,
+   "x": 345,
+   "baseline": 419,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 345,
+   "expBase": 375,
+   "react": {
+    "x": 345,
+    "baseline": 374,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "4.1"
+   }
+  },
+  {
+   "text": "Rs. 220",
+   "width": 87.18,
+   "x": 24,
+   "baseline": 466,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 422,
+   "react": {
+    "x": 24,
+    "baseline": 422,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Rs. 220"
+   }
+  },
+  {
+   "text": "Chilled yogurt drink with sugar.",
+   "width": 230.16,
+   "x": 24,
+   "baseline": 507,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 463,
+   "react": {
+    "x": 24,
+    "baseline": 462,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Chilled yogurt drink with sugar."
+   }
+  },
+  {
+   "text": "Add to cart",
+   "width": 85.89,
+   "x": 152,
+   "baseline": 785,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": true,
+   "expX": 152,
+   "expBase": 785,
+   "react": {
+    "x": 152.06,
+    "baseline": 784.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "Add to cart"
+   }
+  }
+ ],
+ "cart-empty": [
+  {
+   "text": "Cart",
+   "width": 51.51,
+   "x": 24,
+   "baseline": 82,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 38,
+   "react": {
+    "x": 24,
+    "baseline": 38,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Cart"
+   }
+  },
+  {
+   "text": "Y",
+   "width": 9.97,
+   "x": 24,
+   "baseline": 135,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 24,
+   "expBase": 91,
+   "react": {
+    "x": 24,
+    "baseline": 90,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Your cart is empty. Browse the menu to add"
+   }
+  },
+  {
+   "text": "our cart is empty. Browse the menu to add ",
+   "width": 317.51,
+   "x": 32.38,
+   "baseline": 135,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 32.38,
+   "expBase": 91,
+   "react": {
+    "x": 32.36,
+    "baseline": 90,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Your cart is empty. Browse the menu to add"
+   }
+  },
+  {
+   "text": "items.",
+   "width": 46.64,
+   "x": 24,
+   "baseline": 159,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 24,
+   "expBase": 115,
+   "react": {
+    "x": 24,
+    "baseline": 114,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "items."
+   }
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": null,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 41.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 41.67,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Home"
+   }
+  },
+  {
+   "text": "Menu",
+   "width": 42.06,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 500,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 173.5,
+   "expBase": 826.5,
+   "react": {
+    "x": 173.95,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 500,
+    "colour": "#6B645C",
+    "text": "Menu"
+   }
+  },
+  {
+   "text": "Cart",
+   "width": 33.96,
+   "x": 308,
+   "baseline": 826.5,
+   "size": 16,
+   "weight": 600,
+   "colour": "#C8451C",
+   "bottom": true,
+   "expX": 308,
+   "expBase": 826.5,
+   "react": {
+    "x": 308.02,
+    "baseline": 825.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#C8451C",
+    "text": "Cart"
+   }
+  }
+ ],
+ "checkout": [
+  {
+   "text": "Checkout",
+   "width": 115.52,
+   "x": 76,
+   "baseline": 82,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 76,
+   "expBase": 38,
+   "react": {
+    "x": 76,
+    "baseline": 38,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Checkout"
+   }
+  },
+  {
+   "text": "Order summary",
+   "width": 120.08,
+   "x": 24,
+   "baseline": 135,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 91,
+   "react": {
+    "x": 24,
+    "baseline": 90,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Order summary"
+   }
+  },
+  {
+   "text": "Delivery address",
+   "width": 125.72,
+   "x": 41,
+   "baseline": 268,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 224,
+   "react": {
+    "x": 41,
+    "baseline": 223,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Delivery address"
+   }
+  },
+  {
+   "text": "Sample delivery address",
+   "width": 188.6,
+   "x": 41,
+   "baseline": 296,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 252,
+   "react": {
+    "x": 41,
+    "baseline": 251,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Sample delivery address"
+   }
+  },
+  {
+   "text": "Payment",
+   "width": 67.12,
+   "x": 41,
+   "baseline": 370,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 326,
+   "react": {
+    "x": 41,
+    "baseline": 325,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Payment"
+   }
+  },
+  {
+   "text": "Cash on delivery",
+   "width": 126.23,
+   "x": 41,
+   "baseline": 398,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 41,
+   "expBase": 354,
+   "react": {
+    "x": 41,
+    "baseline": 353,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Cash on delivery"
+   }
+  },
+  {
+   "text": "Subtotal",
+   "width": 65.11,
+   "x": 24,
+   "baseline": 455,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 411,
+   "react": {
+    "x": 24,
+    "baseline": 410,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Subtotal"
+   }
+  },
+  {
+   "text": "Rs. 0",
+   "width": 37.97,
+   "x": 328,
+   "baseline": 455,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 328,
+   "expBase": 411,
+   "react": {
+    "x": 309.67,
+    "right": 366,
+    "baseline": 410,
+    "size": 16,
+    "weight": 500,
+    "colour": null,
+    "text": "Rs. 720",
+    "byPosition": true
+   }
+  },
+  {
+   "text": "Delivery fee",
+   "width": 89.17,
+   "x": 24,
+   "baseline": 487,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 443,
+   "react": {
+    "x": 24,
+    "baseline": 442,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Delivery fee"
+   }
+  },
+  {
+   "text": "Rs. 150",
+   "width": 53.94,
+   "x": 312,
+   "baseline": 487,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 312,
+   "expBase": 443,
+   "react": {
+    "x": 312.06,
+    "baseline": 442,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Rs. 150"
+   }
+  },
+  {
+   "text": "Total",
+   "width": 37.26,
+   "x": 24,
+   "baseline": 523,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 479,
+   "react": {
+    "x": 24,
+    "baseline": 482,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Total"
+   }
+  },
+  {
+   "text": "Rs. 0",
+   "width": 58.52,
+   "x": 307,
+   "baseline": 526,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 307,
+   "expBase": 482,
+   "react": {
+    "x": 278.88,
+    "right": 366,
+    "baseline": 482,
+    "size": 24,
+    "weight": 700,
+    "colour": null,
+    "text": "Rs. 870",
+    "byPosition": true
+   }
+  },
+  {
+   "text": "Place order",
+   "width": 88.37,
+   "x": 150.5,
+   "baseline": 785,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": true,
+   "expX": 150.5,
+   "expBase": 785,
+   "react": {
+    "x": 150.81,
+    "baseline": 784.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "Place order"
+   }
+  }
+ ],
+ "order": [
+  {
+   "text": "Order confirmed",
+   "width": 195.54,
+   "x": 97,
+   "baseline": 210,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 97,
+   "expBase": 166,
+   "react": {
+    "x": 97.23,
+    "baseline": 166,
+    "size": 24,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Order confirmed"
+   }
+  },
+  {
+   "text": "Thank you. Y",
+   "width": 92.51,
+   "x": 35.01,
+   "baseline": 251,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 35.01,
+   "expBase": 207,
+   "react": {
+    "x": 35.03,
+    "baseline": 206,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Thank you. Your order has been placed and"
+   }
+  },
+  {
+   "text": "our order has been placed and ",
+   "width": 231.77,
+   "x": 125.93,
+   "baseline": 251,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 125.93,
+   "expBase": 207,
+   "react": {
+    "x": 125.92,
+    "baseline": 206,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Thank you. Your order has been placed and"
+   }
+  },
+  {
+   "text": "will arrive soon.",
+   "width": 113.59,
+   "x": 138.2,
+   "baseline": 275,
+   "size": 16,
+   "weight": 400,
+   "colour": null,
+   "bottom": false,
+   "expX": 138.2,
+   "expBase": 231,
+   "react": {
+    "x": 138.19,
+    "baseline": 230,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "will arrive soon."
+   }
+  },
+  {
+   "text": "Subtotal",
+   "width": 65.11,
+   "x": 24,
+   "baseline": 391,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 347,
+   "react": {
+    "x": 24,
+    "baseline": 346,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Subtotal"
+   }
+  },
+  {
+   "text": "Rs. 0",
+   "width": 37.97,
+   "x": 328,
+   "baseline": 391,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 328,
+   "expBase": 347,
+   "react": {
+    "x": 309.67,
+    "right": 366,
+    "baseline": 346,
+    "size": 16,
+    "weight": 500,
+    "colour": null,
+    "text": "Rs. 720",
+    "byPosition": true
+   }
+  },
+  {
+   "text": "Delivery fee",
+   "width": 89.17,
+   "x": 24,
+   "baseline": 423,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 379,
+   "react": {
+    "x": 24,
+    "baseline": 378,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Delivery fee"
+   }
+  },
+  {
+   "text": "Rs. 150",
+   "width": 53.94,
+   "x": 312,
+   "baseline": 423,
+   "size": 16,
+   "weight": 500,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 312,
+   "expBase": 379,
+   "react": {
+    "x": 312.06,
+    "baseline": 378,
+    "size": 16,
+    "weight": 500,
+    "colour": "#1F1B16",
+    "text": "Rs. 150"
+   }
+  },
+  {
+   "text": "Total",
+   "width": 37.26,
+   "x": 24,
+   "baseline": 459,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 24,
+   "expBase": 415,
+   "react": {
+    "x": 24,
+    "baseline": 418,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Total"
+   }
+  },
+  {
+   "text": "Rs. 0",
+   "width": 58.52,
+   "x": 307,
+   "baseline": 462,
+   "size": 24,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": false,
+   "expX": 307,
+   "expBase": 418,
+   "react": {
+    "x": 278.88,
+    "right": 366,
+    "baseline": 418,
+    "size": 24,
+    "weight": 700,
+    "colour": null,
+    "text": "Rs. 870",
+    "byPosition": true
+   }
+  },
+  {
+   "text": "Back to home",
+   "width": 105.8,
+   "x": 142,
+   "baseline": 785,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": true,
+   "expX": 142,
+   "expBase": 785,
+   "react": {
+    "x": 142.09,
+    "baseline": 784.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "Back to home"
+   }
+  }
+ ],
+ "panel": [
+  {
+   "text": "Added to cart",
+   "width": 134.49,
+   "x": 76,
+   "baseline": 572,
+   "size": 20,
+   "weight": 700,
+   "colour": "#1F1B16",
+   "bottom": true,
+   "expX": 76,
+   "expBase": 572,
+   "react": {
+    "x": 76,
+    "baseline": 572,
+    "size": 20,
+    "weight": 700,
+    "colour": "#1F1B16",
+    "text": "Added to cart"
+   }
+  },
+  {
+   "text": "Cart: 0 items · Rs. 0",
+   "width": 126.28,
+   "x": 76,
+   "baseline": 593,
+   "size": 14,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 76,
+   "expBase": 593,
+   "react": {
+    "x": 76,
+    "baseline": 593,
+    "size": 14,
+    "weight": 400,
+    "colour": null,
+    "text": "Cart: 1 item · Rs. 950",
+    "byPosition": true
+   }
+  },
+  {
+   "text": "Veggie Supreme Pizza",
+   "width": 169.34,
+   "x": 24,
+   "baseline": 639.5,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": true,
+   "expX": 24,
+   "expBase": 639.5,
+   "react": {
+    "x": 24,
+    "baseline": 638.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Veggie Supreme Pizza"
+   }
+  },
+  {
+   "text": "Rs. 950",
+   "width": 57.92,
+   "x": 308,
+   "baseline": 652.5,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": true,
+   "expX": 308,
+   "expBase": 652.5,
+   "react": {
+    "x": 308.08,
+    "baseline": 651.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Rs. 950"
+   }
+  },
+  {
+   "text": "Qty 1",
+   "width": 37.49,
+   "x": 24,
+   "baseline": 665.5,
+   "size": 16,
+   "weight": 400,
+   "colour": "#6B645C",
+   "bottom": true,
+   "expX": 24,
+   "expBase": 665.5,
+   "react": {
+    "x": 24,
+    "baseline": 664.5,
+    "size": 16,
+    "weight": 400,
+    "colour": "#6B645C",
+    "text": "Qty 1"
+   }
+  },
+  {
+   "text": "View cart",
+   "width": 72.44,
+   "x": 158.5,
+   "baseline": 729,
+   "size": 16,
+   "weight": 600,
+   "colour": "#FFFFFF",
+   "bottom": true,
+   "expX": 158.5,
+   "expBase": 729,
+   "react": {
+    "x": 158.78,
+    "baseline": 728.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#FFFFFF",
+    "text": "View cart"
+   }
+  },
+  {
+   "text": "Back to menu",
+   "width": 104.73,
+   "x": 142.5,
+   "baseline": 793,
+   "size": 16,
+   "weight": 600,
+   "colour": "#1F1B16",
+   "bottom": true,
+   "expX": 142.5,
+   "expBase": 793,
+   "react": {
+    "x": 142.63,
+    "baseline": 792.5,
+    "size": 16,
+    "weight": 600,
+    "colour": "#1F1B16",
+    "text": "Back to menu"
+   }
+  }
+ ]
+}

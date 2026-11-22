@@ -1,0 +1,613 @@
+{
+ "ready": {
+  "B": {
+   "text": "BiteBuddyWait for the moderator, then tap Start.Start",
+   "buttons": [
+    "Start"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "BiteBuddyWait for the moderator, then tap Start.Start",
+   "buttons": [
+    "Start"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "home": {
+  "B": {
+   "text": "BiteBuddySearch meals and drinksCategoriesBurgersWrapsPizzaRice BowlsDrinksFeatured mealsVegetable BiryaniVegetarianRs. 6904.3Chicken Caesar WrapNon-vegetarianRs. 8504.2Cheese Margherita PizzaVegetarianRs. 7704.3HomeMenuCart",
+   "buttons": [
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "BiteBuddySearch meals and drinksCategoriesBurgersWrapsPizzaRice BowlsDrinksFeatured mealsVegetable BiryaniVegetarianRs. 6904.3Chicken Caesar WrapNon-vegetarianRs. 8504.2Cheese Margherita PizzaVegetarianRs. 7704.3HomeMenuCart",
+   "buttons": [
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 7,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "menu-all": {
+  "B": {
+   "text": "MenuVegetarianNon-vegetarianBurgersWrapsPizzaRice BowlsDrinksBurgersCrispy Chicken BurgerNon-vegetarianRs. 7204.2Grilled Chicken BurgerNon-vegetarianRs. 7904.6BBQ Chicken BurgerNon-vegetarianRs. 9204.4Veggie Crunch BurgerVegetarianRs. 6804.8WrapsChicken Caesar WrapNon-vegetarianRs. 8504.2Chicken Tikka WrapNon-vegetarianRs. 6404.6Spicy Chicken WrapNon-vegetarianRs. 6104.4Falafel WrapVegetarianRs. 6604.8PizzaCheese Margherita PizzaVegetarianRs. 7704.3Veggie Supreme PizzaVegetarianRs. 9504.7Chicken Fajita PizzaNon-vegetarianRs. 1,0904.4Rice BowlsDaal Chawal BowlVegetarianRs. 6504.1Chana Pulao BowlVegetarianRs. 6304.4Vegetable BiryaniVegetarianRs. 6904.3DrinksMango LassiRs. 2604.3Sweet LassiRs. 2204.1Mint LemonadeRs. 2404.4Classic LemonadeRs. 2004.0Fresh Orange JuiceRs. 3004.2Cola 345 mlRs. 1503.9HomeMenuCart",
+   "buttons": [
+    "Vegetarian",
+    "Non-vegetarian",
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Crispy Chicken BurgerNon-vegetarianRs. 7",
+    "Grilled Chicken BurgerNon-vegetarianRs. ",
+    "BBQ Chicken BurgerNon-vegetarianRs. 9204",
+    "Veggie Crunch BurgerVegetarianRs. 6804.8",
+    "Chicken Caesar WrapNon-vegetarianRs. 850",
+    "Chicken Tikka WrapNon-vegetarianRs. 6404",
+    "Spicy Chicken WrapNon-vegetarianRs. 6104",
+    "Falafel WrapVegetarianRs. 6604.8",
+    "Cheese Margherita PizzaVegetarianRs. 770",
+    "Veggie Supreme PizzaVegetarianRs. 9504.7",
+    "Chicken Fajita PizzaNon-vegetarianRs. 1,",
+    "Daal Chawal BowlVegetarianRs. 6504.1",
+    "Chana Pulao BowlVegetarianRs. 6304.4",
+    "Vegetable BiryaniVegetarianRs. 6904.3",
+    "Mango LassiRs. 2604.3",
+    "Sweet LassiRs. 2204.1",
+    "Mint LemonadeRs. 2404.4",
+    "Classic LemonadeRs. 2004.0",
+    "Fresh Orange JuiceRs. 3004.2",
+    "Cola 345 mlRs. 1503.9",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "MenuVegetarianNon-vegetarianBurgersWrapsPizzaRice BowlsDrinksBurgersCrispy Chicken BurgerNon-vegetarianRs. 7204.2Grilled Chicken BurgerNon-vegetarianRs. 7904.6BBQ Chicken BurgerNon-vegetarianRs. 9204.4Veggie Crunch BurgerVegetarianRs. 6804.8WrapsChicken Caesar WrapNon-vegetarianRs. 8504.2Chicken Tikka WrapNon-vegetarianRs. 6404.6Spicy Chicken WrapNon-vegetarianRs. 6104.4Falafel WrapVegetarianRs. 6604.8PizzaCheese Margherita PizzaVegetarianRs. 7704.3Veggie Supreme PizzaVegetarianRs. 9504.7Chicken Fajita PizzaNon-vegetarianRs. 1,0904.4Rice BowlsDaal Chawal BowlVegetarianRs. 6504.1Chana Pulao BowlVegetarianRs. 6304.4Vegetable BiryaniVegetarianRs. 6904.3DrinksMango LassiRs. 2604.3Sweet LassiRs. 2204.1Mint LemonadeRs. 2404.4Classic LemonadeRs. 2004.0Fresh Orange JuiceRs. 3004.2Cola 345 mlRs. 1503.9HomeMenuCart",
+   "buttons": [
+    "Vegetarian",
+    "Non-vegetarian",
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Crispy Chicken BurgerNon-vegetarianRs. 7",
+    "Grilled Chicken BurgerNon-vegetarianRs. ",
+    "BBQ Chicken BurgerNon-vegetarianRs. 9204",
+    "Veggie Crunch BurgerVegetarianRs. 6804.8",
+    "Chicken Caesar WrapNon-vegetarianRs. 850",
+    "Chicken Tikka WrapNon-vegetarianRs. 6404",
+    "Spicy Chicken WrapNon-vegetarianRs. 6104",
+    "Falafel WrapVegetarianRs. 6604.8",
+    "Cheese Margherita PizzaVegetarianRs. 770",
+    "Veggie Supreme PizzaVegetarianRs. 9504.7",
+    "Chicken Fajita PizzaNon-vegetarianRs. 1,",
+    "Daal Chawal BowlVegetarianRs. 6504.1",
+    "Chana Pulao BowlVegetarianRs. 6304.4",
+    "Vegetable BiryaniVegetarianRs. 6904.3",
+    "Mango LassiRs. 2604.3",
+    "Sweet LassiRs. 2204.1",
+    "Mint LemonadeRs. 2404.4",
+    "Classic LemonadeRs. 2004.0",
+    "Fresh Orange JuiceRs. 3004.2",
+    "Cola 345 mlRs. 1503.9",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [
+    {
+     "button": "Veggie Crunch BurgerVege",
+     "hit": "nav-bar__icon"
+    }
+   ],
+   "animated": 0,
+   "decorCount": 7,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "menu-veg": {
+  "B": {
+   "text": "MenuVegetarianNon-vegetarianBurgersWrapsPizzaRice BowlsDrinksBurgersVeggie Crunch BurgerVegetarianRs. 6804.8WrapsFalafel WrapVegetarianRs. 6604.8PizzaCheese Margherita PizzaVegetarianRs. 7704.3Veggie Supreme PizzaVegetarianRs. 9504.7Rice BowlsDaal Chawal BowlVegetarianRs. 6504.1Chana Pulao BowlVegetarianRs. 6304.4Vegetable BiryaniVegetarianRs. 6904.3DrinksMango LassiRs. 2604.3Sweet LassiRs. 2204.1Mint LemonadeRs. 2404.4Classic LemonadeRs. 2004.0Fresh Orange JuiceRs. 3004.2Cola 345 mlRs. 1503.9HomeMenuCart",
+   "buttons": [
+    "Vegetarian",
+    "Non-vegetarian",
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Veggie Crunch BurgerVegetarianRs. 6804.8",
+    "Falafel WrapVegetarianRs. 6604.8",
+    "Cheese Margherita PizzaVegetarianRs. 770",
+    "Veggie Supreme PizzaVegetarianRs. 9504.7",
+    "Daal Chawal BowlVegetarianRs. 6504.1",
+    "Chana Pulao BowlVegetarianRs. 6304.4",
+    "Vegetable BiryaniVegetarianRs. 6904.3",
+    "Mango LassiRs. 2604.3",
+    "Sweet LassiRs. 2204.1",
+    "Mint LemonadeRs. 2404.4",
+    "Classic LemonadeRs. 2004.0",
+    "Fresh Orange JuiceRs. 3004.2",
+    "Cola 345 mlRs. 1503.9",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [
+    {
+     "button": "Veggie Supreme PizzaVege",
+     "hit": "nav-bar__tab nav-bar__tab--active"
+    }
+   ],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "MenuVegetarianNon-vegetarianBurgersWrapsPizzaRice BowlsDrinksBurgersVeggie Crunch BurgerVegetarianRs. 6804.8WrapsFalafel WrapVegetarianRs. 6604.8PizzaCheese Margherita PizzaVegetarianRs. 7704.3Veggie Supreme PizzaVegetarianRs. 9504.7Rice BowlsDaal Chawal BowlVegetarianRs. 6504.1Chana Pulao BowlVegetarianRs. 6304.4Vegetable BiryaniVegetarianRs. 6904.3DrinksMango LassiRs. 2604.3Sweet LassiRs. 2204.1Mint LemonadeRs. 2404.4Classic LemonadeRs. 2004.0Fresh Orange JuiceRs. 3004.2Cola 345 mlRs. 1503.9HomeMenuCart",
+   "buttons": [
+    "Vegetarian",
+    "Non-vegetarian",
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Veggie Crunch BurgerVegetarianRs. 6804.8",
+    "Falafel WrapVegetarianRs. 6604.8",
+    "Cheese Margherita PizzaVegetarianRs. 770",
+    "Veggie Supreme PizzaVegetarianRs. 9504.7",
+    "Daal Chawal BowlVegetarianRs. 6504.1",
+    "Chana Pulao BowlVegetarianRs. 6304.4",
+    "Vegetable BiryaniVegetarianRs. 6904.3",
+    "Mango LassiRs. 2604.3",
+    "Sweet LassiRs. 2204.1",
+    "Mint LemonadeRs. 2404.4",
+    "Classic LemonadeRs. 2004.0",
+    "Fresh Orange JuiceRs. 3004.2",
+    "Cola 345 mlRs. 1503.9",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [
+    {
+     "button": "Veggie Supreme PizzaVege",
+     "hit": "nav-bar__tab nav-bar__tab--active"
+    }
+   ],
+   "animated": 0,
+   "decorCount": 8,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "menu-nonveg": {
+  "B": {
+   "text": "MenuVegetarianNon-vegetarianBurgersWrapsPizzaRice BowlsDrinksBurgersCrispy Chicken BurgerNon-vegetarianRs. 7204.2Grilled Chicken BurgerNon-vegetarianRs. 7904.6BBQ Chicken BurgerNon-vegetarianRs. 9204.4WrapsChicken Caesar WrapNon-vegetarianRs. 8504.2Chicken Tikka WrapNon-vegetarianRs. 6404.6Spicy Chicken WrapNon-vegetarianRs. 6104.4PizzaChicken Fajita PizzaNon-vegetarianRs. 1,0904.4Rice BowlsNo non-vegetarian items in this category.DrinksMango LassiRs. 2604.3Sweet LassiRs. 2204.1Mint LemonadeRs. 2404.4Classic LemonadeRs. 2004.0Fresh Orange JuiceRs. 3004.2Cola 345 mlRs. 1503.9HomeMenuCart",
+   "buttons": [
+    "Vegetarian",
+    "Non-vegetarian",
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Crispy Chicken BurgerNon-vegetarianRs. 7",
+    "Grilled Chicken BurgerNon-vegetarianRs. ",
+    "BBQ Chicken BurgerNon-vegetarianRs. 9204",
+    "Chicken Caesar WrapNon-vegetarianRs. 850",
+    "Chicken Tikka WrapNon-vegetarianRs. 6404",
+    "Spicy Chicken WrapNon-vegetarianRs. 6104",
+    "Chicken Fajita PizzaNon-vegetarianRs. 1,",
+    "Mango LassiRs. 2604.3",
+    "Sweet LassiRs. 2204.1",
+    "Mint LemonadeRs. 2404.4",
+    "Classic LemonadeRs. 2004.0",
+    "Fresh Orange JuiceRs. 3004.2",
+    "Cola 345 mlRs. 1503.9",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [
+    {
+     "button": "Chicken Caesar WrapNon-v",
+     "hit": "nav-bar__label"
+    }
+   ],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "MenuVegetarianNon-vegetarianBurgersWrapsPizzaRice BowlsDrinksBurgersCrispy Chicken BurgerNon-vegetarianRs. 7204.2Grilled Chicken BurgerNon-vegetarianRs. 7904.6BBQ Chicken BurgerNon-vegetarianRs. 9204.4WrapsChicken Caesar WrapNon-vegetarianRs. 8504.2Chicken Tikka WrapNon-vegetarianRs. 6404.6Spicy Chicken WrapNon-vegetarianRs. 6104.4PizzaChicken Fajita PizzaNon-vegetarianRs. 1,0904.4Rice BowlsNo non-vegetarian items in this category.DrinksMango LassiRs. 2604.3Sweet LassiRs. 2204.1Mint LemonadeRs. 2404.4Classic LemonadeRs. 2004.0Fresh Orange JuiceRs. 3004.2Cola 345 mlRs. 1503.9HomeMenuCart",
+   "buttons": [
+    "Vegetarian",
+    "Non-vegetarian",
+    "Burgers",
+    "Wraps",
+    "Pizza",
+    "Rice Bowls",
+    "Drinks",
+    "Crispy Chicken BurgerNon-vegetarianRs. 7",
+    "Grilled Chicken BurgerNon-vegetarianRs. ",
+    "BBQ Chicken BurgerNon-vegetarianRs. 9204",
+    "Chicken Caesar WrapNon-vegetarianRs. 850",
+    "Chicken Tikka WrapNon-vegetarianRs. 6404",
+    "Spicy Chicken WrapNon-vegetarianRs. 6104",
+    "Chicken Fajita PizzaNon-vegetarianRs. 1,",
+    "Mango LassiRs. 2604.3",
+    "Sweet LassiRs. 2204.1",
+    "Mint LemonadeRs. 2404.4",
+    "Classic LemonadeRs. 2004.0",
+    "Fresh Orange JuiceRs. 3004.2",
+    "Cola 345 mlRs. 1503.9",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [
+    {
+     "button": "Chicken Caesar WrapNon-v",
+     "hit": "nav-bar__label"
+    }
+   ],
+   "animated": 0,
+   "decorCount": 8,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "item-m10": {
+  "B": {
+   "text": "DetailsVeggie Supreme PizzaVegetarian4.7Rs. 950Peppers, olives, onion and mushrooms on a thin 9-inch crust.Add to cart",
+   "buttons": [
+    "Back",
+    "Add to cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "DetailsVeggie Supreme PizzaVegetarian4.7Rs. 950Peppers, olives, onion and mushrooms on a thin 9-inch crust.Add to cart",
+   "buttons": [
+    "Back",
+    "Add to cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "item-d01": {
+  "B": {
+   "text": "DetailsMango LassiDrink4.3Rs. 260Chilled yogurt drink blended with mango.Add to cart",
+   "buttons": [
+    "Back",
+    "Add to cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "DetailsMango LassiDrink4.3Rs. 260Chilled yogurt drink blended with mango.Add to cart",
+   "buttons": [
+    "Back",
+    "Add to cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "panel": {
+  "B": {
+   "text": "DetailsVeggie Supreme PizzaVegetarian4.7Rs. 950Peppers, olives, onion and mushrooms on a thin 9-inch crust.Add to cartAdded to cartCart: 1 item · Rs. 950Veggie Supreme PizzaQty 1Rs. 950View cartBack to menu",
+   "buttons": [
+    "Back",
+    "Add to cart",
+    "Close",
+    "View cart",
+    "Back to menu"
+   ],
+   "overlaps": [],
+   "blocked": [
+    {
+     "button": "Back",
+     "hit": "added-panel__backdrop"
+    },
+    {
+     "button": "Add to cart",
+     "hit": "btn btn--secondary"
+    }
+   ],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "DetailsVeggie Supreme PizzaVegetarian4.7Rs. 950Peppers, olives, onion and mushrooms on a thin 9-inch crust.Add to cartAdded to cartCart: 1 item · Rs. 950Veggie Supreme PizzaQty 1Rs. 950View cartBack to menu",
+   "buttons": [
+    "Back",
+    "Add to cart",
+    "Close",
+    "View cart",
+    "Back to menu"
+   ],
+   "overlaps": [],
+   "blocked": [
+    {
+     "button": "Back",
+     "hit": "added-panel__backdrop"
+    },
+    {
+     "button": "Add to cart",
+     "hit": "btn btn--secondary"
+    }
+   ],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "cart-empty": {
+  "B": {
+   "text": "CartYour cart is empty. Browse the menu to add items.HomeMenuCart",
+   "buttons": [
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "CartYour cart is empty. Browse the menu to add items.HomeMenuCart",
+   "buttons": [
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "cart": {
+  "B": {
+   "text": "CartVeggie Supreme PizzaQty 1Rs. 950Mango LassiQty 1Rs. 260SubtotalRs. 1,210Delivery feeRs. 150TotalRs. 1,360CheckoutHomeMenuCart",
+   "buttons": [
+    "Checkout",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "CartVeggie Supreme PizzaQty 1Rs. 950Mango LassiQty 1Rs. 260SubtotalRs. 1,210Delivery feeRs. 150TotalRs. 1,360CheckoutHomeMenuCart",
+   "buttons": [
+    "Checkout",
+    "Home",
+    "Menu",
+    "Cart"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "checkout": {
+  "B": {
+   "text": "CheckoutOrder summaryVeggie Supreme PizzaQty 1Rs. 950Mango LassiQty 1Rs. 260Delivery addressSample delivery addressPaymentCash on deliverySubtotalRs. 1,210Delivery feeRs. 150TotalRs. 1,360Place order",
+   "buttons": [
+    "Back",
+    "Place order"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "CheckoutOrder summaryVeggie Supreme PizzaQty 1Rs. 950Mango LassiQty 1Rs. 260Delivery addressSample delivery addressPaymentCash on deliverySubtotalRs. 1,210Delivery feeRs. 150TotalRs. 1,360Place order",
+   "buttons": [
+    "Back",
+    "Place order"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ },
+ "order": {
+  "B": {
+   "text": "Order confirmedThank you. Your order has been placed and will arrive soon.Veggie Supreme PizzaQty 1Rs. 950Mango LassiQty 1Rs. 260SubtotalRs. 1,210Delivery feeRs. 150TotalRs. 1,360Back to home",
+   "buttons": [
+    "Back to home"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "A": {
+   "text": "Order confirmedThank you. Your order has been placed and will arrive soon.Veggie Supreme PizzaQty 1Rs. 950Mango LassiQty 1Rs. 260SubtotalRs. 1,210Delivery feeRs. 150TotalRs. 1,360Back to home",
+   "buttons": [
+    "Back to home"
+   ],
+   "overlaps": [],
+   "blocked": [],
+   "animated": 0,
+   "decorCount": 0,
+   "decorInteractive": 0,
+   "frameWidth": 390,
+   "docWidth": 390
+  },
+  "same": {
+   "text": true,
+   "buttons": true
+  }
+ }
+}

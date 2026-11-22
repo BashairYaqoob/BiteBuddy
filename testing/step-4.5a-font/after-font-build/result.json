@@ -1,0 +1,50 @@
+{
+  "appUrl": "http://localhost:5181/",
+  "fontInfo": {
+    "bodyFontFamily": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+    "checks": {
+      "w400": true,
+      "w600": true,
+      "w700": true,
+      "w800": true
+    },
+    "fontFaces": [
+      {
+        "family": "Plus Jakarta Sans",
+        "weight": "200 800",
+        "status": "loaded"
+      }
+    ],
+    "widthWithJakarta": 457.53125,
+    "widthMonospaceOnly": 461.84375,
+    "widthAppStack": 457.53125
+  },
+  "taskCardPositions": {
+    "all": {
+      "Veggie Supreme Pizza": 1556,
+      "Chicken Fajita Pizza": 1690,
+      "Mango Lassi": 2336,
+      "Mint Lemonade": 2604
+    },
+    "veg": {
+      "Veggie Supreme Pizza": 752,
+      "Mango Lassi": 1398,
+      "Mint Lemonade": 1666
+    },
+    "nonveg": {
+      "Chicken Fajita Pizza": 1154,
+      "Mango Lassi": 1428,
+      "Mint Lemonade": 1696
+    }
+  },
+  "cartText": "Cart\nVeggie Supreme Pizza\nQty 1\nRs. 950\nMango Lassi\nQty 1\nRs. 260\nSubtotal\nRs. 1,210\nDelivery fee\nRs. 150\nTotal\nRs. 1,360\nCheckout\nHome\nMenu\nCart",
+  "orderText": "✓\nOrder confirmed\n\nThank you. Your order has been placed and will arrive soon.\n\nVeggie Supreme Pizza\nQty 1\nRs. 950\nMango Lassi\nQty 1\nRs. 260\nSubtotal\nRs. 1,210\nDelivery fee\nRs. 150\nTotal\nRs. 1,360\nBack to home",
+  "requests": [
+    "http://localhost:5181/",
+    "http://localhost:5181/fonts/PlusJakartaSans-Variable.ttf",
+    "http://localhost:5181/assets/index-St_O8q--.js",
+    "http://localhost:5181/assets/index-CbjR8S9W.css"
+  ],
+  "fontRequestCount": 1,
+  "failedRequests": []
+}

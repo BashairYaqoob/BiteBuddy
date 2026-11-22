@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* Neutral desktop backdrop outside the 390px frame during development;
+     irrelevant on the actual study phone, where the viewport is ~390px wide. */
+  background: #e5e4e7;
+}
+
+#root {
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

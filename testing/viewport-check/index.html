@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Same viewport setting as the BiteBuddy app (index.html), so the values
+         below are the conditions the app runs in. Nothing here guesses or adds
+         safe-area values; it only reports what the browser says. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport check</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+      body { font: 16px/1.4 system-ui, -apple-system, sans-serif; color: #1F1B16; background: #FAF8F5; }
+      main { height: 100%; overflow-y: auto; padding: 12px 12px 24px; }
+      h1 { font-size: 18px; margin: 0 0 4px; }
+      p { margin: 0 0 8px; font-size: 13px; color: #6B645C; }
+      table { width: 100%; border-collapse: collapse; font-size: 15px; }
+      td { padding: 4px 2px; border-bottom: 1px solid #E9E4DD; vertical-align: top; }
+      td:last-child { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+      button { font: inherit; font-size: 15px; padding: 10px 14px; margin: 8px 0; border: 1px solid #6B645C; border-radius: 10px; background: #fff; }
+      pre { white-space: pre-wrap; font-size: 12px; background: #fff; border: 1px solid #E9E4DD; padding: 8px; }
+      /* Probes: measured with getBoundingClientRect / getComputedStyle. */
+      .probe { position: fixed; left: 0; top: 0; width: 1px; visibility: hidden; pointer-events: none; }
+      #p-vh { height: 100vh; } #p-dvh { height: 100dvh; } #p-svh { height: 100svh; } #p-lvh { height: 100lvh; }
+      #p-safe { padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px); }
+    </style>
+  </head>
+  <body>
+    <div class="probe" id="p-vh"></div><div class="probe" id="p-dvh"></div>
+    <div class="probe" id="p-svh"></div><div class="probe" id="p-lvh"></div>
+    <div class="probe" id="p-safe"></div>
+    <main>
+      <h1>Viewport check (BiteBuddy testing page)</h1>
+      <p>Portrait, normal zoom, same Safari settings as the study. Please screenshot this page, then tap "Measure again" and screenshot again.</p>
+      <table id="out"></table>
+      <button type="button" id="again">Measure again</button>
+      <pre id="log"></pre>
+    </main>
+    <script>
+      const px = (v) => (Math.round(v * 100) / 100).toString()
+      const h = (id) => document.getElementById(id).getBoundingClientRect().height
+      function measure() {
+        const vv = window.visualViewport
+        const safe = getComputedStyle(document.getElementById('p-safe'))
+        return [
+          ['window.innerWidth', px(innerWidth)],
+          ['window.innerHeight', px(innerHeight)],
+          ['documentElement.clientWidth', px(document.documentElement.clientWidth)],
+          ['documentElement.clientHeight', px(document.documentElement.clientHeight)],
+          ['visualViewport width', vv ? px(vv.width) : 'n/a'],
+          ['visualViewport height', vv ? px(vv.height) : 'n/a'],
+          ['visualViewport scale', vv ? px(vv.scale) : 'n/a'],
+          ['100vh (px)', px(h('p-vh'))],
+          ['100dvh (px)', px(h('p-dvh'))],
+          ['100svh (px)', px(h('p-svh'))],
+          ['100lvh (px)', px(h('p-lvh'))],
+          ['safe-area top', safe.paddingTop],
+          ['safe-area bottom', safe.paddingBottom],
+          ['safe-area left / right', safe.paddingLeft + ' / ' + safe.paddingRight],
+          ['screen.width x height', screen.width + ' x ' + screen.height],
+          ['devicePixelRatio', px(devicePixelRatio)],
+          ['orientation', (screen.orientation && screen.orientation.type) || (innerWidth < innerHeight ? 'portrait' : 'landscape')],
+          ['standalone (home-screen app)', String(!!navigator.standalone)],
+          ['user agent', navigator.userAgent],
+        ]
+      }
+      const log = []
+      function render(reason) {
+        const rows = measure()
+        document.getElementById('out').innerHTML = rows.map(([k, v]) => '<tr><td>' + k + '</td><td>' + v + '</td></tr>').join('')
+        log.push(new Date().toLocaleTimeString() + ' [' + reason + '] inner ' + innerWidth + ' x ' + innerHeight + ', dvh ' + px(h('p-dvh')))
+        document.getElementById('log').textContent = log.slice(-12).join('\n')
+      }
+      render('load')
+      setTimeout(() => render('after 1 s'), 1000)
+      addEventListener('resize', () => render('resize'))
+      if (window.visualViewport) visualViewport.addEventListener('resize', () => render('visualViewport resize'))
+      document.getElementById('again').addEventListener('click', () => render('button'))
+    </script>
+  </body>
+</html>

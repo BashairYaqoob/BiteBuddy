@@ -1,0 +1,46 @@
+/* Colors are fixed literals, not theme variables: this screen must stay
+   identical even once theme-a.css exists (CLAUDE.md section 3 and section 6
+   rule 8), so it must not be able to drift if Theme A's tokens change. */
+.ready-screen {
+  background: #FAF8F5;
+}
+
+/* Step 4.5c, Option A (no 44 px status-bar band): Figma positions − 44.
+   Wordmark top 256 (Figma 300), message top 300 (Figma 344), 12 px apart.
+   PROVISIONAL until the study-iPhone viewport is measured: Start pinned
+   48 px above the viewport bottom (Figma y 744 in an 844 frame). */
+.ready-screen__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  height: 100%;
+  padding: 256px 24px 48px;
+  text-align: center;
+}
+
+.ready-screen__content .btn {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.ready-screen__wordmark {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #1F1B16;
+  margin: 0;
+}
+
+.ready-screen__wordmark-accent {
+  color: #C8451C;
+}
+
+.ready-screen__message {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #6B645C;
+  margin: 0;
+}

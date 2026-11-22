@@ -1,0 +1,31 @@
+/* Measured from Figma Prototype B (reference/step-4.5b-measurements.md):
+   tile #F1ECE5, radius 16, glyph 44 × 44 centred on every size. */
+.food-image {
+  border-radius: 16px;
+  background: var(--color-placeholder);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.food-image__glyph {
+  width: 44px;
+  height: 44px;
+}
+
+.food-image--card {
+  width: 96px;
+  height: 96px;
+}
+
+.food-image--tile {
+  width: 106px;
+  height: 80px;
+}
+
+.food-image--detail {
+  width: 100%;
+  max-width: 342px;
+  height: 220px;
+}

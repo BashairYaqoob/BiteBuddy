@@ -1,0 +1,43 @@
+/* Step 4.5c, Option A (no 44 px status-bar band): Figma positions − 44
+   (reference/step-4.5b-measurements.md). Padding 16 / 24 / 100 (Figma 60 / 24 / 100):
+   wordmark y 16, search y 72, Categories y 144, tile rows y 188 / 316,
+   Featured meals y 452, cards y 496 / 630 / 764. */
+.home-screen__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 24px 100px;
+}
+
+.home-screen__wordmark {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.home-screen__wordmark-accent {
+  color: var(--color-accent);
+}
+
+.home-screen__section-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0 0 12px;
+}
+
+/* Tile grid: 12 px between columns, 16 px between rows (Figma). */
+.home-screen__categories {
+  display: flex;
+  gap: 16px 12px;
+  flex-wrap: wrap;
+}
+
+.home-screen__featured {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

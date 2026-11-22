@@ -1,0 +1,37 @@
+/* Shared structure (CLAUDE.md section 5): values that must be identical in
+   both themes, plus the generic screen layout used by every screen component.
+   Theme-specific colors and spacing live in theme-b.css / theme-a.css. */
+
+/* Plus Jakarta Sans, self-hosted so both themes render identically offline
+   (CLAUDE.md section 5, Fonts). One variable font file covers weights 200–800.
+   Source: github.com/google/fonts (ofl/plusjakartasans), licence in
+   public/fonts/OFL.txt. Renamed from PlusJakartaSans[wght].ttf so the preload
+   link in index.html and this url() are the same address (one download).
+   font-display: block avoids a fallback-font flash that would shift layout. */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-Variable.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  /* Primary action colour must stay identical in both themes (section 6, rule 6). */
+  --color-accent: #C8451C;
+  --color-on-accent: #FFFFFF;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.screen__scroll {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

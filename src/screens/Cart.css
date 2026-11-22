@@ -1,0 +1,35 @@
+/* Step 4.5c, Option A (no 44 px status-bar band): Figma positions − 44
+   (reference/step-4.5b-measurements.md). Title bar y 0 (TopBar, no Back).
+   Content starts 16 px below the bar (empty message top y 72). */
+.cart-screen__content {
+  display: flex;
+  flex-direction: column;
+  /* PROVISIONAL (hidden in Figma): 16 px between rows and summary. */
+  gap: 16px;
+  padding: 16px 24px 16px;
+}
+
+.cart-screen__rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-screen__empty {
+  max-width: 342px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-muted);
+  text-align: left;
+  margin: 0;
+}
+
+/* Checkout button fixed above the nav bar: Figma layer at y 700 = 16 px
+   above the 76 px nav bar. PROVISIONAL until the study-iPhone viewport is
+   measured (distance kept from the viewport bottom). */
+.cart-screen__footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px 16px;
+}

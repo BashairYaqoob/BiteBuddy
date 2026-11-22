@@ -1,0 +1,19 @@
+# App frame width per screen after the #root width fix (21 Nov 2026)
+## Mobile 390 x 844 (study viewport)
+ready {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[]}
+home {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[]}
+menu {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[{"cls":"chip","w":117,"right":414,"text":"Rice Bowls"},{"cls":"chip","w":82,"right":504,"text":"Drinks"}]}
+item {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[]}
+panel {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[]}
+cart {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[]}
+checkout {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[]}
+orderConfirmed {"innerWidth":390,"docScrollWidth":390,"bodyScrollWidth":390,"frameWidth":390,"wide":[]}
+## Desktop 1280 x 900 (frame must stay 390 and centred)
+ready {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[]}
+home {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[]}
+menu {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[{"cls":"chip","w":117,"right":859,"text":"Rice Bowls"},{"cls":"chip","w":82,"right":949,"text":"Drinks"}]}
+item {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[]}
+panel {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[]}
+cart {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[]}
+checkout {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[]}
+orderConfirmed {"innerWidth":1280,"docScrollWidth":1280,"bodyScrollWidth":1280,"frameWidth":390,"frameLeft":445,"frameRight":835,"wide":[]}

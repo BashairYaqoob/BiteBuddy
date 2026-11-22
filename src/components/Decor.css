@@ -1,0 +1,48 @@
+/* Prototype A decorations (Figma "A / Decor"). Decorative only: never
+   tappable, never animated, painted behind content. */
+.decor {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.decor--stripes {
+  width: 48px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.decor__stripe {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 12px;
+}
+
+.decor--info-card {
+  width: 366px;
+  height: 214px;
+  background: #FFFFFF;
+  border: 2px solid #6C3FC5;
+  border-radius: 16px;
+}
+
+.decor--confetti {
+  width: 64px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.decor__bar {
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  border-radius: 1px;
+}
+
+.decor__fill--mustard { background: #F2B705; }
+.decor__fill--teal { background: #0F8B8D; }
+.decor__fill--pink { background: #E0457B; }
+.decor__fill--violet { background: #6C3FC5; }

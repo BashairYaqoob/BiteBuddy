@@ -1,0 +1,21 @@
+/* Measured from Figma Prototype B (reference/step-4.5b-measurements.md):
+   column of image tile 106 × 80 → gap 8 → label 16 Medium ink centred
+   (line 24); 112 tall; no border, no background. */
+.category-tile {
+  width: 106px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  text-align: center;
+}
+
+.category-tile__label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--color-ink);
+  white-space: nowrap;
+}

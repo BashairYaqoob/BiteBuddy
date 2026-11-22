@@ -1,0 +1,1437 @@
+{
+ "ready": [
+  {
+   "text": "BiteBuddy",
+   "width": 124.25,
+   "x": 132.5,
+   "baseline": 326.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Wait for the moderator, then tap Start.",
+   "width": 284.72,
+   "x": 52.63,
+   "baseline": 363.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Start",
+   "width": 38.44,
+   "x": 175.5,
+   "baseline": 777.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  }
+ ],
+ "home": [
+  {
+   "text": "BiteBuddy",
+   "width": 124.25,
+   "x": 24.0,
+   "baseline": 86.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Search meals and drinks",
+   "width": 181.5,
+   "x": 77.0,
+   "baseline": 147.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Categories",
+   "width": 129.87,
+   "x": 24.0,
+   "baseline": 214.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 46.5,
+   "baseline": 339.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 170.5,
+   "baseline": 339.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 293.5,
+   "baseline": 339.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 35.5,
+   "baseline": 467.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 171.0,
+   "baseline": 467.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Featured meals",
+   "width": 179.45,
+   "x": 24.0,
+   "baseline": 522.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetable Biryani",
+   "width": 135.23,
+   "x": 145.0,
+   "baseline": 572.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156.0,
+   "baseline": 607.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 690",
+   "width": 57.45,
+   "x": 145.0,
+   "baseline": 642.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.3",
+   "width": 25.04,
+   "x": 327.0,
+   "baseline": 642.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Chicken Caesar Wrap",
+   "width": 164.94,
+   "x": 145.0,
+   "baseline": 706.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156.0,
+   "baseline": 741.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 850",
+   "width": 58.4,
+   "x": 145.0,
+   "baseline": 776.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 328.0,
+   "baseline": 776.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Home",
+   "width": 46.7,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": null,
+   "colour": "#C8451C"
+  },
+  {
+   "text": "Menu",
+   "width": 42.06,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308.0,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Cheese Margherita Pizza",
+   "width": 187.65,
+   "x": 145.0,
+   "baseline": 840.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  }
+ ],
+ "menu-all": [
+  {
+   "text": "Menu",
+   "width": 64.57,
+   "x": 24.0,
+   "baseline": 82.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 41.0,
+   "baseline": 130.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 167.0,
+   "baseline": 130.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 41.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 144.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 235.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 41.0,
+   "baseline": 248.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 166.0,
+   "baseline": 248.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Burgers",
+   "width": 91.44,
+   "x": 24.0,
+   "baseline": 314.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Crispy Chicken Burger",
+   "width": 171.45,
+   "x": 145.0,
+   "baseline": 364.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156.0,
+   "baseline": 399.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 720",
+   "width": 56.9,
+   "x": 145.0,
+   "baseline": 434.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 328.0,
+   "baseline": 434.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Grilled Chicken Burger",
+   "width": 172.54,
+   "x": 145.0,
+   "baseline": 498.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156.0,
+   "baseline": 533.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 790",
+   "width": 56.94,
+   "x": 145.0,
+   "baseline": 568.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.6",
+   "width": 24.86,
+   "x": 328.0,
+   "baseline": 568.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "BBQ Chicken Burger",
+   "width": 157.64,
+   "x": 145.0,
+   "baseline": 632.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156.0,
+   "baseline": 667.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 920",
+   "width": 57.65,
+   "x": 145.0,
+   "baseline": 702.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.4",
+   "width": 25.49,
+   "x": 327.0,
+   "baseline": 702.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Veggie Crunch Burger",
+   "width": 168.57,
+   "x": 145.0,
+   "baseline": 766.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156.0,
+   "baseline": 801.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#C8451C"
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": null,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Menu",
+   "width": 42.54,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#C8451C"
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308.0,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 680",
+   "width": 58.18,
+   "x": 145.0,
+   "baseline": 836.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.8",
+   "width": 25.34,
+   "x": 327.0,
+   "baseline": 836.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  }
+ ],
+ "menu-veg": [
+  {
+   "text": "Menu",
+   "width": 64.57,
+   "x": 24.0,
+   "baseline": 82.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 84.2,
+   "x": 40.0,
+   "baseline": 129.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 166.0,
+   "baseline": 130.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 41.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 144.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 235.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 41.0,
+   "baseline": 248.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 166.0,
+   "baseline": 248.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Burgers",
+   "width": 91.44,
+   "x": 24.0,
+   "baseline": 314.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Veggie Crunch Burger",
+   "width": 168.57,
+   "x": 145.0,
+   "baseline": 364.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156.0,
+   "baseline": 399.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 680",
+   "width": 58.18,
+   "x": 145.0,
+   "baseline": 434.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.8",
+   "width": 25.34,
+   "x": 327.0,
+   "baseline": 434.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Wraps",
+   "width": 74.87,
+   "x": 24.0,
+   "baseline": 504.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Falafel Wrap",
+   "width": 95.16,
+   "x": 145.0,
+   "baseline": 554.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156.0,
+   "baseline": 589.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 660",
+   "width": 57.7,
+   "x": 145.0,
+   "baseline": 624.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.8",
+   "width": 25.34,
+   "x": 327.0,
+   "baseline": 624.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Pizza",
+   "width": 58.64,
+   "x": 24.0,
+   "baseline": 694.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Cheese Margherita Pizza",
+   "width": 187.65,
+   "x": 145.0,
+   "baseline": 744.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 156.0,
+   "baseline": 779.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 770",
+   "width": 56.19,
+   "x": 145.0,
+   "baseline": 814.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.3",
+   "width": 25.04,
+   "x": 327.0,
+   "baseline": 814.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": null,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Menu",
+   "width": 42.54,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#C8451C"
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308.0,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  }
+ ],
+ "menu-nonveg": [
+  {
+   "text": "Menu",
+   "width": 64.57,
+   "x": 24.0,
+   "baseline": 82.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 123.45,
+   "x": 166.0,
+   "baseline": 129.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  },
+  {
+   "text": "Vegetarian",
+   "width": 83.37,
+   "x": 41.0,
+   "baseline": 130.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Burgers",
+   "width": 60.1,
+   "x": 41.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Wraps",
+   "width": 48.98,
+   "x": 144.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Pizza",
+   "width": 38.03,
+   "x": 235.0,
+   "baseline": 194.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rice Bowls",
+   "width": 82.97,
+   "x": 41.0,
+   "baseline": 248.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Drinks",
+   "width": 47.63,
+   "x": 166.0,
+   "baseline": 248.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Burgers",
+   "width": 91.44,
+   "x": 24.0,
+   "baseline": 314.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Crispy Chicken Burger",
+   "width": 171.45,
+   "x": 145.0,
+   "baseline": 364.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156.0,
+   "baseline": 399.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 720",
+   "width": 56.9,
+   "x": 145.0,
+   "baseline": 434.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 328.0,
+   "baseline": 434.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Grilled Chicken Burger",
+   "width": 172.54,
+   "x": 145.0,
+   "baseline": 498.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156.0,
+   "baseline": 533.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 790",
+   "width": 56.94,
+   "x": 145.0,
+   "baseline": 568.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.6",
+   "width": 24.86,
+   "x": 328.0,
+   "baseline": 568.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "BBQ Chicken Burger",
+   "width": 157.64,
+   "x": 145.0,
+   "baseline": 632.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 156.0,
+   "baseline": 667.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 920",
+   "width": 57.65,
+   "x": 145.0,
+   "baseline": 702.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "4.4",
+   "width": 25.49,
+   "x": 327.0,
+   "baseline": 702.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Wraps",
+   "width": 74.87,
+   "x": 24.0,
+   "baseline": 772.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Chicken Caesar Wrap",
+   "width": 164.94,
+   "x": 145.0,
+   "baseline": 822.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": null,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Menu",
+   "width": 42.54,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#C8451C"
+  },
+  {
+   "text": "Cart",
+   "width": 33.52,
+   "x": 308.0,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  }
+ ],
+ "item-meal": [
+  {
+   "text": "Details",
+   "width": 80.68,
+   "x": 76.0,
+   "baseline": 82.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Crispy Chicken Burger",
+   "width": 259.54,
+   "x": 24.0,
+   "baseline": 378.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Non-vegetarian",
+   "width": 121.94,
+   "x": 35.0,
+   "baseline": 424.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "4.2",
+   "width": 24.86,
+   "x": 341.0,
+   "baseline": 424.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rs. 720",
+   "width": 86.27,
+   "x": 24.0,
+   "baseline": 476.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Fried chicken fillet, lettuce and mayo in a ",
+   "width": 304.85,
+   "x": 24.0,
+   "baseline": 517.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "sesame bun.",
+   "width": 95.96,
+   "x": 24.0,
+   "baseline": 541.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "Add to cart",
+   "width": 85.89,
+   "x": 152.0,
+   "baseline": 785.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  }
+ ],
+ "item-drink": [
+  {
+   "text": "Details",
+   "width": 80.68,
+   "x": 76.0,
+   "baseline": 82.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Sweet Lassi",
+   "width": 137.5,
+   "x": 24.0,
+   "baseline": 378.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Drink",
+   "width": 39.46,
+   "x": 24.0,
+   "baseline": 419.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "4.1",
+   "width": 21.0,
+   "x": 345.0,
+   "baseline": 419.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rs. 220",
+   "width": 87.18,
+   "x": 24.0,
+   "baseline": 466.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Chilled yogurt drink with sugar.",
+   "width": 230.16,
+   "x": 24.0,
+   "baseline": 507.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Add to cart",
+   "width": 85.89,
+   "x": 152.0,
+   "baseline": 785.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  }
+ ],
+ "cart-empty": [
+  {
+   "text": "Cart",
+   "width": 51.51,
+   "x": 24.0,
+   "baseline": 82.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Y",
+   "width": 9.97,
+   "x": 24.0,
+   "baseline": 135.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "our cart is empty. Browse the menu to add ",
+   "width": 317.51,
+   "x": 32.38,
+   "baseline": 135.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "items.",
+   "width": 46.64,
+   "x": 24.0,
+   "baseline": 159.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "Home",
+   "width": 46.66,
+   "x": 41.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": null,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Menu",
+   "width": 42.06,
+   "x": 173.5,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Cart",
+   "width": 33.96,
+   "x": 308.0,
+   "baseline": 826.5,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#C8451C"
+  }
+ ],
+ "checkout": [
+  {
+   "text": "Checkout",
+   "width": 115.52,
+   "x": 76.0,
+   "baseline": 82.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Order summary",
+   "width": 120.08,
+   "x": 24.0,
+   "baseline": 135.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Delivery address",
+   "width": 125.72,
+   "x": 41.0,
+   "baseline": 268.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Sample delivery address",
+   "width": 188.6,
+   "x": 41.0,
+   "baseline": 296.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Payment",
+   "width": 67.12,
+   "x": 41.0,
+   "baseline": 370.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Cash on delivery",
+   "width": 126.23,
+   "x": 41.0,
+   "baseline": 398.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Subtotal",
+   "width": 65.11,
+   "x": 24.0,
+   "baseline": 455.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 0",
+   "width": 37.97,
+   "x": 328.0,
+   "baseline": 455.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Delivery fee",
+   "width": 89.17,
+   "x": 24.0,
+   "baseline": 487.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 150",
+   "width": 53.94,
+   "x": 312.0,
+   "baseline": 487.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Total",
+   "width": 37.26,
+   "x": 24.0,
+   "baseline": 523.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rs. 0",
+   "width": 58.52,
+   "x": 307.0,
+   "baseline": 526.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Place order",
+   "width": 88.37,
+   "x": 150.5,
+   "baseline": 785.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  }
+ ],
+ "order": [
+  {
+   "text": "Order confirmed",
+   "width": 195.54,
+   "x": 97.0,
+   "baseline": 210.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Thank you. Y",
+   "width": 92.51,
+   "x": 35.01,
+   "baseline": 251.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "our order has been placed and ",
+   "width": 231.77,
+   "x": 125.93,
+   "baseline": 251.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "will arrive soon.",
+   "width": 113.59,
+   "x": 138.2,
+   "baseline": 275.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": null
+  },
+  {
+   "text": "Subtotal",
+   "width": 65.11,
+   "x": 24.0,
+   "baseline": 391.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 0",
+   "width": 37.97,
+   "x": 328.0,
+   "baseline": 391.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Delivery fee",
+   "width": 89.17,
+   "x": 24.0,
+   "baseline": 423.0,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Rs. 150",
+   "width": 53.94,
+   "x": 312.0,
+   "baseline": 423.0,
+   "size": 16.0,
+   "weight": 500,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Total",
+   "width": 37.26,
+   "x": 24.0,
+   "baseline": 459.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rs. 0",
+   "width": 58.52,
+   "x": 307.0,
+   "baseline": 462.0,
+   "size": 24.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Back to home",
+   "width": 105.8,
+   "x": 142.0,
+   "baseline": 785.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  }
+ ],
+ "panel": [
+  {
+   "text": "Added to cart",
+   "width": 134.49,
+   "x": 76.0,
+   "baseline": 572.0,
+   "size": 20.0,
+   "weight": 700,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Cart: 0 items · Rs. 0",
+   "width": 126.28,
+   "x": 76.0,
+   "baseline": 593.0,
+   "size": 14.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "Veggie Supreme Pizza",
+   "width": 169.34,
+   "x": 24.0,
+   "baseline": 639.5,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Rs. 950",
+   "width": 57.92,
+   "x": 308.0,
+   "baseline": 652.5,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  },
+  {
+   "text": "Qty 1",
+   "width": 37.49,
+   "x": 24.0,
+   "baseline": 665.5,
+   "size": 16.0,
+   "weight": 400,
+   "colour": "#6B645C"
+  },
+  {
+   "text": "View cart",
+   "width": 72.44,
+   "x": 158.5,
+   "baseline": 729.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#FFFFFF"
+  },
+  {
+   "text": "Back to menu",
+   "width": 104.73,
+   "x": 142.5,
+   "baseline": 793.0,
+   "size": 16.0,
+   "weight": 600,
+   "colour": "#1F1B16"
+  }
+ ]
+}

@@ -1,0 +1,413 @@
+/* Prototype A (high visual complexity). Every rule is scoped to
+   [data-theme="A"]; Theme B is untouched. Values come from the saved Figma A
+   component code (A / FoodCard, DietTag, FoodImage, Chip, Button, SearchField,
+   NavBar, CartRow, CategoryTile, TopBar) and the saved Figma A layout data.
+   Step 5a: confirmed details only. Screen-level details of Item, Cart,
+   Checkout, Order confirmed and the Added-to-cart panel are deferred (5b). */
+
+[data-theme="A"] {
+  --color-accent-soft: #FCEBE4;
+  --color-ink: #1F1B16;
+  --color-muted: #6B645C;
+  --color-border: #E9E4DD;
+  --color-surface: #FFFFFF;
+  --color-bg: #FFF4E6;
+  --color-placeholder: #F1ECE5;
+  --color-glyph: #B7ADA0;
+  /* Decorative accents (CLAUDE.md section 3). */
+  --color-decor-mustard: #F2B705;
+  --color-decor-teal: #0F8B8D;
+  --color-decor-violet: #6C3FC5;
+  --color-decor-pink: #E0457B;
+}
+
+/* Decorations are clipped at the frame edge (some sit partly outside it in
+   Figma) and painted behind content. */
+[data-theme="A"] .screen__scroll {
+  position: relative;
+  overflow-x: hidden;
+}
+
+[data-theme="A"] .screen__scroll > :not(.decor),
+[data-theme="A"] .home-screen__content section > :not(.decor),
+[data-theme="A"] .menu-screen__section > :not(.decor) {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Components ---------- */
+
+/* A / FoodCard: 358 × 116 on screens, padding 8, gap 10, 2 px violet border,
+   radius 14; name ExtraBold ink; price ExtraBold violet; corner sticker. */
+[data-theme="A"] .food-card {
+  position: relative;
+  max-width: 358px;
+  min-height: 116px;
+  padding: 8px;
+  gap: 10px;
+  border: 2px solid var(--color-decor-violet);
+  border-radius: 14px;
+}
+
+[data-theme="A"] .food-card__name {
+  font-weight: 800;
+}
+
+[data-theme="A"] .food-card__price {
+  font-weight: 800;
+  color: var(--color-decor-violet);
+}
+
+/* A / FoodImage tile (card 96 × 96; Home tile stretched to 106 × 80). */
+[data-theme="A"] .food-image--a-tile {
+  background: none;
+  border-radius: 0;
+}
+
+[data-theme="A"] .food-image__a-tile {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Rating in A / FoodCard: number Bold ink. */
+[data-theme="A"] .rating__value {
+  font-weight: 700;
+}
+
+/* A / DietTag (meals): 34 tall, 1.5 px violet border, radius 8, padding 3.5/8,
+   12% violet tint, 14 Bold uppercase ink. The plain drink label is deferred. */
+[data-theme="A"] .diet-tag:not(.diet-tag--plain) {
+  padding: 3.5px 8px;
+  border: 1.5px solid var(--color-decor-violet);
+  border-radius: 8px;
+  background: linear-gradient(rgba(108, 63, 197, 0.12), rgba(108, 63, 197, 0.12)), #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ink);
+  text-transform: uppercase;
+}
+
+/* A / Chip: unselected 2 px teal border, white, radius 12, padding 9/14,
+   14 Bold uppercase ink (46 tall); selected accent fill, 2 px mustard border,
+   padding 8/14, 14 ExtraBold uppercase white (44 tall). */
+[data-theme="A"] .chip {
+  padding: 9px 14px;
+  border: 2px solid var(--color-decor-teal);
+  border-radius: 12px;
+  background: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ink);
+  text-transform: uppercase;
+}
+
+[data-theme="A"] .chip--selected {
+  padding: 8px 14px;
+  border: 2px solid var(--color-decor-mustard);
+  background: var(--color-accent);
+  font-weight: 800;
+  color: var(--color-on-accent);
+}
+
+/* A / Button: radius 16, 2 px border, 16 ExtraBold uppercase. Primary: accent
+   fill, mustard border, solid violet shadow. Secondary: white, violet border
+   and text. Ready's Start button is excluded: Ready is identical in A and B. */
+[data-theme="A"] .screen:not(.ready-screen) .btn,
+[data-theme="A"] .added-panel .btn {
+  border-radius: 16px;
+  border: 2px solid;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+[data-theme="A"] .screen:not(.ready-screen) .btn--primary,
+[data-theme="A"] .added-panel .btn--primary {
+  border-color: var(--color-decor-mustard);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  box-shadow: 0 4px 0 rgba(107, 64, 196, 0.35);
+}
+
+[data-theme="A"] .screen:not(.ready-screen) .btn--secondary,
+[data-theme="A"] .added-panel .btn--secondary {
+  border-color: var(--color-decor-violet);
+  background: #FFFFFF;
+  color: var(--color-decor-violet);
+}
+
+/* A / SearchField: 2 px pink border, radius 24; placeholder 16 Medium muted. */
+[data-theme="A"] .search-field {
+  max-width: 358px;
+  border: 2px solid var(--color-decor-pink);
+  border-radius: 24px;
+}
+
+[data-theme="A"] .search-field__placeholder {
+  font-weight: 500;
+}
+
+/* A / NavBar: 3 px mustard top border; labels 14 uppercase; active tab on
+   accent-soft with ExtraBold ink label; inactive SemiBold muted. */
+[data-theme="A"] .nav-bar {
+  border-top: 3px solid var(--color-decor-mustard);
+}
+
+[data-theme="A"] .nav-bar__tab {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+[data-theme="A"] .nav-bar__tab--active {
+  background: var(--color-accent-soft);
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+/* A / CartRow: 2 px dashed mustard divider; name ExtraBold ink;
+   "Qty 1" 14 Medium muted uppercase; price ExtraBold violet. */
+[data-theme="A"] .cart-row {
+  border-bottom: 2px dashed var(--color-decor-mustard);
+}
+
+[data-theme="A"] .cart-row__name {
+  font-weight: 800;
+}
+
+[data-theme="A"] .cart-row__qty {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+[data-theme="A"] .cart-row__price {
+  font-weight: 800;
+  color: var(--color-decor-violet);
+}
+
+/* A / CategoryTile: label 14 ExtraBold uppercase ink. */
+[data-theme="A"] .category-tile__label {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* A / TopBar: Back in a 44 px accent-soft circle; title 24 ExtraBold violet. */
+[data-theme="A"] .top-bar__back {
+  border-radius: 22px;
+  background: var(--color-accent-soft);
+}
+
+[data-theme="A"] .top-bar__title {
+  font-weight: 800;
+  color: var(--color-decor-violet);
+}
+
+/* ---------- Home (Figma A layout − 44, Option A) ----------
+   Padding 16 / 16 / 100; blocks 12 apart: wordmark y 16, search 60,
+   hero 120, Categories 228 (grid 270: rows 12 apart, columns 20 apart),
+   Featured 518 (cards 558 / 682 / 806, 8 apart). */
+[data-theme="A"] .home-screen__content {
+  gap: 12px;
+  padding: 16px 16px 100px;
+}
+
+[data-theme="A"] .home-screen__content section {
+  position: relative;
+}
+
+/* Wordmark: 28 ExtraBold uppercase (matches the Figma text box, 159 px);
+   "Buddy" violet per CLAUDE.md section 3 (colour not measured). */
+[data-theme="A"] .home-screen__wordmark {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+[data-theme="A"] .home-screen__wordmark-accent {
+  color: var(--color-decor-violet);
+}
+
+/* Section headings (Home and Menu): 20 ExtraBold uppercase, 0.6 px letter
+   spacing (fits all seven Figma text-box widths), violet #6C3FC5 (sampled
+   from the Figma A Menu screenshot), line 32. */
+[data-theme="A"] .home-screen__section-title,
+[data-theme="A"] .menu-screen__section-title {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--color-decor-violet);
+}
+
+[data-theme="A"] .home-screen__section-title {
+  margin: 0;
+}
+
+[data-theme="A"] .home-screen__section-title + .home-screen__categories {
+  margin-top: 10px;
+}
+
+[data-theme="A"] .home-screen__section-title + .home-screen__featured {
+  margin-top: 8px;
+}
+
+[data-theme="A"] .home-screen__categories {
+  gap: 12px 20px;
+}
+
+[data-theme="A"] .home-screen__featured {
+  gap: 8px;
+}
+
+/* ---------- Menu (Figma A layout − 44, Option A) ----------
+   Header as B but filters at x 16. List: padding 6 / 16 / 100; ticker,
+   chips, strip and sections 8 apart; heading → cards 8; cards 8 apart. */
+[data-theme="A"] .menu-screen__diet-filters {
+  padding: 0 16px;
+}
+
+[data-theme="A"] .menu-screen__content {
+  gap: 8px;
+  padding: 6px 16px 100px;
+}
+
+[data-theme="A"] .menu-screen__section {
+  position: relative;
+  gap: 8px;
+}
+
+[data-theme="A"] .menu-screen__cards {
+  gap: 8px;
+}
+
+/* Extra space below some sections (Figma A, decision 9: holds the task
+   cards within ±10 px of B). Per filter state, from the Figma A layout data. */
+[data-theme="A"] .menu-screen[data-filter="all"] .menu-screen__section[data-category="Wraps"] { padding-bottom: 63px; }
+[data-theme="A"] .menu-screen[data-filter="all"] .menu-screen__section[data-category="Rice Bowls"] { padding-bottom: 87px; }
+[data-theme="A"] .menu-screen[data-filter="veg"] .menu-screen__section[data-category="Rice Bowls"] { padding-bottom: 80px; }
+[data-theme="A"] .menu-screen[data-filter="nonveg"] .menu-screen__section[data-category="Wraps"] { padding-bottom: 28px; }
+[data-theme="A"] .menu-screen[data-filter="nonveg"] .menu-screen__section[data-category="Rice Bowls"] { padding-bottom: 56px; }
+
+/* ======================================================================
+   Phase 5b (reference/step-5b-theme-a-measurements.md). Values confirmed
+   from reference/BiteBuddy-Figma-Reference-A.png + saved Figma A layout
+   data unless marked INFERENCE (owner-approved).
+   ====================================================================== */
+
+/* Title bars show decorations behind them (Figma A / TopBar has no fill). */
+[data-theme="A"] .top-bar {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+/* Section headings alternate with the heading decoration: stripes → violet,
+   sticker → ink. Confirmed: Categories, Burgers, Pizza violet; Featured
+   meals, Wraps ink. INFERENCE (owner-approved): Rice Bowls ink, Drinks violet. */
+[data-theme="A"] .home-screen__content section:nth-of-type(2) .home-screen__section-title,
+[data-theme="A"] .menu-screen__section[data-category="Wraps"] .menu-screen__section-title,
+[data-theme="A"] .menu-screen__section[data-category="Rice Bowls"] .menu-screen__section-title {
+  color: var(--color-ink);
+}
+
+/* ---------- Item screen ---------- */
+[data-theme="A"] .item-detail-screen__name {
+  font-weight: 800;
+}
+
+[data-theme="A"] .item-detail-screen__price {
+  font-weight: 800;
+  color: var(--color-decor-violet);
+}
+
+/* Item-screen rating keeps B's accent star (Rating.jsx) and Medium number. */
+[data-theme="A"] .rating--detail .rating__value {
+  font-weight: 500;
+}
+
+/* Large image tile (A / FoodImage – Detail): 22% category colour over white,
+   2 px border in that colour, radius 20, four corner dots, glyph centred. */
+[data-theme="A"] .food-image--a-detail {
+  position: relative;
+  border: 2px solid var(--tile-colour);
+  border-radius: 20px;
+  background: linear-gradient(var(--tile-tint), var(--tile-tint)), #FFFFFF;
+}
+
+[data-theme="A"] .food-image--a-mustard { --tile-colour: #F2B705; --tile-tint: rgba(242, 183, 5, 0.22); }
+[data-theme="A"] .food-image--a-teal { --tile-colour: #0F8B8D; --tile-tint: rgba(15, 139, 141, 0.22); }
+[data-theme="A"] .food-image--a-pink { --tile-colour: #E0457B; --tile-tint: rgba(224, 69, 123, 0.22); }
+[data-theme="A"] .food-image--a-violet { --tile-colour: #6C3FC5; --tile-tint: rgba(108, 63, 197, 0.22); }
+
+[data-theme="A"] .food-image__dot {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* ---------- Checkout and Order confirmed ---------- */
+[data-theme="A"] .checkout-screen__section-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-decor-violet);
+}
+
+/* Address and payment cards: 342 × 88, 2 px violet border, radius 16
+   (label at +18, value at +46). */
+[data-theme="A"] .checkout-screen__card {
+  border: 2px solid var(--color-decor-violet);
+  border-radius: 16px;
+}
+
+/* Summary card (Checkout and Order confirmed; the Cart summary is a hidden
+   Figma layer and stays as in B): 342 × 132, white, 2 px violet border,
+   radius 16, rows inset 18. "Total" label ExtraBold ink; Total amount
+   ExtraBold violet (owner decision); other amounts stay Medium. */
+[data-theme="A"] .checkout-screen .summary,
+[data-theme="A"] .order-confirmed-screen .summary {
+  padding: 16px;
+  background: #FFFFFF;
+  border: 2px solid var(--color-decor-violet);
+  border-radius: 16px;
+}
+
+[data-theme="A"] .checkout-screen .summary__row--total span:first-child,
+[data-theme="A"] .order-confirmed-screen .summary__row--total span:first-child {
+  font-weight: 800;
+}
+
+[data-theme="A"] .checkout-screen .summary__row--total span:last-child,
+[data-theme="A"] .order-confirmed-screen .summary__row--total span:last-child {
+  font-weight: 800;
+  color: var(--color-decor-violet);
+}
+
+[data-theme="A"] .order-confirmed-screen__heading {
+  font-weight: 800;
+}
+
+/* ---------- Added-to-cart panel ---------- */
+/* Sheet: 2 px violet border on top and sides (Figma's bottom edge is outside
+   the frame), top radius 24, content inset 26, 317 px visible:
+   2 + 24 + content 261 + 30 = 317. */
+[data-theme="A"] .added-panel__sheet {
+  border: 2px solid var(--color-decor-violet);
+  border-bottom: none;
+  padding: 24px 24px 30px;
+}
+
+[data-theme="A"] .added-panel__sheet > :not(.decor) {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="A"] .added-panel__heading {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-decor-violet);
+}

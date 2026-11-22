@@ -1,0 +1,31 @@
+/* Measured from Figma Prototype B (reference/step-4.5b-measurements.md):
+   342 × 48, white, radius 14, 1 px inside border; icon 24 at (+17, +12);
+   placeholder at +53 (icon + gap 12), 16 Regular muted. */
+.search-field {
+  width: 100%;
+  max-width: 342px;
+  height: 48px;
+  /* Keep the measured 48 px: without this the Home scroll column shrank the
+     field to ~20 px (pre-existing bug found in the Step 4.5b measurements). */
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+
+.search-field__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.search-field__placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-muted);
+}

@@ -1,0 +1,78 @@
+GEOMETRY: 59 / 59 within tolerance (1 px unless noted)
+PASS  | Card width | Figma 342 | React 342 | diff 0
+PASS  | Card height | Figma 122 | React 122 | diff 0
+PASS  | Card image offset x | Figma 13 | React 13 | diff 0
+PASS  | Card image offset y | Figma 13 | React 13.0 | diff 0.0
+PASS  | Card image size | Figma 96 | React 96 | diff 0
+PASS  | Card name x offset | Figma 121 | React 121 | diff 0
+PASS  | Card name baseline offset | Figma 32 | React 31.0 | diff -1.0
+PASS  | Card tag top offset | Figma 43 | React 43.0 | diff 0.0
+PASS  | Card tag height | Figma 34 | React 34 | diff 0
+PASS  | Card tag width (Non-vegetarian pill) | Figma 144 | React 143.92 | diff -0.08
+PASS  | Card price baseline offset | Figma 102 | React 101.0 | diff -1.0
+PASS  | Card rating right edge (card inner right, +329) | Figma 329 | React 329.01 | diff 0.01
+PASS  | Card star size | Figma 16 | React 16 | diff 0
+PASS  | Drink card has no tag (1 = none) | Figma 1 | React 1 | diff 0
+PASS  | Drink card price baseline offset | Figma 62 | React 61.0 | diff -1.0
+PASS  | Chip Vegetarian width (unselected) | Figma 118 | React 117.36 | diff -0.64
+PASS  | Chip unselected height | Figma 46 | React 46 | diff 0
+PASS  | Chip Non-vegetarian width | Figma 156 | React 155.92 | diff -0.08
+PASS  | Chip Burgers width | Figma 95 | React 94.11 | diff -0.89
+PASS  | Chip Wraps width | Figma 83 | React 82.98 | diff -0.02
+PASS  | Chip Pizza width | Figma 73 | React 72.05 | diff -0.95
+PASS  | Chip Rice Bowls width | Figma 117 | React 116.97 | diff -0.03
+PASS  | Chip Drinks width | Figma 82 | React 81.64 | diff -0.36
+PASS  | Chip Vegetarian width (selected) | Figma 117 | React 116.2 | diff -0.8
+PASS  | Chip selected height | Figma 44 | React 44 | diff 0
+PASS  | Next chip shift when Vegetarian selected | Figma -1 | React -1.16 | diff -0.16
+PASS  | Nav height | Figma 76 | React 76 | diff 0
+PASS  | Nav icon top below bar top | Figma 13.5 | React 13.5 | diff 0.0
+PASS  | Nav icon 1 x | Figma 53 | React 53 | diff 0
+PASS  | Nav icon 2 x | Figma 183 | React 183 | diff 0
+PASS  | Nav icon 3 x | Figma 313 | React 313 | diff 0
+PASS  | Nav label baseline below bar top | Figma 58.5 | React 57.5 | diff -1.0
+PASS  | Search icon x offset | Figma 17 | React 17 | diff 0
+PASS  | Search icon y offset | Figma 12 | React 12.0 | diff 0.0
+PASS  | Search placeholder x offset | Figma 53 | React 53 | diff 0
+PASS  | Search placeholder baseline offset | Figma 31 | React 30.0 | diff -1.0
+PASS  | Tile height | Figma 112 | React 112 | diff 0
+PASS  | Tile image height | Figma 80 | React 80 | diff 0
+PASS  | Tile image width | Figma 106 | React 106 | diff 0
+PASS  | Tile label baseline below tile top | Figma 107 | React 106.0 | diff -1.0
+PASS  | Panel sheet top | Figma 527 | React 527 | diff 0
+PASS  | Panel sheet height | Figma 317 | React 317 | diff 0
+PASS  | Panel badge top offset | Figma 26.5 | React 26.5 | diff 0.0
+PASS  | Panel badge size | Figma 40 | React 40 | diff 0
+PASS  | Panel check icon size | Figma 24 | React 24 | diff 0
+PASS  | Panel heading x | Figma 76 | React 76 | diff 0
+PASS  | Panel heading baseline offset | Figma 45 | React 45 | diff 0
+PASS  | Panel status baseline offset | Figma 66 | React 66 | diff 0
+PASS  | Panel row top offset | Figma 89 | React 89 | diff 0
+PASS  | Panel row height | Figma 60 | React 60 | diff 0
+PASS  | Panel row name baseline offset | Figma 112.5 | React 111.5 | diff -1.0
+PASS  | Panel row qty baseline offset | Figma 138.5 | React 137.5 | diff -1.0
+PASS  | Panel row price baseline offset | Figma 125.5 | React 124.5 | diff -1.0
+PASS  | Panel View cart top offset | Figma 169 | React 169 | diff 0
+PASS  | Panel Back to menu top offset | Figma 233 | React 233 | diff 0
+PASS  | TopBar back icon x | Figma 34 | React 34 | diff 0
+PASS  | TopBar title x | Figma 76 | React 76 | diff 0
+PASS  | TopBar title baseline below bar top | Figma 38 | React 38 | diff 0
+PASS  | Item-screen glyph size | Figma 44 | React 44 | diff 0
+TEXT STYLES (size, weight, colour)
+card name: 16px 600 rgb(31, 27, 22)
+card tag: 16px 500 rgb(107, 100, 92)
+card price: 16px 600 rgb(31, 27, 22)
+card rating: 16px 500 rgb(31, 27, 22)
+chip unselected: 16px 500 rgb(31, 27, 22) | selected: 16px 600 rgb(255, 255, 255)
+nav active: 16px 600 rgb(200, 69, 28) | inactive: 16px 500 rgb(107, 100, 92)
+search placeholder: 16px 400 rgb(107, 100, 92) | tile label: 16px 500 rgb(31, 27, 22)
+top bar title: 24px 700 rgb(31, 27, 22) | drink label (item screen): 16px 500 rgb(107, 100, 92)
+panel heading: 20px 700 rgb(31, 27, 22) | status: 14px 400 rgb(107, 100, 92)
+cart row name: 16px 600 rgb(31, 27, 22) | qty: 16px 400 rgb(107, 100, 92) | price: 16px 600 rgb(31, 27, 22)
+summary (checkout): Subtotal=16px 400 rgb(107, 100, 92) ; Rs. 1,210=16px 500 rgb(31, 27, 22) ; Delivery fee=16px 400 rgb(107, 100, 92) ; Rs. 150=16px 500 rgb(31, 27, 22) ; Total=16px 600 rgb(31, 27, 22) ; Rs. 1,360=24px 700 rgb(31, 27, 22)
+BUTTON INVENTORY identical before/after on every screen: False
+  DIFF menuAll: before ['Vegetarian', 'Non-vegetarian', 'Burgers', 'Wraps', 'Pizza', 'Rice Bowls', 'Drinks', '🍔Crispy Chicken BurgerNon-vegetarian★ 4', '🍔Grilled Chicken BurgerNon-vegetarian★ ', '🍔BBQ Chicken BurgerNon-vegetarian★ 4.4R', '🍔Veggie Crunch BurgerVegetarian★ 4.8Rs.', '🌯Chicken Caesar WrapNon-vegetarian★ 4.2', '🌯Chicken Tikka WrapNon-vegetarian★ 4.6R', '🌯Spicy Chicken WrapNon-vegetarian★ 4.4R', '🌯Falafel WrapVegetarian★ 4.8Rs. 660', '🍕Cheese Margherita PizzaVegetarian★ 4.3', '🍕Veggie Supreme PizzaVegetarian★ 4.7Rs.', '🍕Chicken Fajita PizzaNon-vegetarian★ 4.', '🍚Daal Chawal BowlVegetarian★ 4.1Rs. 650', '🍚Chana Pulao BowlVegetarian★ 4.4Rs. 630', '🍚Vegetable BiryaniVegetarian★ 4.3Rs. 69', '🥤Mango LassiDrink★ 4.3Rs. 260', '🥤Sweet LassiDrink★ 4.1Rs. 220', '🥤Mint LemonadeDrink★ 4.4Rs. 240', '🥤Classic LemonadeDrink★ 4.0Rs. 200', '🥤Fresh Orange JuiceDrink★ 4.2Rs. 300', '🥤Cola 345 mlDrink★ 3.9Rs. 150', 'Home', 'Menu', 'Cart'] after ['Vegetarian', 'Non-vegetarian', 'Burgers', 'Wraps', 'Pizza', 'Rice Bowls', 'Drinks', 'Crispy Chicken BurgerNon-vegetarianRs. 7', 'Grilled Chicken BurgerNon-vegetarianRs. ', 'BBQ Chicken BurgerNon-vegetarianRs. 9204', 'Veggie Crunch BurgerVegetarianRs. 6804.8', 'Chicken Caesar WrapNon-vegetarianRs. 850', 'Chicken Tikka WrapNon-vegetarianRs. 6404', 'Spicy Chicken WrapNon-vegetarianRs. 6104', 'Falafel WrapVegetarianRs. 6604.8', 'Cheese Margherita PizzaVegetarianRs. 770', 'Veggie Supreme PizzaVegetarianRs. 9504.7', 'Chicken Fajita PizzaNon-vegetarianRs. 1,', 'Daal Chawal BowlVegetarianRs. 6504.1', 'Chana Pulao BowlVegetarianRs. 6304.4', 'Vegetable BiryaniVegetarianRs. 6904.3', 'Mango LassiRs. 2604.3', 'Sweet LassiRs. 2204.1', 'Mint LemonadeRs. 2404.4', 'Classic LemonadeRs. 2004.0', 'Fresh Orange JuiceRs. 3004.2', 'Cola 345 mlRs. 1503.9', 'Home', 'Menu', 'Cart']
+TASK CARDS before {"all": {"Veggie Supreme Pizza": 1556, "Chicken Fajita Pizza": 1690, "Mango Lassi": 2336, "Mint Lemonade": 2604}, "veg": {"Veggie Supreme Pizza": 752, "Mango Lassi": 1398, "Mint Lemonade": 1666}, "nonveg": {"Chicken Fajita Pizza": 1154, "Mango Lassi": 1428, "Mint Lemonade": 1696}}
+TASK CARDS after  {"all": {"Veggie Supreme Pizza": 1560, "Chicken Fajita Pizza": 1694, "Mango Lassi": 2340, "Mint Lemonade": 2608}, "veg": {"Veggie Supreme Pizza": 756, "Mango Lassi": 1402, "Mint Lemonade": 1670}, "nonveg": {"Chicken Fajita Pizza": 1158, "Mango Lassi": 1432, "Mint Lemonade": 1700}}
+REGRESSION before 27/27, after 27/27
+console errors after: 0, non-local requests after: 0

@@ -1,0 +1,323 @@
+[
+ {
+  "name": "Start tap logged with a negative ms (converted once t0 was known)",
+  "pass": true,
+  "detail": {
+   "tapMs": -117.3,
+   "startTapMs": -117.3
+  }
+ },
+ {
+  "name": "Every event has seq, attemptId, ms, afterEnd, screen, type, data",
+  "pass": true
+ },
+ {
+  "name": "seq strictly increasing",
+  "pass": true
+ },
+ {
+  "name": "Touch swipe (60 px) is not a tap and opens nothing; 8 px movement is a tap (dead, on the Menu title)",
+  "pass": true,
+  "detail": [
+   "btn-start",
+   "dead:home-screen__section-title",
+   "nav-menu",
+   "dead:top-bar__title",
+   "filter-veg",
+   "chip-rice-bowls",
+   "card-M13",
+   "back",
+   "card-M13",
+   "btn-add-to-cart",
+   "btn-view-cart"
+  ]
+ },
+ {
+  "name": "Menu nav tab is an interactive, not relevant, tap",
+  "pass": true
+ },
+ {
+  "name": "First relevant tap = Vegetarian filter (T1 Set 1)",
+  "pass": true
+ },
+ {
+  "name": "filter event: all → veg",
+  "pass": true,
+  "detail": {
+   "tapped": "veg",
+   "from": "all",
+   "to": "veg"
+  }
+ },
+ {
+  "name": "chip_scroll Rice Bowls logged, and its tap is relevant (category, T1)",
+  "pass": true
+ },
+ {
+  "name": "open_item ×2 for M13 (first from Menu:veg; second from Menu:all, because Back re-opens the Menu with its default filter)",
+  "pass": true,
+  "detail": [
+   {
+    "itemId": "M13",
+    "fromScreen": "Menu:veg"
+   },
+   {
+    "itemId": "M13",
+    "fromScreen": "Menu:all"
+   }
+  ]
+ },
+ {
+  "name": "back event ItemDetail:M13 → Menu:all (as displayed)",
+  "pass": true,
+  "detail": [
+   {
+    "from": "ItemDetail:M13",
+    "to": "Menu:all"
+   }
+  ]
+ },
+ {
+  "name": "add_to_cart (M13, correct) and panel_open not afterEnd; task_end follows with the result",
+  "pass": true
+ },
+ {
+  "name": "add_to_cart time = the Add to cart pointer down (= result timeMs)",
+  "pass": true,
+  "detail": {
+   "add": 8015.3,
+   "timeMs": 8015.3
+  }
+ },
+ {
+  "name": "After the end: view_cart and panel_close (cause view_cart) are afterEnd",
+  "pass": true
+ },
+ {
+  "name": "Scroll samples: ≥ 100 ms apart while moving, plus final samples",
+  "pass": true,
+  "detail": {
+   "samples": 11,
+   "minGap": 100,
+   "finals": 2
+  }
+ },
+ {
+  "name": "item_visibility: enter/exit at both levels",
+  "pass": true,
+  "detail": {
+   "n": 126
+  }
+ },
+ {
+  "name": "Home featured cards observed (enter events on Home)",
+  "pass": true
+ },
+ {
+  "name": "Filter change removes non-veg cards → exit with reason \"removed\"",
+  "pass": true
+ },
+ {
+  "name": "Measures: firstRelevantTapMs observed = Vegetarian tap; counts match the events",
+  "pass": true,
+  "detail": {
+   "firstRelevantTapMs": 3383.1,
+   "firstRelevantTapStatus": "observed",
+   "firstRelevantTapCensored": false,
+   "firstRelevantTapTarget": "filter-veg",
+   "tapCount": 9,
+   "deadTapCount": 2,
+   "backCount": 1
+  }
+ },
+ {
+  "name": "Start tap (before t0) excluded from tapCount",
+  "pass": true
+ },
+ {
+  "name": "Hold (3 s) in the corner is not logged as a tap",
+  "pass": true
+ },
+ {
+  "name": "Short tap in the hold corner → dead tap",
+  "pass": true
+ },
+ {
+  "name": "T2 Set 1 via Wraps → Falafel: no relevant tap → status none_before_end, value null, decision error",
+  "pass": true,
+  "detail": {
+   "firstRelevantTapMs": null,
+   "firstRelevantTapStatus": "none_before_end",
+   "firstRelevantTapCensored": false,
+   "firstRelevantTapTarget": null,
+   "tapCount": 5,
+   "deadTapCount": 1,
+   "backCount": 0
+  }
+ },
+ {
+  "name": "T3: tile_scroll Pizza; first relevant tap = Pizza tile",
+  "pass": true,
+  "detail": {
+   "firstRelevantTapMs": 798.9,
+   "firstRelevantTapStatus": "observed",
+   "firstRelevantTapCensored": false,
+   "firstRelevantTapTarget": "tile-pizza",
+   "tapCount": 10,
+   "deadTapCount": 0,
+   "backCount": 0
+  }
+ },
+ {
+  "name": "T3: panel_close causes back_to_menu then view_cart; checkout and place_order logged before task_end",
+  "pass": true,
+  "detail": [
+   {
+    "itemId": "M10",
+    "cause": "back_to_menu"
+   },
+   {
+    "itemId": "D01",
+    "cause": "view_cart"
+   }
+  ]
+ },
+ {
+  "name": "T3: add_to_cart correct flags (M10 true, D01 true) and total Rs. 1,360",
+  "pass": true
+ },
+ {
+  "name": "navigate events carry from, to and cause",
+  "pass": true,
+  "detail": [
+   "Ready>Home:btn-start",
+   "Home>Menu:all:tile-pizza",
+   "Menu:all>ItemDetail:M10:card-M10",
+   "ItemDetail:M10+panel>Menu:all:btn-back-to-menu",
+   "Menu:all>ItemDetail:D01:card-D01",
+   "ItemDetail:D01+panel>Cart:btn-view-cart",
+   "Cart>Checkout:btn-checkout",
+   "Checkout>OrderConfirmed:btn-place-order"
+  ]
+ },
+ {
+  "name": "Abandoned: measures status not_applicable; attempt_closed event logged",
+  "pass": true,
+  "detail": {
+   "firstRelevantTapMs": null,
+   "firstRelevantTapStatus": "not_applicable",
+   "firstRelevantTapCensored": false,
+   "firstRelevantTapTarget": null,
+   "tapCount": 1,
+   "deadTapCount": 0,
+   "backCount": 0
+  }
+ },
+ {
+  "name": "Interrupted: events saved before the reload survive; attempt_closed (interrupted) logged",
+  "pass": true,
+  "detail": {
+   "before": 25,
+   "after": 26
+  }
+ },
+ {
+  "name": "Interrupted attempt measures computed (first relevant = filter-nonveg, status observed)",
+  "pass": true
+ },
+ {
+  "name": "counted_changed moderator event logged",
+  "pass": true
+ },
+ {
+  "name": "Time limit, no relevant tap: firstRelevantTapMs = 120000, status censored_time_limit, flagged censored",
+  "pass": true,
+  "detail": {
+   "firstRelevantTapMs": 120000,
+   "firstRelevantTapStatus": "censored_time_limit",
+   "firstRelevantTapCensored": true,
+   "firstRelevantTapTarget": null,
+   "tapCount": 1,
+   "deadTapCount": 1,
+   "backCount": 0
+  }
+ },
+ {
+  "name": "task_end at exactly 120000 ms; Wait-screen taps afterEnd",
+  "pass": true
+ },
+ {
+  "name": "Tap on the wait screen → dead, screen \"Wait\", afterEnd",
+  "pass": true
+ },
+ {
+  "name": "Export downloads P80-session.json",
+  "pass": true
+ },
+ {
+  "name": "Export: top-level fields",
+  "pass": true
+ },
+ {
+  "name": "Export: session metadata",
+  "pass": true
+ },
+ {
+  "name": "Export: blocks (C1: Design 1 A set1, Design 2 B set2)",
+  "pass": true
+ },
+ {
+  "name": "Export: every attempt has the identity fields, result and measures",
+  "pass": true
+ },
+ {
+  "name": "Export: all attempts and the counted history included",
+  "pass": true
+ },
+ {
+  "name": "Export: events only carry the documented fields",
+  "pass": true
+ },
+ {
+  "name": "Export: no \"gaze\"/\"attention\"/\"fixation\" field names",
+  "pass": true
+ },
+ {
+  "name": "Same scripted T1 path in A and B → identical non-scroll/visibility event sequence (type|screen|target|afterEnd)",
+  "pass": true,
+  "detail": {
+   "A": 26,
+   "B": 26,
+   "firstDiff": -1
+  }
+ },
+ {
+  "name": "Same path in A and B → same measures except times",
+  "pass": true,
+  "detail": {
+   "A": {
+    "firstRelevantTapMs": 3383.1,
+    "firstRelevantTapStatus": "observed",
+    "firstRelevantTapCensored": false,
+    "firstRelevantTapTarget": "filter-veg",
+    "tapCount": 9,
+    "deadTapCount": 2,
+    "backCount": 1
+   },
+   "B": {
+    "firstRelevantTapMs": 3363.7,
+    "firstRelevantTapStatus": "observed",
+    "firstRelevantTapCensored": false,
+    "firstRelevantTapTarget": "filter-veg",
+    "tapCount": 9,
+    "deadTapCount": 2,
+    "backCount": 1
+   }
+  }
+ },
+ {
+  "name": "No console errors",
+  "pass": true,
+  "detail": []
+ }
+]

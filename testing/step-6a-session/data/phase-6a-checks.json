@@ -1,0 +1,339 @@
+[
+ {
+  "name": "Opens on moderator setup (no app frame)",
+  "pass": true
+ },
+ {
+  "name": "Setup shows Design 1 / Design 2 and task sets",
+  "pass": true
+ },
+ {
+  "name": "Setup shows no prototype letter or \"prototype\"/\"theme\" wording",
+  "pass": true,
+  "detail": null
+ },
+ {
+  "name": "Suggested task is Block 1 T1",
+  "pass": true
+ },
+ {
+  "name": "Page title neutral",
+  "pass": true,
+  "detail": "bitebuddy"
+ },
+ {
+  "name": "Ready shown in block 1 theme (A for C1)",
+  "pass": true
+ },
+ {
+  "name": "t0 recorded from the Home frame, after the Start tap",
+  "pass": true,
+  "detail": {
+   "startTapMs": -213.5,
+   "readyShownMs": -1063.2
+  }
+ },
+ {
+  "name": "Start tap time taken from pointerdown",
+  "pass": true
+ },
+ {
+  "name": "T1 correct item → success, add_to_cart, time from pointerdown",
+  "pass": true,
+  "detail": {
+   "endReason": "add_to_cart",
+   "success": true,
+   "censored": false,
+   "timeMs": 3335,
+   "endTimeSource": "pointerdown",
+   "timerFiredMs": null,
+   "raceResolved": false,
+   "itemId": "M13",
+   "correct": true,
+   "decisionError": false,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 3335
+  }
+ },
+ {
+  "name": "Panel still shown after task end (decision 2)",
+  "pass": true
+ },
+ {
+  "name": "Counted by default",
+  "pass": true
+ },
+ {
+  "name": "3 s hold top-right returns to setup",
+  "pass": true
+ },
+ {
+  "name": "Ended attempt unchanged by returning to setup",
+  "pass": true
+ },
+ {
+  "name": "Suggestion advanced to Block 1 T2",
+  "pass": true
+ },
+ {
+  "name": "T2 wrong item → failure, decision error",
+  "pass": true,
+  "detail": {
+   "endReason": "add_to_cart",
+   "success": false,
+   "censored": false,
+   "timeMs": 2216.4,
+   "endTimeSource": "pointerdown",
+   "timerFiredMs": null,
+   "raceResolved": false,
+   "itemId": "M01",
+   "correct": false,
+   "decisionError": true,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 2216.4
+  }
+ },
+ {
+  "name": "Later Add to cart does not change a frozen result",
+  "pass": true
+ },
+ {
+  "name": "T3 set 1 in A → order_confirmed, success, Rs. 1,210 / 1,360",
+  "pass": true,
+  "detail": {
+   "endReason": "order_confirmed",
+   "success": true,
+   "censored": false,
+   "timeMs": 8349.7,
+   "endTimeSource": "frame",
+   "timerFiredMs": null,
+   "raceResolved": false,
+   "itemId": null,
+   "correct": null,
+   "decisionError": null,
+   "orderedItemIds": [
+    "M10",
+    "D01"
+   ],
+   "orderSubtotal": 1210,
+   "orderTotal": 1360,
+   "lastEventMs": 8349.7
+  }
+ },
+ {
+  "name": "T3 set 2 in B → order_confirmed, success, Rs. 1,330 / 1,480",
+  "pass": true,
+  "detail": {
+   "endReason": "order_confirmed",
+   "success": true,
+   "censored": false,
+   "timeMs": 8116.3,
+   "endTimeSource": "frame",
+   "timerFiredMs": null,
+   "raceResolved": false,
+   "itemId": null,
+   "correct": null,
+   "decisionError": null,
+   "orderedItemIds": [
+    "M11",
+    "D03"
+   ],
+   "orderSubtotal": 1330,
+   "orderTotal": 1480,
+   "lastEventMs": 8116.3
+  }
+ },
+ {
+  "name": "Block 2 theme is B for C1",
+  "pass": true
+ },
+ {
+  "name": "Leaving a running attempt → abandoned, success/timeMs null",
+  "pass": true,
+  "detail": {
+   "endReason": "abandoned",
+   "success": null,
+   "censored": false,
+   "timeMs": null,
+   "endTimeSource": null,
+   "timerFiredMs": null,
+   "raceResolved": false,
+   "itemId": null,
+   "correct": null,
+   "decisionError": null,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 4455.9
+  }
+ },
+ {
+  "name": "Second attempt gets a new id (a2) and is open",
+  "pass": true
+ },
+ {
+  "name": "After reload: setup shown, not the task",
+  "pass": true
+ },
+ {
+  "name": "Unfinished attempt closed as interrupted, last known time kept",
+  "pass": true,
+  "detail": {
+   "endReason": "interrupted",
+   "success": null,
+   "censored": false,
+   "timeMs": null,
+   "endTimeSource": null,
+   "timerFiredMs": null,
+   "raceResolved": false,
+   "itemId": null,
+   "correct": null,
+   "decisionError": null,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 0
+  }
+ },
+ {
+  "name": "Earlier attempts survive the reload unchanged",
+  "pass": true
+ },
+ {
+  "name": "Re-opening P90 with a different condition is refused",
+  "pass": true
+ },
+ {
+  "name": "Re-run after reload → new attempt a3, set 2 T1 correct (Spicy Chicken Wrap), counted by default",
+  "pass": true,
+  "detail": {
+   "endReason": "add_to_cart",
+   "success": true,
+   "censored": false,
+   "timeMs": 3271.1,
+   "endTimeSource": "pointerdown",
+   "timerFiredMs": null,
+   "raceResolved": false,
+   "itemId": "M07",
+   "correct": true,
+   "decisionError": false,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 3271.1
+  }
+ },
+ {
+  "name": "\"None counted\" → no counted attempt, countedBy moderator, history logged",
+  "pass": true,
+  "detail": {
+   "at": "2026-11-21T17:51:59.988Z",
+   "block": 2,
+   "task": "T1",
+   "from": "P90-b2-T1-a3",
+   "to": null,
+   "choice": "none"
+  }
+ },
+ {
+  "name": "\"Back to default\" → a3 counted again (default), history has 2 entries",
+  "pass": true
+ },
+ {
+  "name": "Abandoned/interrupted attempts offer no \"Count this one\"",
+  "pass": true
+ },
+ {
+  "name": "T3 set 1 in B → Rs. 1,360",
+  "pass": true
+ },
+ {
+  "name": "T3 set 2 in A → Rs. 1,480",
+  "pass": true
+ },
+ {
+  "name": "T1 at 120 s → time_limit, censored, timeMs exactly 120000, success false",
+  "pass": true,
+  "detail": {
+   "endReason": "time_limit",
+   "success": false,
+   "censored": true,
+   "timeMs": 120000,
+   "endTimeSource": "time_limit",
+   "timerFiredMs": 120010.1,
+   "raceResolved": false,
+   "itemId": null,
+   "correct": null,
+   "decisionError": null,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 0
+  }
+ },
+ {
+  "name": "Wait screen shown with the neutral message",
+  "pass": true
+ },
+ {
+  "name": "Timed-out attempt counted by default (decision 7)",
+  "pass": true
+ },
+ {
+  "name": "T3 at 180 s → time_limit, censored, timeMs exactly 180000",
+  "pass": true,
+  "detail": {
+   "endReason": "time_limit",
+   "success": false,
+   "censored": true,
+   "timeMs": 180000,
+   "endTimeSource": "time_limit",
+   "timerFiredMs": 180000.4,
+   "raceResolved": false,
+   "itemId": null,
+   "correct": null,
+   "decisionError": null,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 0
+  }
+ },
+ {
+  "name": "Wait screen theme frame is A",
+  "pass": true
+ },
+ {
+  "name": "Race: press before the limit, release after → completed by timestamp, raceResolved",
+  "pass": true,
+  "detail": {
+   "endReason": "add_to_cart",
+   "success": true,
+   "censored": false,
+   "timeMs": 119706.7,
+   "endTimeSource": "pointerdown",
+   "timerFiredMs": 120006,
+   "raceResolved": true,
+   "itemId": "M07",
+   "correct": true,
+   "decisionError": false,
+   "orderedItemIds": null,
+   "orderSubtotal": null,
+   "orderTotal": null,
+   "lastEventMs": 119706.7
+  }
+ },
+ {
+  "name": "Race: participant sees the panel, not the wait screen",
+  "pass": true
+ },
+ {
+  "name": "No console errors",
+  "pass": true,
+  "detail": []
+ }
+]

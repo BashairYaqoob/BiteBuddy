@@ -1,0 +1,26 @@
+/* Measured from Figma Prototype B (reference/step-4.5b-measurements.md):
+   unselected: white, 1 px inside border, radius 22, 46 tall, text 16 Medium ink;
+   selected: accent fill, no border, 44 tall, text 16 SemiBold white.
+   align-self keeps the selected chip at 44 instead of stretching to the row. */
+.chip {
+  padding: 10px 16px;
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  white-space: nowrap;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-ink);
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.chip--selected {
+  background: var(--color-accent);
+  border: none;
+  color: var(--color-on-accent);
+  font-weight: 600;
+}

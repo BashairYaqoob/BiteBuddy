@@ -1,0 +1,25 @@
+/* Measured from Figma Prototype B (reference/step-4.5b-measurements.md):
+   pill 34 tall, white, radius 16, 1 px inside border, padding 4/10,
+   text 16 Medium muted. Drinks: plain text, no pill. */
+.diet-tag {
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.diet-tag--plain {
+  height: auto;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
